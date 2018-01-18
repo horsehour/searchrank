@@ -1,0 +1,202 @@
+\chapter{Celebrity}
+%\section{John von Neumann}
+%\section{Claude Shannon}
+%\section{Alan Turing}
+%
+%\section{Karl Pearson}
+%
+%\section{Andrey Markov}
+%
+%\section{Leo Breiman}
+%\section{Vladimir Vapnik}
+%\subsection{Bernhard Sch\"{o}lkopf}%optimization,kernel
+%
+%\section{Jerome Friedman}
+%\section{John Quinlan}
+%\section{Geoffrey Hinton}
+%\subsection{Yoshua Bengio}
+
+%\subsection{Bradley Efron}
+
+%\section{Thomas Dietterich}
+%
+%\section{Robert Schapire}
+%\section{Yoav Freund}
+%
+%\section{John Lafferty}
+%
+%\section{Frank Rosenblatt}
+%\section{Teuvo Kohonen}
+%
+%\section{Tom Mitchell}
+%
+%\section{Michael Jordan}
+%\subsection{Andrew Ng}
+%
+%\section{Terence Tao}
+
+\section{数学难题}
+\subsection{Fermat's Last Theorem}
+费马大定理由法国数学家费马在1637年提出，他在阅读丢番图（Diophatus）《算术》时，于留白处写道：“将一个立方数表示成两个立方数之和，或一个四次幂表示成两个四次幂之和，或者一般地将一个高于二次的幂表示成两个同次幂之和，这是不可能的。关于此，我确信已发现一种绝妙的证法，可惜这里空白太少，写不下”。费马大定理使用现代数学语言可以表述为：\\
+\centerline{\textbf{当$n>2$时，等式$z^n=x^n + y^n$没有正整数解}}
+
+1995年，英国数学家Andrew Wiles给出费马大定理的一般性证明，称为“20世纪最伟大的数学成就”，Wiles因此获得了1995～1996年度的沃尔夫数学奖（Wolf Prize in Mathematics），并在1998年国际数学家大会上荣获菲尔兹奖银质奖章（Fields Medal）。
+\subsection{Goldbach's Conjecture}
+哥德巴赫猜想是数论中存在最久的未解问题之一，最早出现在1742年德国数学家Christian Goldbach与瑞士大数学家Leonhard Euler的通信中。哥德巴赫在信中大胆地猜想：\\
+\centerline{\textbf{每个大于5的整数都可以表示成三个素数的和}}
+
+Euler在回信中给出一个等价的结论：\\
+\centerline{\textbf{每个大于2的偶数都可以表示成两个素数的和}}
+后人称之为“强哥德巴赫猜想”或“关于偶数的哥德巴赫猜想”，由此还可以推出：\\
+\centerline{\textbf{每个大于5的奇数都可以表示成三个素数的和}}
+称作“弱哥德巴赫猜想”或“关于奇数的哥德巴赫猜想”。
+
+假设$N$是偶数，可以证明它能够写成两个“殆素数（Almost Prime）”
+\footnote{殆素数是指素因子（包括相同的与不同的）的个数不超过某一固定常数的整数。如$15=3\times 5$有2个素因子，19只有1个素因子，$27=3\times 3\times 3$ 有3 个素因子，$45=3\times 3\times 5$也有三个素因子，它们都是素因子数不超过3的殆素数。}
+的和$N=A+B$，其中A和B的素因子个数都不太多，比如不超过10。现在用“$a+b$”表示命题：每个大偶数$N$都可以表示为$A+B$，其中A和B的素因子个数分别不超过a和b。由此，哥德巴赫猜想可以写成“1+1”。
+
+从1742年哥德巴赫猜想的出现，到二十世纪初，在160多年的时间，大批数学家们的研究并未取得任何实质性的进展，也没有获得任何有效的研究方法。1900年，希尔伯特在第二届国际数学家大会上提出了著名的二十三个希尔伯特问题，其中第八个问题包括\textbf{哥德巴赫猜想}和\textbf{孪生素数猜想}。1923年，英国的数学家Godfrey Hardy与John Littlewood使用“圆法”等研究数论问题的有力工具，证明了：在假设广义黎曼猜想成立的前提下，每个充分大的奇数都能表示成三个素数的和，\textbf{几乎}每一个充分大的偶数都能表示成两个素数的和。1937年，前苏联数学家Ivan Vinogradov在无须广义黎曼猜想成立前提，直接证明了“充分大的奇数可以表示为三个素数之和”，称为“三素数定理”。1973年，中国数学家陈景润使用“筛法（Sieve）
+\footnote{筛法最早出现在公元前250年的古希腊，通过筛掉合数寻找素数：1不是素数，也不是合数，直接丢弃；第一个数2留下，将2的倍数全部丢弃；将剩余数中最小的3 留下，将3的倍数全部丢弃；继续将剩余数中最小的5留下，将它的倍数全部丢弃$\dots$}
+”证明，每个充分大的偶数都能表示成两个素数的和或者一个素数与一个“半素数”（Semiprime）
+\footnote{半素数是指素因子最多两个的殆素数，在密码学尤其是公钥加密中有广泛应用}
+的和，称为“1+2”或“陈氏定理”。2013 年，秘鲁数学家Harald Helfgott\cite{helfgott2013major}宣称完全证明“弱哥德巴赫猜想”。
+
+\subsubsection{Prime}
+素数（或质数）指大于1的自然数，除了1和它本身，不存在其他可以整除它的自然数。在数论中，素数就是最基本的粒子。比1大的自然数不是\textbf{素数}就是
+\textbf{合数}，0和1 既非素数也非合数。最小的素数是2，也是唯一的偶素数，其他的都是奇数，并且任意两个素数互素（公因子为1）。
+
+\begin{enumerate}
+  \item 公元前300年，Euclid在《几何原本》中证明：素数有无穷多个。
+  \item Euler利用Riemann$\zeta$函数证明：全部素数的倒数之和发散。
+\end{enumerate}
+
+一个数$N$如果是素数，我们称其具有素性。素性的测试有两种方法：确定性算法与随机算法，前者可以给出确定的结果但速度慢，后者相反。确定性算法包括筛法和AKS 素数测试法。筛法也称Eratosthenes筛法，当用于测试素数时，可以使用判断是否整除$N$。此外，还可用于寻找素数，尤其是在寻找1000万以下的素数时被认为是最有效的一个方法。AKS素数测试法是由Manindra Agrawal，Neeraj Kayal和Nitin Saxena在2002年发明的第一个多项式时间（$\mathcal{O}((\log n)^6)$）的素性测试方法。随机算法包括费马测试、Miller-Rabin 素数测试和Euler-Jacobi素数测试等。
+
+由于素数是可数的，如果能够发现生成素数的一般公式，对于素数性质的研究相当有利，但至今无大的进展。17世纪初，法国数学家Mersenne错误地认为每一个梅森数$M_n=2^n-1$ 都是素数。如果一个素数也是一个梅森数，则称它是梅森质数。截至2013 年2 月，人们已经发现了48个梅森数。
+
+\begin{theorem}[唯一分解定理]
+    任何大于$1$的整数都可以唯一地分解成有限个素数的乘积（忽略因子顺序）
+\end{theorem}
+
+\begin{definition}[欧拉函数]
+    对于正整数$n$，欧拉函数$\phi(n)$表示小于等于$n$且与$n$互素的正整数的数目。
+\end{definition}
+
+如果$n>1$可以分解成下面的乘积形式：
+\begin{equation}
+    n = p_1^{r_1} p_2^{r_2} \cdots p_k^{r_k}
+\end{equation}
+$p_1,\ldots,p_k$是互不相同的素数且$r_i>0$，则欧拉函数可以表示为下面的形式
+\begin{equation}
+    \phi(n) = n \prod\limits_{i=1}^k (1-\frac{1}{p_i})
+\end{equation}
+特别地，如果$n=pq$，则$\phi(n)=\phi(p)\phi(q)$。
+
+\begin{theorem}[欧拉定理、小费马定理]
+    如果正整数$a,n$互素，则等式
+    \begin{equation}
+        a^{\phi(n)}\equiv 1~(\text{mod}~n)
+    \end{equation}
+    成立，其中$a\equiv b~(\text{mod}~c)$表示\textbf{同余}，即$a~\text{mod}~c = b~\text{mod}~c$。这个结论称作欧拉定理。
+
+    如果正整数$n$是一个素数，则有$\phi(n)=n(1-\frac{1}{n}) = n - 1$，因此
+    \begin{equation}
+        a^{n-1}\equiv 1~(\text{mod}~n)
+    \end{equation}
+    它就是著名的小费马定理，属于欧拉定理的一个特例。
+\end{theorem}
+
+\begin{theorem}
+    如果正整数$a,n$互素，则一定存在$b$，使得
+    \begin{equation}
+        ab \equiv 1~(\text{mod}~n)
+    \end{equation}
+    $b$称为$a$的模反元素；根据欧拉定理有$a^{\phi(n)}=a a^{\phi(n)-1}\equiv 1~(\text{mod}~n)$，可知$a^{\phi(n)-1}$是$a$的模反元素。
+\end{theorem}
+
+\subsubsection{RSA算法}
+1977年，麻省理工学院的Ron Rivest，Adi Shamir和Leonard Adleman设计出世界上第一个非对称加密算法，简称\textbf{RSA算法}。实际上在1973年，任职于英国情报机构的数学家Clifford Cocks就发明了一套等价的加密算法，被列为机密文件，直至1997年得以公开。目前，RSA已经成为使用最广、影响力最大的公钥加密算法。
+
+RSA算法涉及三个关键步骤：制作密钥、加密（Encryption）和解密（Decryption）。假设甲要与乙进行加密通信，必须由乙方制作密钥：
+\begin{enumerate}
+  \item 随机选择两个不相等的大素数$p$和$q$，计算二者的乘积$n=pq$。
+  \item 计算$n$的欧拉函数值$\phi(n)=\phi(p)\phi(q)=(p-1)(q-1)$。
+  \item 在$(1,\phi(n))$之间随机选取一个与$\phi(n)$互素的整数$e$。
+  \item 计算$e$对于$\phi(n)$的模反元素$d$：$ed\equiv 1~(\text{mod}~\phi(n))$。
+  \item 将$n,e$作为公钥，$d$作为私钥。
+\end{enumerate}
+
+如果要从公钥$(n,e)$中解开私钥$d$，必须对$n$进行因数分解。\textbf{大整数的因数分解}是一个世界性的难题，保证了通信的安全。
+
+乙方制作密钥后，甲方就可以利用公钥加密信息$m<n$，得到密文$c$：
+\begin{equation}
+    m^e \equiv~c~(\text{mod}~n)
+\end{equation}
+
+甲方将密文发送给乙，然后乙就可以使用私钥$e$解密，可以证明：
+\begin{equation}
+    c^d \equiv~m~(\text{mod}~n)
+\end{equation}
+
+\begin{proof}
+根据加密规则$m^e \equiv~c~(\text{mod}~n)$，所以$c$可以写成：
+\[
+    c = m^e - kn
+\]
+代入解密规则得：
+\[
+    (m^e - kn)^d \equiv~m~(\text{mod}~n)
+\]
+等价于
+\[
+    m^{ed} \equiv~m~(\text{mod}~n)
+\]
+由于$ed \equiv~1~(\text{mod}~\phi(n))$，因此$ed -1 = h\phi(n)$，带入上式：
+\[
+    m^{h\phi(n)+1} \equiv~m~(\text{mod}~n)
+\]
+
+（1）如果$m$与$n$互素：根据欧拉定理有$m^{\phi(n)} \equiv~1~(\text{mod}~n)$，则$m^{h\phi(n)+1} \equiv~m~(\text{mod}~n)$。
+
+（2）如果$m$与$n$不是互素关系：
+由于$n=pq$，则存在$k>0$使得$m=kp$或$m=kq$最多一个成立。不失一般性，我们假设$m=kp$。由于$k$与$q$互素（否则，$m>=n$，矛盾），则$m$与$q$互素，根据欧拉定理有：
+\[
+    m^{\phi(q)} \equiv~1~(\text{mod}~q)
+\]
+则$m^{h\phi(q)\phi(p) + 1}  \equiv~m~(\text{mod}~q)$，即$m^{ed} \equiv~m~(\text{mod}~q)$，那么$q\mid m^{ed}-m$。既然$m=kp$，必然有$p\mid m^{ed}-m$，而$p,q$ 互素，因此
+\[
+    m^{ed} \equiv~m~(\text{mod}~n)
+\]
+\end{proof}
+
+\subsection{Twin Primes Conjecture}
+1849年，de Polignac猜想：\\
+\centerline{\textbf{对于任意的自然数$k$，存在无穷多个素数$p$使得$p+2k$也是素数}}
+
+1900年，希尔伯特在第二届国际数学家大会上做出孪生素数猜想：存在无穷多对孪生素数。它其实是Polignac猜想在$k=1$时的一个特例。
+
+孪生素数是一对相差为$b=2$的素数，如3和5、5和7、11和13、17和19等，截至2011年12月25日，已知最大的孪生素数是$3,756,801,695,685\times 2^{666669}-1$和$3,756,801,695,685\times 2^{666669}+1$，有$200,700$位。根据素数定理，素数越大则相邻孪生素数的间隔越大，然而仍然存在无穷多对间隔为2的孪生素数，因此孪生素数猜想似乎违反人们的直觉。孪生素数猜想反映了素数分布的有序性与随机性的理想平衡。
+
+2013年4月，张益唐证明了一种弱化的形式，“存在无穷多个相差小于7000万的素数对”，这个证明对于\textbf{弱孪生素数猜想}的证明具有里程碑的意义。同年7月，陶泽轩主导的Polymath 项目宣称已经将素数对的界降低到5,414。
+
+\subsection{Four Color Theorem}
+四色问题又称“四色猜想”，与费马大定理、哥德巴赫猜想并称为近代三大数学难题，由英国大学生Francis Guthrie提出。1852年，毕业于伦敦大学的Francis Guthrie 在为地图着色时，发现一个有趣的现象：每幅地图只要使用四种颜色，就可以使所有相邻的国家着上不同的颜色。Francis及其弟弟Frederick期望从数学上给以严格证明，可是研究工作并无进展。后来，Frederick请教其导师，著名数学家Augustus De Morgan，也没有找到解决的方案。1976年，数学家Kenneth Appel和Wolfgang Haken在两台电子计算机上算了1200个小时，终于完成证明，四色问题成为四色定理。
+\subsection{Poincar\'{e}'s Conjecture}
+庞加莱猜想是关于三维球面特征的一个定理，具体地可以表述为：\\
+\centerline{\textbf{每个单连通的，封闭的三维流形与三维球面同胚}}
+
+在2002年11月到2003年7月期间，俄罗斯数学家Grigori Perelman在arxiv上发表三篇论文，声称证明了庞加莱猜想。2006年8月，第25届国际数学家大会授予Perelman菲尔兹奖，数学界最终确认他的证明解决了庞加莱猜想。
+
+如果我们伸缩围绕一个苹果表面的橡皮带，那么我们可以既不扯断它，也不让它离开表面，使它慢慢移动收缩为一个点。另一方面，如果我们想象同样的橡皮带以适当的方向被伸缩在一个轮胎面上，那么不扯断橡皮带或者轮胎面，是没有办法把它收缩到一点的。我们说，苹果表面是“单连通的”，而轮胎面不是。20世纪初，庞加莱知道二维球面本质上可由单连通性来刻画，它将这一特性推广到三维球面，就提出了著名的庞加莱猜想。
+
+\subsection{P v.s. NP}
+在信息学计算复杂度理论中，如果问题能够在多项式时间内得到解决，这类问题称作P问题；如果问题的一个解可以在多项式时间内得到验证，则称此类问题为NP问题。P/NP 问题收录于Clay数学研究所（Clay Mathematics Institute，CMI）的千禧年大奖难题，奖金一百万美元，至今未解。它是由著名的计算机科学家，1982年图灵奖得主Stephen A. Cook\cite{cook1971complexity}于1971年发现并提出的，具体可表述如下：\\
+\centerline{\textbf{两个复杂度类P和NP是否恒等？}}
+对于任意一个问题，如果它的解可以使用计算机\textbf{迅速}（多项式时间）验证，这个问题是否同样可以使用计算机\textbf{迅速}求解。
+
+Cook使用下面一个故事对P/NP问题做出陈述：在一个周六的晚上，你参加了一个盛大的晚会，感到局促不安，你想知道大厅里是否有你认识的人。晚会的主人道：“你一定认识那位正在甜点盘附近的女士罗丝”。你只需向主人所指的方向扫一眼，也许发现他/她是正确的。如果缺少这样的暗示，你需要环顾整个大厅，一个个地审视。生成问题的一个解通常比验证给定的一个解所花费的时间多得多。
+
+给定一个整数集合，它的一个非空子集的所有元素加和是否等于零？比如集合$\{-2, -3, 15, 14, 7, -10\}$，我们可以迅速地给出肯定的答复，但是不存在一个多项式时间复杂度的算法构造一个加和为零的子集。子集加和问题是一个典型的NP问题，但不一定是P问题。
+
+\subsection{Hodge's Conjecture}
+\subsection{Riemann Hypothesis}

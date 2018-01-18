@@ -1,0 +1,2676 @@
+\begin{thebibliography}{100}
+
+\bibitem{rodriguez2014clustering}
+Alex Rodriguez and Alessandro Laio.
+\newblock Clustering by fast search and find of density peaks.
+\newblock {\em Science}, 344(6191):1492--1496, 2014.
+
+\bibitem{salton1975vector}
+Gerard Salton, Anita Wong, and Chung-Shu Yang.
+\newblock A vector space model for automatic indexing.
+\newblock {\em Communications of the ACM}, 18(11):613--620, 1975.
+
+\bibitem{robertson1976relevance}
+S.~E. Robertson and K.~Sp{\"{a}}rck Jones.
+\newblock Relevance weighting of search terms.
+\newblock {\em Journal of the American Society for Information Science},
+  27(3):129–146, 1976.
+
+\bibitem{robertson2009probabilistic}
+Stephen Robertson and Hugo Zaragoza.
+\newblock {\em The probabilistic relevance framework: BM25 and beyond},
+  volume~3.
+\newblock Now Publishers Inc, 2009.
+
+\bibitem{robertson1996okapi}
+Stephen~E. Robertson, Steve Walker, Susan Jones, Micheline Hancock-Beaulieu,
+  and Mike Gatford.
+\newblock Okapi at trec-3.
+\newblock {\em Overview of the Third Text Retrieval Conference}, pages
+  109--126, 1996.
+
+\bibitem{ponte1998language}
+Jay~M. Ponte and W.~Bruce Croft.
+\newblock A language modeling approach to information retrieval.
+\newblock {\em Research \& Development in Information Retrieval}, pages
+  275--281, 1998.
+
+\bibitem{tao2007exploration}
+Tao Tao and ChengXiang Zhai.
+\newblock An exploration of proximity measures in information retrieval.
+\newblock In {\em Annual ACM Conference on Research and Development in
+  Information Retrieval: Proceedings of the 30 th annual international ACM
+  SIGIR conference on Research and development in information retrieval},
+  volume~23, pages 295--302, 2007.
+
+\bibitem{khare2004nutch}
+Rohit Khare, Doug Cutting, Kragen Sitaker, and Adam Rifkin.
+\newblock Nutch: A flexible and scalable open-source web search engine.
+\newblock {\em Oregon State University}, 2004.
+
+\bibitem{fang2005exploration}
+Hui Fang and ChengXiang Zhai.
+\newblock An exploration of axiomatic approaches to information retrieval.
+\newblock In {\em Proceedings of the 28th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  480--487. ACM, 2005.
+
+\bibitem{fang2009evaluation}
+Hui Fang and ChengXiang Zhai.
+\newblock Evaluation of the default similarity function in lucene.
+\newblock Retrieved from
+  http://www.eecis.udel.edu/\~hfang/lucene/lucene\_exp.pdf, 2009.
+
+\bibitem{abiteboul2003adaptive}
+Serge Abiteboul, Mihai Preda, and Gregory Cobena.
+\newblock Adaptive on-line page importance computation.
+\newblock In {\em Proceedings of the 12th international conference on World
+  Wide Web}, pages 280--290. ACM, 2003.
+
+\bibitem{brin1998anatomy}
+Sergey Brin and Lawrence Page.
+\newblock The anatomy of a large-scale hypertextual web search engine.
+\newblock {\em Computer networks and ISDN systems}, 30(1):107--117, 1998.
+
+\bibitem{bahmani2010fast}
+Bahman Bahmani, Abdur Chowdhury, and Ashish Goel.
+\newblock Fast incremental and personalized pagerank.
+\newblock {\em Proceedings of the VLDB Endowment}, 4(3):173--184, 2010.
+
+\bibitem{franceschet2011pagerank}
+Massimo Franceschet.
+\newblock Pagerank: Standing on the shoulders of giants.
+\newblock {\em Communications of the ACM}, 54(6):92--101, 2011.
+
+\bibitem{haveliwala2002topic}
+Taher~H Haveliwala.
+\newblock Topic-sensitive pagerank.
+\newblock In {\em Proceedings of the 11th international conference on World
+  Wide Web}, pages 517--526. ACM, 2002.
+
+\bibitem{jeh2002simrank}
+Glen Jeh and Jennifer Widom.
+\newblock Simrank: a measure of structural-context similarity.
+\newblock In {\em Proceedings of the eighth ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 538--543. ACM, 2002.
+
+\bibitem{fogaras2005scaling}
+D{\'a}niel Fogaras and Bal{\'a}zs R{\'a}cz.
+\newblock Scaling link-based similarity search.
+\newblock In {\em Proceedings of the 14th international conference on World
+  Wide Web}, pages 641--650. ACM, 2005.
+
+\bibitem{lizorkin2008accuracy}
+Dmitry Lizorkin, Pavel Velikhov, Maxim Grinev, and Denis Turdakov.
+\newblock Accuracy estimate and optimization techniques for simrank
+  computation.
+\newblock {\em Proceedings of the VLDB Endowment}, 1(1):422--433, 2008.
+
+\bibitem{antonellis2008simrank++}
+Ioannis Antonellis, Hector~Garcia Molina, and Chi~Chao Chang.
+\newblock Simrank++: Query rewriting through link analysis of the click graph.
+\newblock {\em Proceedings of the VLDB Endowment}, 1(1):408--421, 2008.
+
+\bibitem{kleinberg1999authoritative}
+Jon~M Kleinberg.
+\newblock Authoritative sources in a hyperlinked environment.
+\newblock {\em Journal of the ACM (JACM)}, 46(5):604--632, 1999.
+
+\bibitem{lempel2001salsa}
+Ronny Lempel and Shlomo Moran.
+\newblock Salsa: the stochastic approach for link-structure analysis.
+\newblock {\em ACM Transactions on Information Systems (TOIS)}, 19(2):131--160,
+  2001.
+
+\bibitem{gyongyi2004combating}
+Zolt{\'a}n Gy{\"o}ngyi, Hector Garcia-Molina, and Jan Pedersen.
+\newblock Combating web spam with trustrank.
+\newblock In {\em Proceedings of the Thirtieth international conference on Very
+  large data bases-Volume 30}, pages 576--587. VLDB Endowment, 2004.
+
+\bibitem{jing2008visualrank}
+Yushi Jing and Shumeet Baluja.
+\newblock Visualrank: Applying pagerank to large-scale image search.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 30(11):1877--1890, 2008.
+
+\bibitem{wilson1927probable}
+Edwin~B Wilson.
+\newblock Probable inference, the law of succession, and statistical inference.
+\newblock {\em Journal of the American Statistical Association},
+  22(158):209--212, 1927.
+
+\bibitem{thurstone1927method}
+Louis~Leon Thurstone.
+\newblock The method of paired comparisons for social values.
+\newblock {\em The Journal of Abnormal and Social Psychology}, 21(4):384, 1927.
+
+\bibitem{pan1998note}
+潘庆年.
+\newblock 排列与置换的一个注记.
+\newblock {\em 惠州大学学报}, pages 58--61, 1998.
+
+\bibitem{riker1982liberalism}
+William~H Riker.
+\newblock {\em Liberalism against populism: A confrontation between the theory
+  of democracy and the theory of social choice}.
+\newblock Freeman San Francisco, 1982.
+
+\bibitem{farah2007outranking}
+Mohamed Farah and Daniel Vanderpooten.
+\newblock An outranking approach for rank aggregation in information retrieval.
+\newblock In {\em Proceedings of the 30th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  591--598. ACM, 2007.
+
+\bibitem{borda1781m}
+JC~de Borda.
+\newblock M'emoire sur les' elections au scrutin.
+\newblock {\em Histoire de l'Acad'emie Royale des Sciences}, 1781.
+
+\bibitem{marden1995analyzing}
+John~I Marden.
+\newblock {\em Analyzing and modeling rank data}, volume~64.
+\newblock CRC Press, 1995.
+
+\bibitem{fagin2003efficient}
+Ronald Fagin, Ravi Kumar, and Dandapani Sivakumar.
+\newblock Efficient similarity search and classification via rank aggregation.
+\newblock In {\em Proceedings of the 2003 ACM SIGMOD international conference
+  on Management of data}, pages 301--312. ACM, 2003.
+
+\bibitem{qin2010new}
+Tao Qin, Xiubo Geng, and Tie-Yan Liu.
+\newblock A new probabilistic model for rank aggregation.
+\newblock In {\em Advances in neural information processing systems}, pages
+  1948--1956, 2010.
+
+\bibitem{gleich2011rank}
+David~F Gleich and Lek-Heng Lim.
+\newblock Rank aggregation via nuclear norm minimization.
+\newblock In {\em Proceedings of the 17th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 60--68. ACM, 2011.
+
+\bibitem{bradley1952rank}
+Ralph~Allan Bradley and Milton~E Terry.
+\newblock Rank analysis of incomplete block designs: I. the method of paired
+  comparisons.
+\newblock {\em Biometrika}, 39(3/4):324--345, 1952.
+
+\bibitem{mallows1957non}
+Colin~L Mallows.
+\newblock Non-null ranking models. i.
+\newblock {\em Biometrika}, 44(1/2):114--130, 1957.
+
+\bibitem{luce1959individual}
+R~Duncan Luce.
+\newblock {\em Individual Choice Behavior: A Theoretical Analysis}.
+\newblock John Wiley and sons, 1959.
+
+\bibitem{plackett1975analysis}
+RL~Plackett.
+\newblock The analysis of permutations.
+\newblock {\em Applied Statistics}, pages 193--202, 1975.
+
+\bibitem{taylor2008mathematics}
+Alan~D Taylor and Allison~M Pacelli.
+\newblock {\em Mathematics and politics: strategy, voting, power, and proof}.
+\newblock Springer Science \& Business Media, 2008.
+
+\bibitem{condorcet1785essai}
+Marie Jean Antoine~Nicolas de~Caritat(Marquis~de Condorcet).
+\newblock {\em Essai sur l'application de l'analyse {\`a} la probabilit{\'e}
+  des d{\'e}cisions rendues {\`a} la pluralit{\'e} des voix}.
+\newblock Paris:L'imprimerie royale, 1785.
+
+\bibitem{kemeny1959mathematics}
+John~G Kemeny.
+\newblock Mathematics without numbers.
+\newblock {\em Daedalus}, 88(4):577--591, 1959.
+
+\bibitem{bartholdi1989voting}
+John Bartholdi~III, Craig~A Tovey, and Michael~A Trick.
+\newblock Voting schemes for which it can be difficult to tell who won the
+  election.
+\newblock {\em Social Choice and welfare}, 6(2):157--165, 1989.
+
+\bibitem{young1995optimal}
+Peyton Young.
+\newblock Optimal voting rules.
+\newblock {\em The Journal of Economic Perspectives}, 9(1):51--64, 1995.
+
+\bibitem{saari2000geometric}
+Donald~G Saari and Vincent~R Merlin.
+\newblock A geometric examination of kemeny's rule.
+\newblock {\em Social Choice and Welfare}, 17(3):403--438, 2000.
+
+\bibitem{arrow1950difficulty}
+Kenneth~J Arrow.
+\newblock A difficulty in the concept of social welfare.
+\newblock {\em The Journal of Political Economy}, 58(4):328--346, 1950.
+
+\bibitem{arrow2012social}
+Kenneth~J Arrow.
+\newblock {\em Social choice and individual values}, volume~12.
+\newblock Yale university press, 2012.
+
+\bibitem{bartholdi1989computational}
+John~J Bartholdi~III, Craig~A Tovey, and Michael~A Trick.
+\newblock The computational difficulty of manipulating an election.
+\newblock {\em Social Choice and Welfare}, 6(3):227--241, 1989.
+
+\bibitem{peserico2007does}
+Enoch Peserico and Luca Pretto.
+\newblock What does it mean to converge in rank.
+\newblock {\em Proc. of ICTIR}, pages 239--245, 2007.
+
+\bibitem{peserico2012hits}
+Enoch Peserico and Luca Pretto.
+\newblock Hits can converge slowly, but not too slowly, in score and rank.
+\newblock {\em SIAM Journal on Discrete Mathematics}, 26(3):1189--1209, 2012.
+
+\bibitem{tibshirani1996regression}
+Robert Tibshirani.
+\newblock Regression shrinkage and selection via the lasso.
+\newblock {\em Journal of the Royal Statistical Society. Series B
+  (Methodological)}, pages 267--288, 1996.
+
+\bibitem{hoerl1970ridge}
+Arthur~E Hoerl and Robert~W Kennard.
+\newblock Ridge regression: Biased estimation for nonorthogonal problems.
+\newblock {\em Technometrics}, 12(1):55--67, 1970.
+
+\bibitem{efron2004least}
+Bradley Efron, Trevor Hastie, Iain Johnstone, and Robert Tibshirani.
+\newblock Least angle regression.
+\newblock {\em The Annals of statistics}, 32(2):407--499, 2004.
+
+\bibitem{friedman2007pathwise}
+Jerome Friedman, Trevor Hastie, Holger H{\"o}fling, and Robert Tibshirani.
+\newblock Pathwise coordinate optimization.
+\newblock {\em The Annals of Applied Statistics}, 1(2):302--332, 2007.
+
+\bibitem{bogdan2013statistical}
+Malgorzata Bogdan, Ewout van~den Berg, Weijie Su, and Emmanuel Candes.
+\newblock Statistical estimation and testing via the ordered l1 norm.
+\newblock {\em arXiv preprint arXiv:1310.1969}, 2013.
+
+\bibitem{barlow1972statistical}
+RE~Barlow, DJ~Bartholomew, JM~Bremner, and HD~Brunk.
+\newblock Statistical inference under order restrictions wiley.
+\newblock {\em New York}, page 183, 1972.
+
+\bibitem{de2009isotone}
+Jan De~Leeuw, Kurt Hornik, and Patrick Mair.
+\newblock Isotone optimization in r: pool-adjacent-violators algorithm (pava)
+  and active set methods.
+\newblock {\em Journal of Statistical Software}, 32(5):1--24, 2009.
+
+\bibitem{tsoumakas2007multi}
+Grigorios Tsoumakas and Ioannis Katakis.
+\newblock Multi-label classification: An overview.
+\newblock {\em International Journal of Data Warehousing and Mining (IJDWM)},
+  3(3):1--13, 2007.
+
+\bibitem{cover1967nearest}
+Thomas Cover and Peter Hart.
+\newblock Nearest neighbor pattern classification.
+\newblock {\em Information Theory, IEEE Transactions on}, 13(1):21--27, 1967.
+
+\bibitem{bentley1975multidimensional}
+Jon~Louis Bentley.
+\newblock Multidimensional binary search trees used for associative searching.
+\newblock {\em Communications of the ACM}, 18(9):509--517, 1975.
+
+\bibitem{fisher1936use}
+Ronald~A Fisher.
+\newblock The use of multiple measurements in taxonomic problems.
+\newblock {\em Annals of eugenics}, 7(2):179--188, 1936.
+
+\bibitem{rosenblatt1957perceptron}
+Frank Rosenblatt.
+\newblock The perceptron: A perceiving and recognizing automation.
+\newblock Technical Report 85-460-1, Cornell Aeronautical Laboratory, Ithaca,
+  New York, 1957.
+
+\bibitem{novikoff1963convergence}
+Albert~BJ Novikoff.
+\newblock On convergence proofs for perceptrons.
+\newblock Technical report, DTIC Document, 1963.
+
+\bibitem{smola2000advances}
+Alex~J Smola.
+\newblock {\em Advances in large margin classifiers}.
+\newblock MIT Press, 2000.
+
+\bibitem{hastie2009elements}
+Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
+\newblock {\em The elements of statistical learning: data mining, inference and
+  prediction}, volume~2.
+\newblock Springer, 2009.
+
+\bibitem{bennett1992robust}
+Kristin~P Bennett and Olvi~L Mangasarian.
+\newblock Robust linear programming discrimination of two linearly inseparable
+  sets.
+\newblock {\em Optimization methods and software}, 1(1):23--34, 1992.
+
+\bibitem{cortes1995support}
+Corinna Cortes and Vladimir Vapnik.
+\newblock Support-vector networks.
+\newblock {\em Machine learning}, 20(3):273--297, 1995.
+
+\bibitem{boser1992training}
+Bernhard~E Boser, Isabelle~M Guyon, and Vladimir~N Vapnik.
+\newblock A training algorithm for optimal margin classifiers.
+\newblock In {\em Proceedings of the fifth annual workshop on Computational
+  learning theory}, pages 144--152. ACM, 1992.
+
+\bibitem{vapnik1963pattern}
+Vladimir Vapnik.
+\newblock Pattern recognition using generalized portrait method.
+\newblock {\em Automation and remote control}, 24:774--780, 1963.
+
+\bibitem{vapnik1998statistical}
+Vladimir Vapnik.
+\newblock Statistical learning theory, 1998.
+
+\bibitem{vapnik1999overview}
+Vladimir~N Vapnik.
+\newblock An overview of statistical learning theory.
+\newblock {\em Neural Networks, IEEE Transactions on}, 10(5):988--999, 1999.
+
+\bibitem{vapnik2000nature}
+Vladimir Vapnik.
+\newblock {\em The nature of statistical learning theory}.
+\newblock springer, 2000.
+
+\bibitem{matic1992computer}
+N~Matic, I~Guyon, L~Bottou, J~Denker, and V~Vapnik.
+\newblock Computer aided cleaning of large databases for character recognition.
+\newblock In {\em International Conference on Pattern Recognition}, pages
+  330--333, 1992.
+
+\bibitem{vapnik1982estimation}
+Vladimir~Naumovich Vapnik and Samuel Kotz.
+\newblock {\em Estimation of dependences based on empirical data}, volume~41.
+\newblock Springer-Verlag New York, 1982.
+
+\bibitem{aizerman1964theoretical}
+A~Aizerman, Emmanuel~M Braverman, and LI~Rozoner.
+\newblock Theoretical foundations of the potential function method in pattern
+  recognition learning.
+\newblock {\em Automation and remote control}, 25:821--837, 1964.
+
+\bibitem{mercer1909functions}
+James Mercer.
+\newblock Functions of positive and negative type, and their connection with
+  the theory of integral equations.
+\newblock {\em Philosophical transactions of the royal society of London.
+  Series A, containing papers of a mathematical or physical character},
+  209:415--446, 1909.
+
+\bibitem{osuna1997improved}
+Edgar Osuna, Robert Freund, and Federico Girosi.
+\newblock An improved training algorithm for support vector machines.
+\newblock In {\em Neural Networks for Signal Processing [1997] VII. Proceedings
+  of the 1997 IEEE Workshop}, pages 276--285. IEEE, 1997.
+
+\bibitem{platt1998sequential}
+John Platt.
+\newblock Sequential minimal optimization: A fast algorithm for training
+  support vector machines.
+\newblock Technical Report MSR-TR-98-14, Microsoft Research, 1998.
+
+\bibitem{joachims1999making}
+Thorsten Joachims.
+\newblock Making large-scale svm learning practical, 1999.
+
+\bibitem{joachims2002learning}
+Thorsten Joachims.
+\newblock {\em Learning to Classify Text Using Support Vector Machines}.
+\newblock Springer, 2002.
+
+\bibitem{shalev2007pegasos}
+Shai Shalev-Shwartz, Yoram Singer, and Nathan Srebro.
+\newblock Pegasos: Primal estimated sub-gradient solver for svm.
+\newblock In {\em Proceedings of the 24th international conference on Machine
+  learning}, pages 807--814. ACM, 2007.
+
+\bibitem{osuna1997support}
+Edgar Osuna, Robert Freund, and Federico Girosi.
+\newblock Support vector machines: Training and applications.
+\newblock Technical report, Massachusetts Institute of Technology, 1997.
+
+\bibitem{lin2001convergence}
+Chih-Jen Lin.
+\newblock On the convergence of the decomposition method for support vector
+  machines.
+\newblock {\em Neural Networks, IEEE Transactions on}, 12(6):1288--1298, 2001.
+
+\bibitem{fan2005working}
+Rong-En Fan, Pai-Hsuen Chen, and Chih-Jen Lin.
+\newblock Working set selection using second order information for training
+  support vector machines.
+\newblock {\em The Journal of Machine Learning Research}, 6:1889--1918, 2005.
+
+\bibitem{fan2008liblinear}
+Rong-En Fan, Kai-Wei Chang, Cho-Jui Hsieh, Xiang-Rui Wang, and Chih-Jen Lin.
+\newblock Liblinear: A library for large linear classification.
+\newblock {\em The Journal of Machine Learning Research}, 9:1871--1874, 2008.
+
+\bibitem{chang2011libsvm}
+Chih-Chung Chang and Chih-Jen Lin.
+\newblock Libsvm: a library for support vector machines.
+\newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)},
+  2(3):27, 2011.
+
+\bibitem{shalev2011pegasos}
+Shai Shalev-Shwartz, Yoram Singer, Nathan Srebro, and Andrew Cotter.
+\newblock Pegasos: Primal estimated sub-gradient solver for svm.
+\newblock {\em Mathematical Programming}, 127(1):3--30, 2011.
+
+\bibitem{li2012statlearning}
+李航.
+\newblock 统计学习方法.
+\newblock {\em 北京: 清华大学出版杜}, 2012.
+
+\bibitem{joachims2006training}
+Thorsten Joachims.
+\newblock Training linear svms in linear time.
+\newblock In {\em Proceedings of the 12th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 217--226. ACM, 2006.
+
+\bibitem{fung2001proximal}
+Glenn Fung and Olvi~L Mangasarian.
+\newblock Proximal support vector machine classifiers.
+\newblock In {\em Proceedings of the seventh ACM SIGKDD international
+  conference on Knowledge discovery and data mining}, pages 77--86. ACM, 2001.
+
+\bibitem{sherman1949adjustment}
+Jack Sherman and Winifred~J Morrison.
+\newblock Adjustment of an inverse matrix corresponding to changes in the
+  elements of a given column or a given row of the original matrix.
+\newblock In {\em Annals of Mathematical Statistics}, volume~20, pages
+  621--621, 1949.
+
+\bibitem{sherman1950adjustment}
+Jack Sherman and Winifred~J Morrison.
+\newblock Adjustment of an inverse matrix corresponding to a change in one
+  element of a given matrix.
+\newblock {\em The Annals of Mathematical Statistics}, pages 124--127, 1950.
+
+\bibitem{woodbury1950inverting}
+Max~A Woodbury.
+\newblock Inverting modified matrices.
+\newblock {\em Memorandum report}, 42:106, 1950.
+
+\bibitem{mcculloch1943logical}
+Warren~S McCulloch and Walter Pitts.
+\newblock A logical calculus of the ideas immanent in nervous activity.
+\newblock {\em The Bulletin of Mathematical Biophysics}, 5(4):115--133, 1943.
+
+\bibitem{hebb1968the}
+Donald Hebb.
+\newblock The organization of behavior, 1968.
+
+\bibitem{widrow1960adaptive}
+Bernard WIDROW and Marcian~E HOFF.
+\newblock Adaptive switching circuits.
+\newblock In {\em Institute of Radio Engineers, Western Electronic Show and
+  Convention, Convention Record, Part 4}. Institute of Radio Engineers, 1960.
+
+\bibitem{minsky1969perceptron}
+Marvin Minsky and Seymour Papert.
+\newblock Perceptron: an introduction to computational geometry.
+\newblock {\em The MIT Press, Cambridge, expanded edition}, 19:88, 1969.
+
+\bibitem{kohonen1982self}
+Teuvo Kohonen.
+\newblock Self-organized formation of topologically correct feature maps.
+\newblock {\em Biological cybernetics}, 43(1):59--69, 1982.
+
+\bibitem{hopfield1982neural}
+John~J Hopfield.
+\newblock Neural networks and physical systems with emergent collective
+  computational abilities.
+\newblock {\em Proceedings of the national academy of sciences},
+  79(8):2554--2558, 1982.
+
+\bibitem{hopfield1984neurons}
+John~J Hopfield.
+\newblock Neurons with graded response have collective computational properties
+  like those of two-state neurons.
+\newblock {\em Proceedings of the national academy of sciences},
+  81(10):3088--3092, 1984.
+
+\bibitem{ackley1985learning}
+David~H Ackley, Geoffrey~E Hinton, and Terrence~J Sejnowski.
+\newblock A learning algorithm for boltzmann machines.
+\newblock {\em Cognitive science}, 9(1):147--169, 1985.
+
+\bibitem{rumelhart1986learning}
+David~E Rumelhart, Geoffrey~E Hinton, and Ronald~J Williams.
+\newblock Learning representations by back-propagating errors.
+\newblock {\em Nature}, 1986.
+
+\bibitem{werbos1974beyond}
+Paul WERBOS.
+\newblock {\em Beyond regression: new fools for prediction and analysis in the
+  behavioral sciences}.
+\newblock PhD thesis, Harvard University, 1974.
+
+\bibitem{hinton2006reducing}
+Geoffrey~E Hinton and Ruslan~R Salakhutdinov.
+\newblock Reducing the dimensionality of data with neural networks.
+\newblock {\em Science}, 313(5786):504--507, 2006.
+
+\bibitem{hinton1983optimal}
+Geoffrey~E Hinton and Terrence~J Sejnowski.
+\newblock Optimal perceptual inference.
+\newblock In {\em Proceedings of the IEEE conference on Computer Vision and
+  Pattern Recognition}, pages 448--453. IEEE Piscataway, NJ, 1983.
+
+\bibitem{hinton1986learning}
+Geoffrey~E Hinton and Terrance~J Sejnowski.
+\newblock Learning and relearning in boltzmann machines.
+\newblock {\em MIT Press, Cambridge, Mass}, 1:282--317, 1986.
+
+\bibitem{hinton2002training}
+Geoffrey~E Hinton.
+\newblock Training products of experts by minimizing contrastive divergence.
+\newblock {\em Neural computation}, 14(8):1771--1800, 2002.
+
+\bibitem{huang2006extreme}
+Guang-Bin Huang, Qin-Yu Zhu, and Chee-Kheong Siew.
+\newblock Extreme learning machine: theory and applications.
+\newblock {\em Neurocomputing}, 70(1):489--501, 2006.
+
+\bibitem{hunt1966experiments}
+Earl~B Hunt, Janet Marin, and Philip~J Stone.
+\newblock {\em Experiments in induction}.
+\newblock Academic Press, 1966.
+
+\bibitem{quinlan1986induction}
+J.~Ross Quinlan.
+\newblock Induction of decision trees.
+\newblock {\em Machine learning}, 1(1):81--106, 1986.
+
+\bibitem{quinlan1993c4}
+John~Ross Quinlan.
+\newblock {\em C4. 5: programs for machine learning}, volume~1.
+\newblock Morgan kaufmann, 1993.
+
+\bibitem{kass1980exploratory}
+Gordon~V Kass.
+\newblock An exploratory technique for investigating large quantities of
+  categorical data.
+\newblock {\em Applied statistics}, pages 119--127, 1980.
+
+\bibitem{breiman1993classification}
+Leo Breiman.
+\newblock {\em Classification and regression trees}.
+\newblock CRC press, 1993.
+
+\bibitem{friedman1991multivariate}
+Jerome~H Friedman.
+\newblock Multivariate adaptive regression splines.
+\newblock {\em The annals of statistics}, pages 1--67, 1991.
+
+\bibitem{breiman2001random}
+Leo Breiman.
+\newblock Random forests.
+\newblock {\em Machine learning}, 45(1):5--32, 2001.
+
+\bibitem{friedman2001greedy}
+Jerome~H Friedman.
+\newblock Greedy function approximation: a gradient boosting machine.(english
+  summary).
+\newblock {\em Ann. Statist}, 29(5):1189--1232, 2001.
+
+\bibitem{friedman2002stochastic}
+Jerome~H Friedman.
+\newblock Stochastic gradient boosting.
+\newblock {\em Computational Statistics \& Data Analysis}, 38(4):367--378,
+  2002.
+
+\bibitem{zheng2007general}
+Zhaohui Zheng, Hongyuan Zha, Tong Zhang, Olivier Chapelle, Keke Chen, and
+  Gordon Sun.
+\newblock A general boosting method and its application to learning ranking
+  functions for web search.
+\newblock {\em Advances in neural information processing systems},
+  20:1697--1704, 2007.
+
+\bibitem{burges2010from}
+Chris Burges.
+\newblock From ranknet to lambdarank to lambdamart: An overview.
+\newblock Technical Report MSR-TR-2010-82, Microsoft Research, 2010.
+
+\bibitem{busa2011ranking}
+R{\'o}bert Busa-Fekete, Bal{\'a}zs K{\'e}gl, Tam{\'a}s {\'E}lteto, and
+  Gy{\"o}rgy Szarvas.
+\newblock Ranking by calibrated adaboost.
+\newblock In {\em Yahoo! Learning to Rank Challenge}, 2011.
+
+\bibitem{mohan2011web}
+Ananth Mohan, Zheng Chen, and Kilian~Q Weinberger.
+\newblock Web-search ranking with initialized gradient boosted regression
+  trees.
+\newblock In {\em Journal of Machine Learning Research, Workshop and Conference
+  Proceedings}, volume~14, pages 77--89, 2011.
+
+\bibitem{dempster1977maximum}
+Arthur~P Dempster, Nan~M Laird, and Donald~B Rubin.
+\newblock Maximum likelihood from incomplete data via the em algorithm.
+\newblock {\em Journal of the Royal Statistical Society. Series B
+  (Methodological)}, pages 1--38, 1977.
+
+\bibitem{jurafsky1999speech}
+Dan Jurafsky, James~H Martin, and Andrew Kehler.
+\newblock {\em Speech and language processing: an introduction to natural
+  language processing, computational linguistics and speech recognition},
+  volume~2.
+\newblock MIT Press, 1999.
+
+\bibitem{berger1996maximum}
+Adam~L Berger, Vincent J~Della Pietra, and Stephen A~Della Pietra.
+\newblock A maximum entropy approach to natural language processing.
+\newblock {\em Computational linguistics}, 22(1):39--71, 1996.
+
+\bibitem{jaynes1957information1}
+Edwin~T Jaynes.
+\newblock Information theory and statistical mechanics.
+\newblock {\em Physical review}, 106(4):620, 1957.
+
+\bibitem{jaynes1957information2}
+Edwin~T Jaynes.
+\newblock Information theory and statistical mechanics. ii.
+\newblock {\em Physical review}, 108(2):171, 1957.
+
+\bibitem{darroch1972generalized}
+John~N Darroch and Douglas Ratcliff.
+\newblock Generalized iterative scaling for log-linear models.
+\newblock {\em The annals of mathematical statistics}, 43(5):1470--1480, 1972.
+
+\bibitem{csiszar1989geometric}
+Imre Csiszar.
+\newblock A geometric interpretation of darroch and ratcliff's generalized
+  iterative scaling.
+\newblock {\em The Annals of Statistics}, pages 1409--1413, 1989.
+
+\bibitem{della1997inducing}
+Stephen Della~Pietra, Vincent Della~Pietra, and John Lafferty.
+\newblock Inducing features of random fields.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 19(4):380--393, 1997.
+
+\bibitem{wu2012math}
+Jun Wu.
+\newblock {\em 数学之美}.
+\newblock 人民邮电出版社, 2012.
+
+\bibitem{jaynes1957information}
+Edwin~T Jaynes.
+\newblock Information theory and statistical mechanics.
+\newblock {\em Physical review}, 106(4):620, 1957.
+
+\bibitem{huang2010iterative}
+Fang~Lan Huang, Cho~Jui Hsieh, Kai~Wei Chang, and Chih~Jen Lin.
+\newblock Iterative scaling and coordinate descent methods for maximum entropy.
+\newblock {\em ACLShort '09 Proceedings of the ACL-IJCNLP 2009 Conference Short
+  Papers}, 11(3):815--848, 2010.
+
+\bibitem{baum1966statistical}
+Leonard~E Baum and Ted Petrie.
+\newblock Statistical inference for probabilistic functions of finite state
+  markov chains.
+\newblock {\em The annals of mathematical statistics}, pages 1554--1563, 1966.
+
+\bibitem{baum1967inequality}
+Leonard~E Baum, John~Alonzo Eagon, et~al.
+\newblock An inequality with applications to statistical estimation for
+  probabilistic functions of markov processes and to a model for ecology.
+\newblock {\em Bull. Amer. Math. Soc}, 73(3):360--363, 1967.
+
+\bibitem{baum1968growth}
+Leonard~E Baum, George~R Sell, et~al.
+\newblock Growth transformations for functions on manifolds.
+\newblock {\em Pacific J. Math}, 27(2):211--227, 1968.
+
+\bibitem{baum1970maximization}
+Leonard~E Baum, Ted Petrie, George Soules, and Norman Weiss.
+\newblock A maximization technique occurring in the statistical analysis of
+  probabilistic functions of markov chains.
+\newblock {\em The annals of mathematical statistics}, pages 164--171, 1970.
+
+\bibitem{baker1975dragon}
+James~K Baker.
+\newblock The dragon system--an overview.
+\newblock {\em Acoustics, speech and signal processing, IEEE transactions on},
+  23(1):24--29, 1975.
+
+\bibitem{jelinek1975design}
+Frederick Jelinek, Lalit~R Bahl, and Robert~L Mercer.
+\newblock Design of a linguistic statistical decoder for the recognition of
+  continuous speech.
+\newblock {\em Information Theory, IEEE Transactions on}, 21(3):250--256, 1975.
+
+\bibitem{dietterich1997machine}
+Thomas~G Dietterich.
+\newblock Machine-learning research.
+\newblock {\em AI magazine}, 18(4):97, 1997.
+
+\bibitem{ditterrich1997direction}
+TG~Ditterrich.
+\newblock Machine learning research: four current direction.
+\newblock {\em Artificial Intelligence Magzine}, 4:97--136, 1997.
+
+\bibitem{dietterich2000ensemble}
+Thomas~G Dietterich.
+\newblock Ensemble methods in machine learning.
+\newblock In {\em Multiple classifier systems}, pages 1--15. Springer, 2000.
+
+\bibitem{hansen1990neural}
+Lars~Kai Hansen and Peter Salamon.
+\newblock Neural network ensembles.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 12(10):993--1001, 1990.
+
+\bibitem{breiman1996bagging}
+Leo Breiman.
+\newblock Bagging predictors.
+\newblock {\em Machine learning}, 24(2):123--140, 1996.
+
+\bibitem{freund1996experiments}
+Yoav Freund, Robert~E Schapire, et~al.
+\newblock Experiments with a new boosting algorithm.
+\newblock In {\em Proceedings of the 13th ICML}, pages 148--156, 1996.
+
+\bibitem{breiman1999using}
+Leo Breiman.
+\newblock Using adaptive bagging to debias regressions.
+\newblock Technical Report 547, Statistics Department,University of California,
+  Berkeley, 1999.
+
+\bibitem{carbonell1998use}
+Jaime Carbonell and Jade Goldstein.
+\newblock The use of mmr, diversity-based reranking for reordering documents
+  and producing summaries.
+\newblock In {\em Proceedings of the 21st annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  335--336. ACM, 1998.
+
+\bibitem{cunningham2000diversity}
+Padraig Cunningham and John Carney.
+\newblock Diversity versus quality in classification ensembles based on feature
+  selection.
+\newblock In {\em Machine Learning: ECML 2000}, pages 109--116. Springer, 2000.
+
+\bibitem{kuncheva2003measures}
+Ludmila~I Kuncheva and Christopher~J Whitaker.
+\newblock Measures of diversity in classifier ensembles and their relationship
+  with the ensemble accuracy.
+\newblock {\em Machine learning}, 51(2):181--207, 2003.
+
+\bibitem{tsymbal2005diversity}
+Alexey Tsymbal, Mykola Pechenizkiy, and P{\'a}draig Cunningham.
+\newblock Diversity in search strategies for ensemble feature selection.
+\newblock {\em Information fusion}, 6(1):83--98, 2005.
+
+\bibitem{kuncheva2002experimental}
+Ludmila~I Kuncheva, Marina Skurichina, and Robert~PW Duin.
+\newblock An experimental study on diversity for bagging and boosting with
+  linear classifiers.
+\newblock {\em Information fusion}, 3(4):245--258, 2002.
+
+\bibitem{geman1992neural}
+Stuart Geman, Elie Bienenstock, and Ren{\'e} Doursat.
+\newblock Neural networks and the bias/variance dilemma.
+\newblock {\em Neural computation}, 4(1):1--58, 1992.
+
+\bibitem{ueda1996generalization}
+Naonori Ueda and Ryohei Nakano.
+\newblock Generalization error of ensemble estimators.
+\newblock In {\em Neural Networks, 1996., IEEE International Conference on},
+  volume~1, pages 90--95. IEEE, 1996.
+
+\bibitem{krogh1995neural}
+Anders Krogh and Jesper Vedelsby.
+\newblock Neural network ensembles, cross validation, and active learning.
+\newblock {\em Advances in neural information processing systems}, pages
+  231--238, 1995.
+
+\bibitem{breiman1996bias}
+Leo Breiman.
+\newblock Bias, variance, and arcing classifiers.
+\newblock {\em STATISTICS}, 1996.
+
+\bibitem{valiant1984theory}
+Leslie~G Valiant.
+\newblock A theory of the learnable.
+\newblock {\em Communications of the ACM}, 27(11):1134--1142, 1984.
+
+\bibitem{blumer1989learnability}
+Anselm Blumer, Andrzej Ehrenfeucht, David Haussler, and Manfred~K Warmuth.
+\newblock Learnability and the vapnik-chervonenkis dimension.
+\newblock {\em Journal of the ACM (JACM)}, 36(4):929--965, 1989.
+
+\bibitem{kearns1988learning}
+Michael~J Kearns and Leslie~G Valiant.
+\newblock {\em Learning Boolean formulae or finite automata is as hard as
+  factoring}.
+\newblock Harvard University, Center for Research in Computing Technology,
+  Aiken Computation Laboratory, 1988.
+
+\bibitem{schapire1990strength}
+Robert~E Schapire.
+\newblock The strength of weak learnability.
+\newblock {\em Machine learning}, 5(2):197--227, 1990.
+
+\bibitem{freund1990boosting}
+Yoav Freund.
+\newblock Boosting a weak learning algorithm by majority.
+\newblock In {\em COLT}, volume~90, pages 202--216, 1990.
+
+\bibitem{drucker1992improving}
+Harris Drucker, Robert~E Schapire, and Patrice Simard.
+\newblock Improving performance in neural networks using a boosting algorithm.
+\newblock In {\em Advances in Neural Information Processing Systems 5,[NIPS
+  Conference]}, pages 42--49. Morgan Kaufmann Publishers Inc., 1992.
+
+\bibitem{drucker1993boosting}
+Harris Drucker, Robert Schapire, and Patrice Simard.
+\newblock Boosting performance in neural networks.
+\newblock {\em International Journal of Pattern Recognition and Artificial
+  Intelligence}, 7(04):705--719, 1993.
+
+\bibitem{freund1995desicion}
+Yoav Freund and Robert Schapire.
+\newblock A desicion-theoretic generalization of on-line learning and an
+  application to boosting.
+\newblock In {\em Computational learning theory}, pages 23--37. Springer, 1995.
+
+\bibitem{schapire1999improved}
+Robert~E Schapire and Yoram Singer.
+\newblock Improved boosting algorithms using confidence-rated predictions.
+\newblock {\em Machine learning}, 37(3):297--336, 1999.
+
+\bibitem{friedman2000additive}
+Jerome Friedman, Trevor Hastie, and Robert Tibshirani.
+\newblock Additive logistic regression: a statistical view of boosting.
+\newblock {\em The annals of statistics}, 28(2):337--407, 2000.
+
+\bibitem{duffy2002boosting}
+Nigel Duffy and David Helmbold.
+\newblock Boosting methods for regression.
+\newblock {\em Machine Learning}, 47(2-3):153--200, 2002.
+
+\bibitem{freund2003efficient}
+Yoav Freund, Raj Iyer, Robert~E Schapire, and Yoram Singer.
+\newblock An efficient boosting algorithm for combining preferences.
+\newblock {\em The Journal of Machine Learning Research}, 4:933--969, 2003.
+
+\bibitem{xu2007adarank}
+Jun Xu and Hang Li.
+\newblock Adarank: a boosting algorithm for information retrieval.
+\newblock In {\em Proceedings of the 30th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  391--398. ACM, 2007.
+
+\bibitem{freund1999short}
+Yoav Freund and Robert Schapire.
+\newblock A short introduction to boosting.
+\newblock {\em Journal-Japanese Society For Artificial Intelligence},
+  14(771-780):1612, 1999.
+
+\bibitem{breiman1998arcing}
+Leo Breiman.
+\newblock Arcing classifier.
+\newblock {\em The annals of statistics}, 26(3):801--849, 1998.
+
+\bibitem{freund2001adaptive}
+Yoav Freund.
+\newblock An adaptive version of the boost by majority algorithm.
+\newblock {\em Machine learning}, 43(3):293--318, 2001.
+
+\bibitem{opitz1999popular}
+David Opitz and Richard Maclin.
+\newblock Popular ensemble methods: An empirical study.
+\newblock {\em Journal of Artificial Intelligence Research}, 11:169--198, 1999.
+
+\bibitem{wolpert1992stacked}
+David~H Wolpert.
+\newblock Stacked generalization.
+\newblock {\em Neural networks}, 5(2):241--259, 1992.
+
+\bibitem{ho1998random}
+Tin~Kam Ho.
+\newblock The random subspace method for constructing decision forests.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 20(8):832--844, 1998.
+
+\bibitem{bryll2003attribute}
+Robert Bryll, Ricardo Gutierrez-Osuna, and Francis Quek.
+\newblock Attribute bagging: improving accuracy of classifier ensembles by
+  using random feature subsets.
+\newblock {\em Pattern recognition}, 36(6):1291--1302, 2003.
+
+\bibitem{sorokina2007additive}
+Daria Sorokina, Rich Caruana, and Mirek Riedewald.
+\newblock Additive groves of regression trees.
+\newblock In {\em Machine Learning: ECML 2007}, pages 323--334. Springer, 2007.
+
+\bibitem{pearson1901liii}
+Karl Pearson.
+\newblock On lines and planes of closest fit to systems of points in space.
+\newblock {\em The London, Edinburgh, and Dublin Philosophical Magazine and
+  Journal of Science}, 2(11):559--572, 1901.
+
+\bibitem{belkin2001laplacian}
+Mikhail Belkin and Partha Niyogi.
+\newblock Laplacian eigenmaps and spectral techniques for embedding and
+  clustering.
+\newblock In {\em NIPS}, volume~14, pages 585--591, 2001.
+
+\bibitem{bebendorf2003adaptive}
+Mario Bebendorf and Sergej Rjasanow.
+\newblock Adaptive low-rank approximation of collocation matrices.
+\newblock {\em Computing}, 70(1):1--24, 2003.
+
+\bibitem{guyon2003introduction}
+Isabelle Guyon and Andr{\'e} Elisseeff.
+\newblock An introduction to variable and feature selection.
+\newblock {\em The Journal of Machine Learning Research}, 3:1157--1182, 2003.
+
+\bibitem{mladenic1999feature}
+Dunja Mladenic and Marko Grobelnik.
+\newblock Feature selection for unbalanced class distribution and naive bayes.
+\newblock In {\em MACHINE LEARNING-INTERNATIONAL WORKSHOP THEN CONFERENCE-},
+  pages 258--267. MORGAN KAUFMANN PUBLISHERS, INC., 1999.
+
+\bibitem{breiman1984classification}
+L~Breiman, JH~Friedman, RA~Olshen, and CJ~Stone.
+\newblock Classification and regression trees.
+\newblock {\em Wadsworth, Belmont, California}, 1984.
+
+\bibitem{kohavi1997wrappers}
+Ron Kohavi and George~H John.
+\newblock Wrappers for feature subset selection.
+\newblock {\em Artificial intelligence}, 97(1):273--324, 1997.
+
+\bibitem{kira1992practical}
+Kenji Kira and Larry~A Rendell.
+\newblock A practical approach to feature selection.
+\newblock In {\em Proceedings of the ninth international workshop on Machine
+  learning}, pages 249--256. Morgan Kaufmann Publishers Inc., 1992.
+
+\bibitem{almuallim1991learning}
+Hussein Almuallim and Thomas~G Dietterich.
+\newblock Learning with many irrelevant features.
+\newblock In {\em Proceedings of the ninth National conference on Artificial
+  intelligence}, volume~2, pages 547--552, 1991.
+
+\bibitem{geng2007feature}
+Xiubo Geng, Tie-Yan Liu, Tao Qin, and Hang Li.
+\newblock Feature selection for ranking.
+\newblock In {\em Proceedings of the 30th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  407--414. ACM, 2007.
+
+\bibitem{yu2009efficient}
+Hwanjo Yu, Jinoh Oh, and Wook-Shin Han.
+\newblock Efficient feature weighting methods for ranking.
+\newblock In {\em Proceedings of the 18th ACM conference on Information and
+  knowledge management}, pages 1157--1166. ACM, 2009.
+
+\bibitem{dang2010feature}
+V~Dang and WB~Croft.
+\newblock Feature selection for document ranking using best first search and
+  coordinate ascent.
+\newblock In {\em Proc. of SIGIR 2010 Workshop on Feature Generation and
+  Selection for Information Retrieval}, 2010.
+
+\bibitem{jannach2010recommender}
+Dietmar Jannach, Markus Zanker, Alexander Felfernig, and Gerhard Friedrich.
+\newblock {\em Recommender systems: an introduction}.
+\newblock Cambridge University Press, 2010.
+
+\bibitem{breese1998empirical}
+John~S Breese, David Heckerman, and Carl Kadie.
+\newblock Empirical analysis of predictive algorithms for collaborative
+  filtering.
+\newblock In {\em Proceedings of the Fourteenth conference on Uncertainty in
+  artificial intelligence}, pages 43--52. Morgan Kaufmann Publishers Inc.,
+  1998.
+
+\bibitem{lemire2005slope}
+Daniel Lemire and Anna Maclachlan.
+\newblock Slope one predictors for online rating-based collaborative filtering.
+\newblock {\em Society for Industrial Mathematics}, 5:471--480, 2005.
+
+\bibitem{sarwar2001item}
+Badrul Sarwar, George Karypis, Joseph Konstan, and John Riedl.
+\newblock Item-based collaborative filtering recommendation algorithms.
+\newblock In {\em Proceedings of the 10th international conference on World
+  Wide Web}, pages 285--295. ACM, 2001.
+
+\bibitem{bell2007scalable}
+Robert~M Bell and Yehuda Koren.
+\newblock Scalable collaborative filtering with jointly derived neighborhood
+  interpolation weights.
+\newblock In {\em Data Mining, 2007. ICDM 2007. Seventh IEEE International
+  Conference on}, pages 43--52. IEEE, 2007.
+
+\bibitem{gao2009personalized}
+Min Gao and Zhongfu Wu.
+\newblock Personalized context-aware collaborative filtering based on neural
+  network and slope one.
+\newblock In {\em Cooperative Design, Visualization, and Engineering}, pages
+  109--116. Springer, 2009.
+
+\bibitem{wang2009personalized}
+Pu~Wang and HongWu Ye.
+\newblock A personalized recommendation algorithm combining slope one scheme
+  and user based collaborative filtering.
+\newblock In {\em Industrial and Information Systems, 2009. IIS'09.
+  International Conference on}, pages 152--154. IEEE, 2009.
+
+\bibitem{zhang2009item}
+DeJia Zhang.
+\newblock An item-based collaborative filtering recommendation algorithm using
+  slope one scheme smoothing.
+\newblock In {\em Electronic Commerce and Security, 2009. ISECS'09. Second
+  International Symposium on}, volume~2, pages 215--217. IEEE, 2009.
+
+\bibitem{sun2011one}
+Zilei Sun, Nianlong Luo, and Wei Kuang.
+\newblock One real-time personalized recommendation systems based on slope one
+  algorithm.
+\newblock In {\em Fuzzy Systems and Knowledge Discovery (FSKD), 2011 Eighth
+  International Conference on}, volume~3, pages 1826--1830. IEEE, 2011.
+
+\bibitem{koren2008factorization}
+Yehuda Koren.
+\newblock Factorization meets the neighborhood: a multifaceted collaborative
+  filtering model.
+\newblock In {\em Proceedings of the 14th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 426--434. ACM, 2008.
+
+\bibitem{koren2009bellkor}
+Yehuda Koren.
+\newblock The bellkor solution to the netflix grand prize.
+\newblock {\em Netflix prize documentation}, 81, 2009.
+
+\bibitem{koren2011advances}
+Yehuda Koren and Robert Bell.
+\newblock Advances in collaborative filtering.
+\newblock In {\em Recommender systems handbook}, pages 145--186. Springer,
+  2011.
+
+\bibitem{hofmann2004latent}
+Thomas Hofmann.
+\newblock Latent semantic models for collaborative filtering.
+\newblock {\em ACM Transactions on Information Systems (TOIS)}, 22(1):89--115,
+  2004.
+
+\bibitem{hofmann1999probabilistic}
+Thomas Hofmann.
+\newblock Probabilistic latent semantic indexing.
+\newblock In {\em Proceedings of the 22nd annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  50--57. ACM, 1999.
+
+\bibitem{blei2003latent}
+David~M Blei, Andrew~Y Ng, and Michael~I Jordan.
+\newblock Latent dirichlet allocation.
+\newblock {\em the Journal of machine Learning research}, 3:993--1022, 2003.
+
+\bibitem{singh2008unified}
+Ajit~P Singh and Geoffrey~J Gordon.
+\newblock A unified view of matrix factorization models.
+\newblock In {\em Machine Learning and Knowledge Discovery in Databases}, pages
+  358--373. Springer, 2008.
+
+\bibitem{de2007iterative}
+Cristobald De~Kerchove and Paul Van~Dooren.
+\newblock Iterative filtering for a dynamical reputation system.
+\newblock {\em arXiv preprint arXiv:0711.3964}, 2007.
+
+\bibitem{de2008reputation}
+Cristobald De~Kerchove and Paul Van~Dooren.
+\newblock Reputation systems and optimization.
+\newblock {\em Siam News}, 41(2):1--3, 2008.
+
+\bibitem{karatzoglou2013learning}
+Alexandros Karatzoglou, Linas Baltrunas, and Yue Shi.
+\newblock Learning to rank for recommender systems.
+\newblock In {\em Proceedings of the 7th ACM Conference on Recommender
+  Systems}, RecSys '13, pages 493--494. ACM, 2013.
+
+\bibitem{weimer2007cofirank}
+Markus Weimer, Alexandros Karatzoglou, Quoc~V. Le, and Alex~J. Smola.
+\newblock Cofi rank - maximum margin matrix factorization for collaborative
+  ranking.
+\newblock In John~C. Platt, Daphne Koller, Yoram Singer, and Sam~T. Roweis,
+  editors, {\em NIPS}. MIT Press, 2007.
+
+\bibitem{shi2010list}
+Yue Shi, Martha Larson, and Alan Hanjalic.
+\newblock List-wise learning to rank with matrix factorization for
+  collaborative filtering.
+\newblock In {\em Proceedings of the fourth ACM conference on Recommender
+  systems}, pages 269--272. ACM, 2010.
+
+\bibitem{huang2002graph}
+Zan Huang, Wingyan Chung, Thian-Huat Ong, and Hsinchun Chen.
+\newblock A graph-based recommender system for digital library.
+\newblock In {\em Proceedings of the 2nd ACM/IEEE-CS joint conference on
+  Digital libraries}, pages 65--73. ACM, 2002.
+
+\bibitem{huang2004graph}
+Zan Huang, Wingyan Chung, and Hsinchun Chen.
+\newblock A graph model for e-commerce recommender systems.
+\newblock {\em Journal of the American Society for information science and
+  technology}, 55(3):259--274, 2004.
+
+\bibitem{jamali2009trustwalker}
+Mohsen Jamali and Martin Ester.
+\newblock Trustwalker: a random walk model for combining trust-based and
+  item-based recommendation.
+\newblock In {\em Proceedings of the 15th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 397--406. ACM, 2009.
+
+\bibitem{zhu2005semi}
+Xiaojin Zhu, John Lafferty, and Ronald Rosenfeld.
+\newblock {\em Semi-supervised learning with graphs}.
+\newblock PhD thesis, Carnegie Mellon University, Language Technologies
+  Institute, School of Computer Science, 2005.
+
+\bibitem{fouss2007random}
+Francois Fouss, Alain Pirotte, J-M Renders, and Marco Saerens.
+\newblock Random-walk computation of similarities between nodes of a graph with
+  application to collaborative recommendation.
+\newblock {\em Knowledge and data engineering, ieee transactions on},
+  19(3):355--369, 2007.
+
+\bibitem{cai2003vips}
+Deng Cai, Shipeng Yu, Ji-Rong Wen, and Wei-Ying Ma.
+\newblock Vips: a visionbased page segmentation algorithm.
+\newblock Technical Report MSR-TR-2003-79, Microsoft Research, 2003.
+
+\bibitem{bergstra2012random}
+James Bergstra and Yoshua Bengio.
+\newblock Random search for hyper-parameter optimization.
+\newblock {\em The Journal of Machine Learning Research}, 13:281--305, 2012.
+
+\bibitem{metzler2007linear}
+Donald Metzler and W~Bruce~Croft.
+\newblock Linear feature-based models for information retrieval.
+\newblock {\em Information Retrieval}, 10(3):257--274, 2007.
+
+\bibitem{cook1971complexity}
+Stephen~A Cook.
+\newblock The complexity of theorem-proving procedures.
+\newblock In {\em Proceedings of the third annual ACM symposium on Theory of
+  computing}, pages 151--158. ACM, 1971.
+
+\bibitem{hadamard1902problemes}
+Jacques Hadamard.
+\newblock Sur les probl{\`e}mes aux d{\'e}riv{\'e}es partielles et leur
+  signification physique.
+\newblock {\em Princeton university bulletin}, 13(49-52):28, 1902.
+
+\bibitem{page1999pagerank}
+Lawrence Page, Sergey Brin, Rajeev Motwani, and Terry Winograd.
+\newblock The pagerank citation ranking: bringing order to the web.
+\newblock Technical Report Technical Report 1999-0120, Computer Science
+  Department, Stanford University, 1999.
+
+\bibitem{lempel2000stochastic}
+Ronny Lempel and Shlomo Moran.
+\newblock The stochastic approach for link-structure analysis (salsa) and the
+  tkc effect.
+\newblock {\em Computer Networks}, 33(1):387--401, 2000.
+
+\bibitem{trotman2005learning}
+Andrew Trotman.
+\newblock Learning to rank.
+\newblock {\em Information Retrieval}, 8(3):359--381, 2005.
+
+\bibitem{liu2009learning}
+Tie-Yan Liu.
+\newblock Learning to rank for information retrieval.
+\newblock {\em Foundations and Trends in Information Retrieval}, 3(3):225--331,
+  2009.
+
+\bibitem{liu2011learning}
+Tie-Yan Liu.
+\newblock {\em Learning to rank for information retrieval}, volume~13.
+\newblock Springer, 2011.
+
+\bibitem{li2011learning}
+Hang Li.
+\newblock Learning to rank for information retrieval and natural language
+  processing.
+\newblock {\em Synthesis Lectures on Human Language Technologies}, 4(1):1--113,
+  2011.
+
+\bibitem{crammer2001pranking}
+Koby Crammer and Yoram Singer.
+\newblock Pranking with ranking.
+\newblock {\em Advances in neural information processing systems}, 14:641--647,
+  2001.
+
+\bibitem{herbrich1999large}
+Ralf Herbrich, Thore Graepel, and Klaus Obermayer.
+\newblock Large margin rank boundaries for ordinal regression.
+\newblock {\em Advances in Neural Information Processing Systems}, pages
+  115--132, 1999.
+
+\bibitem{burges2005learning}
+Chris Burges, Tal Shaked, Erin Renshaw, Ari Lazier, Matt Deeds, Nicole
+  Hamilton, and Greg Hullender.
+\newblock Learning to rank using gradient descent.
+\newblock In {\em Proceedings of the 22nd international conference on Machine
+  learning}, pages 89--96. ACM, 2005.
+
+\bibitem{burges2007learning}
+Christopher~JC Burges, Robert Ragno, and Quoc~Viet Le.
+\newblock Learning to rank with nonsmooth cost functions.
+\newblock In {\em Advances in Neural Information Processing Systems 19:
+  Proceedings of the 2006 Conference}, volume~19, page 193. The MIT Press,
+  2007.
+
+\bibitem{cao2007learning}
+Zhe Cao, Tao Qin, Tie-Yan Liu, Ming-Feng Tsai, and Hang Li.
+\newblock Learning to rank: from pairwise approach to listwise approach.
+\newblock In {\em Proceedings of the 24th international conference on Machine
+  learning}, pages 129--136. ACM, 2007.
+
+\bibitem{qin2008query}
+Tao Qin, Xu-Dong Zhang, Ming-Feng Tsai, De-Sheng Wang, Tie-Yan Liu, and Hang
+  Li.
+\newblock Query-level loss functions for information retrieval.
+\newblock {\em Information Processing \& Management}, 44(2):838--855, 2008.
+
+\bibitem{xia2008listwise}
+Fen Xia, Tie-Yan Liu, Jue Wang, Wensheng Zhang, and Hang Li.
+\newblock Listwise approach to learning to rank: theory and algorithm.
+\newblock In {\em Proceedings of the 25th international conference on Machine
+  learning}, pages 1192--1199. ACM, 2008.
+
+\bibitem{taylor2008softrank}
+Michael Taylor, John Guiver, Stephen Robertson, and Tom Minka.
+\newblock Softrank: optimizing non-smooth rank metrics.
+\newblock In {\em Proceedings of the international conference on Web search and
+  web data mining}, pages 77--86. ACM, 2008.
+
+\bibitem{yue2007support}
+Yisong Yue, Thomas Finley, Filip Radlinski, and Thorsten Joachims.
+\newblock A support vector method for optimizing average precision.
+\newblock In {\em Proceedings of the 30th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  271--278. ACM, 2007.
+
+\bibitem{chakrabarti2008structured}
+Soumen Chakrabarti, Rajiv Khanna, Uma Sawant, and Chiru Bhattacharyya.
+\newblock Structured learning for non-smooth ranking losses.
+\newblock In {\em Proceeding of the 14th ACM SIGKDD international conference on
+  Knowledge discovery and data mining}, pages 88--96. ACM, 2008.
+
+\bibitem{joachims2002optimizing}
+Thorsten Joachims.
+\newblock Optimizing search engines using clickthrough data.
+\newblock In {\em Proceedings of the eighth ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 133--142. ACM, 2002.
+
+\bibitem{airola2011training}
+Antti Airola, Tapio Pahikkala, and Tapio Salakoski.
+\newblock Training linear ranking svms in linearithmic time using red--black
+  trees.
+\newblock {\em Pattern Recognition Letters}, 32(9):1328--1336, 2011.
+
+\bibitem{jung2011ensemble}
+Cheolkon Jung, LC~Jiao, and Yanbo Shen.
+\newblock Ensemble ranking svm for learning to rank.
+\newblock In {\em Machine Learning for Signal Processing (MLSP), 2011 IEEE
+  International Workshop on}, pages 1--6. IEEE, 2011.
+
+\bibitem{cao2006adapting}
+Yunbo Cao, Jun Xu, Tie-Yan Liu, Hang Li, Yalou Huang, and Hsiao-Wuen Hon.
+\newblock Adapting ranking svm to document retrieval.
+\newblock In {\em Proceedings of the 29th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  186--193. ACM, 2006.
+
+\bibitem{ganjisaffar2011bagging}
+Yasser Ganjisaffar, Rich Caruana, and Cristina~Videira Lopes.
+\newblock Bagging gradient-boosted trees for high precision, low variance
+  ranking models.
+\newblock In {\em Proceedings of the 34th international ACM SIGIR conference on
+  Research and development in Information Retrieval}, pages 85--94. ACM, 2011.
+
+\bibitem{zheng2007regression}
+Zhaohui Zheng, Keke Chen, Gordon Sun, and Hongyuan Zha.
+\newblock A regression framework for learning ranking functions using relative
+  relevance judgments.
+\newblock In {\em Proceedings of the 30th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  287--294. ACM, 2007.
+
+\bibitem{chen2010learning}
+Jiang Chen, Wei Chu, Zhenzhen Kou, and Zhaohui Zheng.
+\newblock Learning to blend by relevance.
+\newblock {\em arXiv preprint arXiv:1001.4597}, 2010.
+
+\bibitem{tsai2007frank}
+Ming-Feng Tsai, Tie-Yan Liu, Tao Qin, Hsin-Hsi Chen, and Wei-Ying Ma.
+\newblock Frank: a ranking method with fidelity loss.
+\newblock In {\em Proceedings of the 30th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  383--390. ACM, 2007.
+
+\bibitem{volkovs2009boltzrank}
+Maksims~N Volkovs and Richard~S Zemel.
+\newblock Boltzrank: learning to maximize expected ranking gain.
+\newblock In {\em Proceedings of the 26th Annual International Conference on
+  Machine Learning}, pages 1089--1096. ACM, 2009.
+
+\bibitem{rigutini2008sortnet}
+Leonardo Rigutini, Tiziano Papini, Marco Maggini, and Franco Scarselli.
+\newblock Sortnet: Learning to rank by a neural-based sorting algorithm.
+\newblock {\em IEEE Transactions on Neural Networks}, 22:1368--1380, 2008.
+
+\bibitem{amini2008boosting}
+Massih-Reza Amini, Tuong-Vinh Truong, and Cyril Goutte.
+\newblock A boosting algorithm for learning bipartite ranking functions with
+  partially labeled data.
+\newblock In {\em Proceedings of the 31st Annual International ACM SIGIR
+  Conference on Research and Development in Information Retrieval, SIGIR 2008},
+  2008.
+
+\bibitem{duh2008beyond}
+Kevin Duh and Katrin Kirchhoff.
+\newblock Beyond log-linear models: boosted minimum error rate training for
+  n-best re-ranking.
+\newblock In {\em Proceedings of the 46th Annual Meeting of the Association for
+  Computational Linguistics on Human Language Technologies: Short Papers},
+  pages 37--40. Association for Computational Linguistics, 2008.
+
+\bibitem{valizadegan2009learning}
+Hamed Valizadegan, Rong Jin, Ruofei Zhang, and Jian~chang Mao.
+\newblock Learning to rank by optimizing ndcg measure.
+\newblock {\em Advances in Neural Information Processing Systems},
+  22:1883--1891, 2009.
+
+\bibitem{wang2010learning}
+Lidan Wang, Jimmy Lin, and Donald Metzler.
+\newblock Learning to efficiently rank.
+\newblock In {\em Proceedings of the 33rd international ACM SIGIR conference on
+  Research and development in information retrieval}, pages 138--145. ACM,
+  2010.
+
+\bibitem{wang2011cascade}
+Lidan Wang, Jimmy~J Lin, and Donald Metzler.
+\newblock A cascade ranking model for efficient ranked retrieval.
+\newblock In {\em SIGIR}, volume~11, pages 105--114, 2011.
+
+\bibitem{ren2012importance}
+Shangkun Ren, Yuexian Hou, Peng Zhang, and Xueru Liang.
+\newblock Importance weighted adarank.
+\newblock In {\em Advanced Intelligent Computing}, pages 448--455. Springer,
+  2012.
+
+\bibitem{kao2013machine}
+Chang-Yi Kao and Chin-Shyurng Fahn.
+\newblock A machine learning algorithm of human-computer-interface application.
+\newblock In {\em Proceedings of the 2nd International Conference on Computer
+  Science and Electronics Engineering}. Atlantis Press, 2013.
+
+\bibitem{zhu2009general}
+Chenguang Zhu, Weizhu Chen, Zeyuan~Allen Zhu, Gang Wang, Dong Wang, and Zheng
+  Chen.
+\newblock A general magnitude-preserving boosting algorithm for search ranking.
+\newblock In {\em Proceedings of the 18th ACM conference on Information and
+  knowledge management}, pages 817--826. ACM, 2009.
+
+\bibitem{jin2008ranking}
+Rong Jin, Hamed Valizadegan, and Hang Li.
+\newblock Ranking refinement and its application to information retrieval.
+\newblock In {\em Proceedings of the 17th international conference on World
+  Wide Web}, pages 397--406. ACM, 2008.
+
+\bibitem{xu2008directly}
+Jun Xu, Tie-Yan Liu, Min Lu, Hang Li, and Wei-Ying Ma.
+\newblock Directly optimizing evaluation measures in learning to rank.
+\newblock In {\em Proceedings of the 31st annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  107--114. ACM, 2008.
+
+\bibitem{moon2010intervalrank}
+Taesup Moon, Alex Smola, Yi~Chang, and Zhaohui Zheng.
+\newblock Intervalrank: isotonic regression with listwise and pairwise
+  constraints.
+\newblock In {\em Proceedings of the third ACM international conference on Web
+  search and data mining}, pages 151--160. ACM, 2010.
+
+\bibitem{sculley2010combined}
+D~Sculley.
+\newblock Combined regression and ranking.
+\newblock In {\em Proceedings of the 16th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 979--988. ACM, 2010.
+
+\bibitem{kuo2009learning}
+Jen-Wei Kuo, Pu-Jen Cheng, and Hsin-Min Wang.
+\newblock Learning to rank from bayesian decision inference.
+\newblock In {\em Proceedings of the 18th ACM conference on Information and
+  knowledge management}, pages 827--836. ACM, 2009.
+
+\bibitem{pahikkala2009efficient}
+Tapio Pahikkala, Evgeni Tsivtsivadze, Antti Airola, Jouni J{\"a}rvinen, and
+  Jorma Boberg.
+\newblock An efficient algorithm for learning to rank from preference graphs.
+\newblock {\em Machine Learning}, 75(1):129--165, 2009.
+
+\bibitem{yeh2007learning}
+Jen-Yuan Yeh, Jung-Yi Lin, Hao-Ren Ke, and Wei-Pang Yang.
+\newblock Learning to rank for information retrieval using genetic programming.
+\newblock In {\em Proceedings of SIGIR 2007 Workshop on Learning to Rank for
+  Information Retrieval (LR4IR 2007)}, 2007.
+
+\bibitem{cooper1992probabilistic}
+William~S Cooper, Fredric~C Gey, and Daniel~P Dabney.
+\newblock Probabilistic retrieval based on staged logistic regression.
+\newblock In {\em Proceedings of the 15th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  198--210. ACM, 1992.
+
+\bibitem{li2007mcrank}
+Ping Li, Christopher J.~C. Burges, and Qiang Wu.
+\newblock Mcrank: Learning to rank using multiple classification and gradient
+  boosting.
+\newblock In {\em NIPS'07}, 2007.
+
+\bibitem{lai2012sparse}
+Hanjiang Lai, Yan Pan, Cong Liu, Liang Lin, and Jie Wu.
+\newblock Sparse learning-to-rank via an efficient primal-dual algorithm.
+\newblock {\em IEEE TRANSACTIONS ON COMPUTERS}, 2012.
+
+\bibitem{lai2013efficient}
+Hanjiang Lai, Yan Pan, Yong Tang, and Ning Liu.
+\newblock Efficient gradient descent algorithm for sparse models with
+  application in learning-to-rank.
+\newblock {\em Knowledge-Based Systems}, 2013.
+
+\bibitem{rifkin2007value}
+Ryan~M Rifkin and Ross~A Lippert.
+\newblock Value regularization and fenchel duality.
+\newblock {\em The Journal of Machine Learning Research}, 8:441--479, 2007.
+
+\bibitem{chapelle2010efficient}
+Olivier Chapelle and S~Sathiya Keerthi.
+\newblock Efficient algorithms for ranking with svms.
+\newblock {\em Information Retrieval}, 13(3):201--215, 2010.
+
+\bibitem{yan2006efficient}
+Rong Yan and Alexander~G Hauptmann.
+\newblock Efficient margin-based rank learning algorithms for information
+  retrieval.
+\newblock In {\em Image and Video Retrieval}, pages 113--122. Springer, 2006.
+
+\bibitem{qin2010letor}
+Tao Qin, Tie-Yan Liu, Jun Xu, and Hang Li.
+\newblock Letor: A benchmark collection for research on learning to rank for
+  information retrieval.
+\newblock {\em Information Retrieval}, 13(4):346--374, 2010.
+
+\bibitem{hersh1994ohsumed}
+William Hersh, Chris Buckley, TJ~Leone, and David Hickam.
+\newblock Ohsumed: an interactive retrieval evaluation and new large test
+  collection for research.
+\newblock In {\em SIGIR’94}, pages 192--201. Springer, 1994.
+
+\bibitem{craswell2003overview}
+Nick Craswell, David Hawking, Ross Wilkinson, and Mingfang Wu.
+\newblock Overview of the trec 2003 web track.
+\newblock In {\em Proceedings of TREC}, volume 2003, 2003.
+
+\bibitem{chapelle2011yahoo}
+Olivier Chapelle and Yi~Chang.
+\newblock Yahoo! learning to rank challenge overview.
+\newblock {\em Journal of Machine Learning Research-Proceedings Track},
+  14:1--24, 2011.
+
+\bibitem{sculley2009large}
+D~Sculley.
+\newblock Large scale learning to rank.
+\newblock In {\em NIPS Workshop on Advances in Ranking}, pages 1--6, 2009.
+
+\bibitem{cha2007comprehensive}
+Sung-Hyuk Cha.
+\newblock Comprehensive survey on distance/similarity measures between
+  probability density functions.
+\newblock {\em City}, 1(2):1, 2007.
+
+\bibitem{lenz2008proximities}
+Hans-J Lenz.
+\newblock Proximities in statistics: Similarity and distance.
+\newblock In {\em Preferences and Similarities}, pages 161--177. Springer,
+  2008.
+
+\bibitem{hamming1950error}
+RW~HAMMING.
+\newblock Error detecting and error correcting codes.
+\newblock {\em Bell Syst. Tech. J}, 29:147--160, 1950.
+
+\bibitem{spearman1904proof}
+Charles Spearman.
+\newblock The proof and measurement of association between two things.
+\newblock {\em The American journal of psychology}, 15(1):72--101, 1904.
+
+\bibitem{spearman1904general}
+Charles Spearman.
+\newblock "general intelligence" objectively determined and measured.
+\newblock {\em The American Journal of Psychology}, 15(2):201--292, 1904.
+
+\bibitem{kendall1938new}
+Maurice~G Kendall.
+\newblock A new measure of rank correlation.
+\newblock {\em Biometrika}, 30(1/2):81--93, 1938.
+
+\bibitem{kumar2010generalized}
+Ravi Kumar and Sergei Vassilvitskii.
+\newblock Generalized distances between rankings.
+\newblock In {\em Proceedings of the 19th international conference on World
+  wide web}, pages 571--580. ACM, 2010.
+
+\bibitem{farnoud2012novel}
+Farzad Farnoud, Behrouz Touri, and Olgica Milenkovic.
+\newblock Novel distance measures for vote aggregation.
+\newblock {\em arXiv preprint arXiv:1203.6371}, 2012.
+
+\bibitem{dunning1993accurate}
+Ted Dunning.
+\newblock Accurate methods for the statistics of surprise and coincidence.
+\newblock {\em Comput. Linguist.}, 19(1):61--74, 1993.
+
+\bibitem{wang2008multiple}
+王大亮, 涂序彦, 郑雪峰, and 佟子健.
+\newblock 多策略融合的搭配抽取方法.
+\newblock {\em 清华大学学报(自然科学版)}, 4:608--612, 2008.
+
+\bibitem{jensen2003reducing}
+Mikkel~T Jensen.
+\newblock Reducing the run-time complexity of multiobjective eas: The nsga-ii
+  and other algorithms.
+\newblock {\em Evolutionary Computation, IEEE Transactions on}, 7(5):503--515,
+  2003.
+
+\bibitem{zhu2012recmetric}
+朱郁筱 and 吕琳媛.
+\newblock 推荐系统评价指标综述.
+\newblock {\em 电子科技大学学报}, 41(2):163--175, 2012.
+
+\bibitem{jarvelin2000ir}
+Kalervo J{\"a}rvelin and Jaana Kek{\"a}l{\"a}inen.
+\newblock Ir evaluation methods for retrieving highly relevant documents.
+\newblock In {\em Proceedings of the 23rd annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  41--48. ACM, 2000.
+
+\bibitem{jarvelin2002cumulated}
+Kalervo J{\"a}rvelin and Jaana Kek{\"a}l{\"a}inen.
+\newblock Cumulated gain-based evaluation of ir techniques.
+\newblock {\em ACM Transactions on Information Systems (TOIS)}, 20(4):422--446,
+  2002.
+
+\bibitem{baeza1999modern}
+Ricardo Baeza-Yates and Berthier Ribeiro-Neto.
+\newblock {\em Modern information retrieval}, volume 463.
+\newblock ACM press New York, 1999.
+
+\bibitem{voorhees1999trec}
+Ellen~M Voorhees.
+\newblock The trec-8 question answering track report.
+\newblock In {\em Proceedings of TREC}, volume~8, pages 77--82, 1999.
+
+\bibitem{chu1996search}
+Heting Chu and Marilyn Rosenthal.
+\newblock Search engines for the world wide web: A comparative study and
+  evaluation methodology.
+\newblock In {\em PROCEEDINGS OF THE ANNUAL MEETING-AMERICAN SOCIETY FOR
+  INFORMATION SCIENCE}, volume~33, pages 127--135, 1996.
+
+\bibitem{gwizdka1999towards}
+Jacek Gwizdka and Mark Chignell.
+\newblock Towards information retrieval measures for evaluation of web search
+  engines.
+\newblock Retrieved from http://www.imedia.mie.utoronto.ca/, 1999.
+
+\bibitem{voorhees2001overview}
+Ellen~M Voorhees and Donna Harman.
+\newblock Overview of trec 2001.
+\newblock In {\em Proceedings of TREC}, volume 2001, 2001.
+
+\bibitem{davis2006relationship}
+Jesse Davis and Mark Goadrich.
+\newblock The relationship between precision-recall and roc curves.
+\newblock In {\em Proceedings of the 23rd international conference on Machine
+  learning}, pages 233--240. ACM, 2006.
+
+\bibitem{bradley1997use}
+Andrew~P Bradley.
+\newblock The use of the area under the roc curve in the evaluation of machine
+  learning algorithms.
+\newblock {\em Pattern recognition}, 30(7):1145--1159, 1997.
+
+\bibitem{hanely1982meaning}
+JA~Hanely and BJ~McNeil.
+\newblock The meaning and use of the area under a receiver operating
+  characteristic (roc) curve.
+\newblock {\em Radiology}, 143(1):29--36, 1982.
+
+\bibitem{chapelle2009expected}
+Olivier Chapelle, Donald Metlzer, Ya~Zhang, and Pierre Grinspan.
+\newblock Expected reciprocal rank for graded relevance.
+\newblock In {\em Proceedings of the 18th ACM conference on Information and
+  knowledge management}, pages 621--630. ACM, 2009.
+
+\bibitem{gulin2009pfound}
+Gulin A., Karpovich P., Raskovalov D., and Segalovich I.
+\newblock Yandex at romip'2009: optimization of ranking algorithms by machine
+  learning methods.
+\newblock In {\em Proceedings of the 7th Russian Information Retrieval
+  Evaluation Workshop}, pages 163--168, 2009.
+
+\bibitem{shannon1948mathematical}
+Claude~Elwood Shannon and Warren Weaver.
+\newblock A mathematical theory of communication, 1948.
+
+\bibitem{kullback1951information}
+Solomon Kullback and Richard~A Leibler.
+\newblock On information and sufficiency.
+\newblock {\em The Annals of Mathematical Statistics}, pages 79--86, 1951.
+
+\bibitem{kullback2012information}
+Solomon Kullback.
+\newblock {\em Information theory and statistics}.
+\newblock Courier Dover Publications, 2012.
+
+\bibitem{dagan1999similarity}
+Ido Dagan, Lillian Lee, and Fernando~CN Pereira.
+\newblock Similarity-based models of word cooccurrence probabilities.
+\newblock {\em Machine Learning}, 34(1-3):43--69, 1999.
+
+\bibitem{dhrymes1978mathematics}
+Phoebus~J Dhrymes, Phoebus~J Dhrymes, Phoebus~J Dhrymes, and Phoebus~J Dhrymes.
+\newblock {\em Mathematics for econometrics}.
+\newblock Springer, 1978.
+
+\bibitem{stigler1945cost}
+George~J Stigler.
+\newblock The cost of subsistence.
+\newblock {\em Journal of Farm Economics}, 27(2):303--314, 1945.
+
+\bibitem{dantzig1998linear}
+George~Bernard Dantzig.
+\newblock {\em Linear programming and extensions}.
+\newblock Princeton university press, 1998.
+
+\bibitem{khachiyan1979polynomial}
+Leonid~G Khachiyan.
+\newblock Polynomial algorithms in linear programming.
+\newblock {\em Doklady Akademii Nauk SSSR}, 244:1093--1096, 1979.
+
+\bibitem{karmarkar1984new}
+Narendra Karmarkar.
+\newblock A new polynomial-time algorithm for linear programming.
+\newblock In {\em Proceedings of the sixteenth annual ACM symposium on Theory
+  of computing}, pages 302--311. ACM, 1984.
+
+\bibitem{charnes1957management}
+Abraham Charnes and William~W Cooper.
+\newblock Management models and industrial applications of linear programming.
+\newblock {\em Management Science}, 4(1):38--91, 1957.
+
+\bibitem{beichl2000metropolis}
+Isabel Beichl and Francis Sullivan.
+\newblock The metropolis algorithm.
+\newblock {\em Computing in Science \& Engineering}, 2(1):65--69, 2000.
+
+\bibitem{nash2000dantzig}
+John~C Nash.
+\newblock The (dantzig) simplex method for linear programming.
+\newblock {\em Computing in Science \& Engineering}, 2(1):29--31, 2000.
+
+\bibitem{van2000krylov}
+Henk~A Van Der~Vorst.
+\newblock Krylov subspace iteration.
+\newblock {\em Computing in Science and Engineering}, 2(1):32--37, 2000.
+
+\bibitem{stewart2000decompositional}
+GW~Stewart.
+\newblock The decompositional approach to matrix computation.
+\newblock {\em Computing in Science \& Engineering}, 2(1):50--59, 2000.
+
+\bibitem{padua2000fortran}
+David Padua.
+\newblock The fortran i compiler.
+\newblock {\em Computing in Science \& Engineering}, 2(1):70--75, 2000.
+
+\bibitem{parlett2000qr}
+Beresford~N Parlett.
+\newblock The qr algorithm.
+\newblock {\em Computing in Science \& Engineering}, 2(1):38--42, 2000.
+
+\bibitem{jaja2000perspective}
+Joseph JaJa.
+\newblock A perspective on quicksort.
+\newblock {\em Computing in Science \& Engineering}, 2(1):43--49, 2000.
+
+\bibitem{rockmore2000fft}
+Daniel~N Rockmore.
+\newblock The fft: An algorithm the whole family can use.
+\newblock {\em Computing in Science \& Engineering}, 2(1):60--64, 2000.
+
+\bibitem{bailey2000integer}
+David~H Bailey.
+\newblock Integer relation detection.
+\newblock {\em Computing in Science \& Engineering}, 2(1):24--28, 2000.
+
+\bibitem{board2000fast}
+John Board and L~Schulten.
+\newblock The fast multipole algorithm.
+\newblock {\em Computing in Science \& Engineering}, 2(1):76--79, 2000.
+
+\bibitem{karush1939minima}
+William Karush.
+\newblock {\em Minima of functions of several variables with inequalities as
+  side constraints}.
+\newblock PhD thesis, Dept. of Mathematics, Univ. of Chicago, 1939.
+
+\bibitem{kuhn1951nonlinear}
+Harold~W Kuhn and Albert~W Tucker.
+\newblock Nonlinear programming.
+\newblock In {\em Proceedings of the second Berkeley symposium on mathematical
+  statistics and probability}, volume~5. California, 1951.
+
+\bibitem{desopo1959convex}
+DA~D'Esopo.
+\newblock A convex programming procedure.
+\newblock {\em Naval Research Logistics Quarterly}, 6(1):33--42, 1959.
+
+\bibitem{rosenbrock1960automatic}
+HoHo Rosenbrock.
+\newblock An automatic method for finding the greatest or least value of a
+  function.
+\newblock {\em The Computer Journal}, 3(3):175--184, 1960.
+
+\bibitem{hooke1961direct}
+Robert Hooke and To~A Jeeves.
+\newblock Direct search solution of numerical and statistical problems.
+\newblock {\em Journal of the ACM (JACM)}, 8(2):212--229, 1961.
+
+\bibitem{powell1964efficient}
+Michael~JD Powell.
+\newblock An efficient method for finding the minimum of a function of several
+  variables without calculating derivatives.
+\newblock {\em The computer journal}, 7(2):155--162, 1964.
+
+\bibitem{nelder1965simplex}
+John~A Nelder and Roger Mead.
+\newblock A simplex method for function minimization.
+\newblock {\em The computer journal}, 7(4):308--313, 1965.
+
+\bibitem{bertsekas1999nonlinear}
+Dimitri~P Bertsekas.
+\newblock {\em Nonlinear programming}.
+\newblock Athena Scientific, 1999.
+
+\bibitem{bottou2010large}
+L{\'e}on Bottou.
+\newblock Large-scale machine learning with stochastic gradient descent.
+\newblock In {\em Proceedings of COMPSTAT'2010}, pages 177--186. Springer,
+  2010.
+
+\bibitem{vishwanathan2006accelerated}
+SVN Vishwanathan, Nicol~N Schraudolph, Mark~W Schmidt, and Kevin~P Murphy.
+\newblock Accelerated training of conditional random fields with stochastic
+  gradient methods.
+\newblock In {\em Proceedings of the 23rd international conference on Machine
+  learning}, pages 969--976. ACM, 2006.
+
+\bibitem{polyak1992acceleration}
+Boris~T Polyak and Anatoli~B Juditsky.
+\newblock Acceleration of stochastic approximation by averaging.
+\newblock {\em SIAM Journal on Control and Optimization}, 30(4):838--855, 1992.
+
+\bibitem{xu2011towards}
+Wei Xu.
+\newblock Towards optimal one pass large scale learning with averaged
+  stochastic gradient descent.
+\newblock {\em arXiv preprint arXiv:1107.2490}, 2011.
+
+\bibitem{lin2011large}
+Yuanqing Lin, Fengjun Lv, Shenghuo Zhu, Ming Yang, Timothee Cour, Kai Yu,
+  Liangliang Cao, and Thomas Huang.
+\newblock Large-scale image classification: fast feature extraction and svm
+  training.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
+  Conference on}, pages 1689--1696. IEEE, 2011.
+
+\bibitem{shor1985minimization}
+NZ~Shor, Krzysztof~C Kiwiel, and Andrzej Ruszcay\`{n}ski.
+\newblock Minimization methods for non-differentiable functions.
+\newblock 1985.
+
+\bibitem{shor2012minimization}
+Naum~Zuselevich Shor.
+\newblock {\em Minimization methods for non-differentiable functions},
+  volume~3.
+\newblock Springer Science \& Business Media, 2012.
+
+\bibitem{davidon1991variable}
+William~C Davidon.
+\newblock Variable metric method for minimization.
+\newblock {\em SIAM Journal on Optimization}, 1(1):1--17, 1991.
+
+\bibitem{fletcher1963rapidly}
+Roger Fletcher and Michael~JD Powell.
+\newblock A rapidly convergent descent method for minimization.
+\newblock {\em The Computer Journal}, 6(2):163--168, 1963.
+
+\bibitem{broyden1967quasi}
+CG~Broyden.
+\newblock Quasi-newton methods and their application to function minimisation.
+\newblock {\em Mathematics of Computation}, 21(99):368--381, 1967.
+
+\bibitem{fletcher1970new}
+Roger Fletcher.
+\newblock A new approach to variable metric algorithms.
+\newblock {\em The computer journal}, 13(3):317--322, 1970.
+
+\bibitem{goldfarb1970family}
+Donald Goldfarb.
+\newblock A family of variable-metric methods derived by variational means.
+\newblock {\em Mathematics of computation}, 24(109):23--26, 1970.
+
+\bibitem{shanno1970conditioning}
+David~F Shanno.
+\newblock Conditioning of quasi-newton methods for function minimization.
+\newblock {\em Mathematics of computation}, 24(111):647--656, 1970.
+
+\bibitem{land1960automatic}
+Ailsa~H Land and Alison~G Doig.
+\newblock An automatic method of solving discrete programming problems.
+\newblock {\em Econometrica: Journal of the Econometric Society}, pages
+  497--520, 1960.
+
+\bibitem{anderson1953recent}
+RL~Anderson.
+\newblock Recent advances in finding best operating conditions.
+\newblock {\em Journal of the American Statistical Association},
+  48(264):789--798, 1953.
+
+\bibitem{rastrigin1963convergence}
+LA~Rastrigin.
+\newblock The convergence of the random search method in the extremal control
+  of a many-parameter system.
+\newblock {\em Automation and Remote Control}, 24(10):1337--1342, 1963.
+
+\bibitem{karnopp1963random}
+Dean~C Karnopp.
+\newblock Random search techniques for optimization problems.
+\newblock {\em Automatica}, 1(2):111--121, 1963.
+
+\bibitem{glover1990tabu}
+Fred Glover.
+\newblock Tabu search: A tutorial.
+\newblock {\em Interfaces}, 20(4):74--94, 1990.
+
+\bibitem{metropolis1953equation}
+Nicholas Metropolis, Arianna~W Rosenbluth, Marshall~N Rosenbluth, Augusta~H
+  Teller, and Edward Teller.
+\newblock Equation of state calculations by fast computing machines.
+\newblock {\em The journal of chemical physics}, 21:1087, 1953.
+
+\bibitem{kirkpatrick1983optimization}
+Scott Kirkpatrick, Daniel Gelatt, and Mario~P Vecchi.
+\newblock Optimization by simmulated annealing.
+\newblock {\em science}, 220(4598):671--680, 1983.
+
+\bibitem{vcerny1985thermodynamical}
+VLADIM{\'I}R {\v{C}}ern{\`y}.
+\newblock Thermodynamical approach to the traveling salesman problem: An
+  efficient simulation algorithm.
+\newblock {\em Journal of optimization theory and applications}, 45(1):41--51,
+  1985.
+
+\bibitem{fogel1988evolutionary}
+David~B Fogel.
+\newblock An evolutionary approach to the traveling salesman problem.
+\newblock {\em Biological Cybernetics}, 60(2):139--144, 1988.
+
+\bibitem{levenberg1944method}
+K.~Levenberg.
+\newblock A method for the solution of certain nonlinear problems in least
+  squares.
+\newblock {\em The Quarterly of Applied Mathematics}, 2:164--168, 1944.
+
+\bibitem{marquardt1963algorithm}
+Donald~W Marquardt.
+\newblock An algorithm for least-squares estimation of nonlinear parameters.
+\newblock {\em Journal of the Society for Industrial \& Applied Mathematics},
+  11(2):431--441, 1963.
+
+\bibitem{frisch1955logarithmic}
+KR~Frisch.
+\newblock The logarithmic potential method of convex programming.
+\newblock {\em Memorandum of May}, 13:1955, 1955.
+
+\bibitem{cipra2006l1}
+Barry~A Cipra.
+\newblock l1-magic.
+\newblock {\em SIAM News}, 39(9), 2006.
+
+\bibitem{grant2006disciplinedconvex}
+Michael Grant, Stephen Boyd, and Yinyu Ye.
+\newblock Disciplined convex programming.
+\newblock In {\em Global Optimization: From Theory to Implementation, Nonconvex
+  Optimization and Its Application Series}, pages 155--210. Springer, 2006.
+
+\bibitem{Kolmogorov1951Foundations}
+A.~N. Kolmogorov.
+\newblock Foundations of the theory of probability.
+\newblock {\em Mathematical Gazette}, 2(2):280--283, 1951.
+
+\bibitem{frechet1927loi}
+Maurice Fr{\'e}chet.
+\newblock Sur la loi de probabilit{\'e} de l’{\'e}cart maximum.
+\newblock In {\em Annales de la societe Polonaise de Mathematique}, volume~6,
+  pages 93--116, 1927.
+
+\bibitem{rossin1933laws}
+Paul Rossin and Erich Rammler.
+\newblock The laws governing the fineness of powdered coal. inst.
+\newblock {\em Of Fuel}, pages 29--36, 1933.
+
+\bibitem{weibull1951statistical}
+W~Weibull.
+\newblock A statistical distribution function of wide applicability.
+\newblock {\em Atlantic City, NJ}, 23:981--997, 1951.
+
+\bibitem{hastings1970monte}
+W~Keith Hastings.
+\newblock Monte carlo sampling methods using markov chains and their
+  applications.
+\newblock {\em Biometrika}, 57(1):97--109, 1970.
+
+\bibitem{diaconis2009markov}
+Persi Diaconis.
+\newblock The markov chain monte carlo revolution.
+\newblock {\em Bulletin of the American Mathematical Society}, 46(2):179--205,
+  2009.
+
+\bibitem{geman1984stochastic}
+Stuart Geman and Donald Geman.
+\newblock Stochastic relaxation, gibbs distributions, and the bayesian
+  restoration of images.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 6(6):721--741, 1984.
+
+\bibitem{Lehmann2001Theory}
+E.~L. Lehmann and George Casella.
+\newblock Theory of point estimation.
+\newblock {\em Technometrics}, 2001.
+
+\bibitem{gomes2013learning}
+Guilherme de Castro~Mendes Gomes, Vitor~Campos de~Oliveira, Jussara~Marques
+  de~Almeida, and Marcos~Andr{\'e} Gon{\c{c}}alves.
+\newblock Is learning to rank worth it? a statistical analysis of learning to
+  rank methods.
+\newblock {\em arXiv preprint arXiv:1303.2277}, 2013.
+
+\bibitem{jain1991art}
+Raj Jain.
+\newblock {\em The art of computer systems performance analysis}, volume 182.
+\newblock John Wiley \& Sons Chichester, 1991.
+
+\bibitem{wilcoxon1945individual}
+Frank Wilcoxon.
+\newblock Individual comparisons by ranking methods.
+\newblock {\em Biometrics bulletin}, 1(6):80--83, 1945.
+
+\bibitem{mann1947test}
+Henry~B Mann and Donald~R Whitney.
+\newblock On a test of whether one of two random variables is stochastically
+  larger than the other.
+\newblock {\em The annals of mathematical statistics}, 18(1):50--60, 1947.
+
+\bibitem{poczos2012copula}
+Barnab{\'a}s P{\'o}czos, Zoubin Ghahramani, and Jeff Schneider.
+\newblock Copula-based kernel dependency measures.
+\newblock {\em arXiv preprint arXiv:1206.4682}, 2012.
+
+\bibitem{sklar1959fonctions}
+M~Sklar.
+\newblock {\em Fonctions de r{\'e}partition {\`a} n dimensions et leurs
+  marges}.
+\newblock Universit{\'e} Paris 8, 1959.
+
+\bibitem{schweizer1981nonparametric}
+Berthold Schweizer and Edward~F Wolff.
+\newblock On nonparametric measures of dependence for random variables.
+\newblock {\em The annals of statistics}, pages 879--885, 1981.
+
+\bibitem{saaty1977scaling}
+Thomas~L Saaty.
+\newblock A scaling method for priorities in hierarchical structures.
+\newblock {\em Journal of mathematical psychology}, 15(3):234--281, 1977.
+
+\bibitem{saaty1980analytic}
+Thomas~L Saaty.
+\newblock The analytic hierarchy process: planning, priority setting, resources
+  allocation.
+\newblock {\em M cGraw-H ill}, 1980.
+
+\bibitem{roy1968classement}
+Bernard Roy.
+\newblock Classement et choix en pr{\'e}sence de points de vue multiples.
+\newblock {\em RAIRO-Operations Research-Recherche Op{\'e}rationnelle},
+  2(V1):57--75, 1968.
+
+\bibitem{charnes1978dea}
+Abraham Charnes, William~W Cooper, and Edwardo Rhodes.
+\newblock Measuring the efficiency of decision making units.
+\newblock {\em European journal of operational research}, 2(6):429--444, 1978.
+
+\bibitem{kao2005dea}
+C.~Kao and H.T. Hung.
+\newblock Data envelopment analysis with common weights: the compromise
+  solution approach.
+\newblock {\em Journal of the Operational Research Society}, 56(10):1196--1203,
+  2005.
+
+\bibitem{cooper2011data}
+William~W Cooper, Lawrence~M Seiford, and Joe Zhu.
+\newblock {\em Data envelopment analysis: History, models, and
+  interpretations}.
+\newblock Springer, 2011.
+
+\bibitem{charnes1952optimality}
+Abraham Charnes.
+\newblock Optimality and degeneracy in linear programming.
+\newblock {\em Econometrica: Journal of the Econometric Society}, pages
+  160--170, 1952.
+
+\bibitem{wei2004dea}
+魏权龄.
+\newblock {\em 数据包络分析}.
+\newblock 科学出版社, 2004.
+
+\bibitem{banker1984some}
+Rajiv~D Banker, Abraham Charnes, and William~Wager Cooper.
+\newblock Some models for estimating technical and scale inefficiencies in data
+  envelopment analysis.
+\newblock {\em Management science}, 30(9):1078--1092, 1984.
+
+\bibitem{fare1985nonparametric}
+Rolf F{\"a}re and Shawna Grosskopf.
+\newblock A nonparametric cost approach to scale efficiency.
+\newblock {\em The Scandinavian Journal of Economics}, pages 594--604, 1985.
+
+\bibitem{seiford1990recent}
+Lawrence~M Seiford and Robert~M Thrall.
+\newblock Recent developments in dea: the mathematical programming approach to
+  frontier analysis.
+\newblock {\em Journal of econometrics}, 46(1):7--38, 1990.
+
+\bibitem{charnes1985foundations}
+Abraham Charnes, William~W Cooper, Boaz Golany, Larry Seiford, and J~Stutz.
+\newblock Foundations of data envelopment analysis for pareto-koopmans
+  efficient empirical production functions.
+\newblock {\em Journal of Econometrics}, 30(1):91--107, 1985.
+
+\bibitem{charnes1989cone}
+Abraham Charnes, WW~Cooper, Quan~Ling Wei, and ZM~Huang.
+\newblock Cone ratio data envelopment analysis and multi-objective programming.
+\newblock {\em International Journal of Systems Science}, 20(7):1099--1118,
+  1989.
+
+\bibitem{charnes1988compositive}
+A~Charnes, WW~Cooper, QL~Wei, and M~Yue.
+\newblock Compositive data envelopment analysis and multiobjective programming.
+\newblock {\em Center for Cybernetic Studies Report, CCS}, 633, 1988.
+
+\bibitem{yu1996generalized}
+Gang Yu, Quanling Wei, and Patrick Brockett.
+\newblock A generalized data envelopment analysis model: A unification and
+  extension of existing methods for efficiency analysis of decision making
+  units.
+\newblock {\em Annals of Operations Research}, 66(1):47--89, 1996.
+
+\bibitem{yun2004generalized}
+Ye~Boon Yun, Hirotaka Nakayama, and Tetsuzo Tanino.
+\newblock A generalized model for data envelopment analysis.
+\newblock {\em European Journal of Operational Research}, 157(1):87--105, 2004.
+
+\bibitem{he1995inputonly}
+何静.
+\newblock 只有输出（入）的数据包络分析及其应用.
+\newblock {\em 系统工程学报}, 10(2):48--55, 1995.
+
+\bibitem{lovell1999radial}
+CA~Lovell and Jes{\'u}s~T Pastor.
+\newblock Radial dea models without inputs or without outputs.
+\newblock {\em European Journal of operational research}, 118(1):46--51, 1999.
+
+\bibitem{liu2011study}
+WB~Liu, DQ~Zhang, W~Meng, XX~Li, and F~Xu.
+\newblock A study of dea models without explicit inputs.
+\newblock {\em Omega}, 39(5):472--480, 2011.
+
+\bibitem{kostrzewa2011data}
+Karolina. Kostrzewa, Andrzej Okninski, and Boguslaw Radzszewski.
+\newblock {\em Data Envelopment Analysis Without Input or Output}.
+\newblock AGH University of Science and Technolgoy Press, 2011.
+
+\bibitem{ramanathan2006data}
+Ramakrishnan Ramanathan.
+\newblock Data envelopment analysis for weight derivation and aggregation in
+  the analytic hierarchy process.
+\newblock {\em Computers \& Operations Research}, 33(5):1289--1307, 2006.
+
+\bibitem{wang2009new}
+Ying-Ming Wang and Kwai-Sang Chin.
+\newblock A new data envelopment analysis method for priority determination and
+  group decision making in the analytic hierarchy process.
+\newblock {\em European Journal of Operational Research}, 195(1):239--250,
+  2009.
+
+\bibitem{wang2008integrated}
+Ying-Ming Wang, Jun Liu, and Taha Elhag.
+\newblock An integrated ahp--dea methodology for bridge risk assessment.
+\newblock {\em Computers \& Industrial Engineering}, 54(3):513--525, 2008.
+
+\bibitem{pendharkar2005data}
+Parag~C Pendharkar.
+\newblock A data envelopment analysis-based approach for data preprocessing.
+\newblock {\em Knowledge and Data Engineering, IEEE Transactions on},
+  17(10):1379--1388, 2005.
+
+\bibitem{chen2007ranking}
+M.C. Chen.
+\newblock Ranking discovered rules from data mining with multiple criteria by
+  data envelopment analysis.
+\newblock {\em Expert Systems with Applications}, 33(4):1110--1116, 2007.
+
+\bibitem{cook1990data}
+Wade~D Cook and Moshe Kress.
+\newblock A data envelopment model for aggregating preference rankings.
+\newblock {\em Management Science}, 36(11):1302--1310, 1990.
+
+\bibitem{llamazares2009preference}
+Bonifacio Llamazares and Teresa Pe{\~n}a.
+\newblock Preference aggregation and dea: An analysis of the methods proposed
+  to discriminate efficient candidates.
+\newblock {\em European Journal of Operational Research}, 197(2):714--721,
+  2009.
+
+\bibitem{ertugrul2008improved}
+E~Ertugrul~Karsak and S~Sebnem~Ahiska.
+\newblock Improved common weight mcdm model for technology selection.
+\newblock {\em International Journal of Production Research},
+  46(24):6933--6944, 2008.
+
+\bibitem{amin2008note}
+Gholam~R Amin.
+\newblock A note on “an improved mcdm dea model for technology selection”.
+\newblock {\em International Journal of Production Research},
+  46(24):7073--7075, 2008.
+
+\bibitem{amin2009optimal}
+Gholam~R Amin.
+\newblock Optimal solution of technology selection model: a computational
+  efficient form.
+\newblock {\em The International Journal of Advanced Manufacturing Technology},
+  43(9-10):1046--1050, 2009.
+
+\bibitem{amin2009finding}
+Gholam~R Amin and Ali Emrouznejad.
+\newblock Finding relevant search engines results: a minimax linear programming
+  approach.
+\newblock {\em Journal of the Operational Research Society}, 61(7):1144--1150,
+  2009.
+
+\bibitem{zhang1999project}
+X-S Zhang and J-C Cui.
+\newblock A project evaluation system in the state economic information system
+  of china an operations research practice in public sectors.
+\newblock {\em International Transactions in Operational Research},
+  6(5):441--452, 1999.
+
+\bibitem{wei2000inverse}
+Quanling Wei, Jianzhong Zhang, and Xiangsun Zhang.
+\newblock An inverse dea model for inputs/outputs estimate.
+\newblock {\em European Journal of Operational Research}, 121(1):151--163,
+  2000.
+
+\bibitem{li2003dea}
+李亮 and 崔晋川.
+\newblock Dea方法中输入输出项目的选择和数据处理.
+\newblock {\em 系统工程学报}, 18(6), 2003.
+
+\bibitem{cooper2000dea}
+William~W Cooper, Kaoru Tone, and LM~Seiford.
+\newblock Data envelopment analysis, 2000.
+
+\bibitem{dula2008computational}
+JH~Dul{\'a}.
+\newblock A computational study of dea with massive data sets.
+\newblock {\em Computers \& Operations Research}, 35(4):1191--1203, 2008.
+
+\bibitem{dula2011algorithm}
+JH~Dul{\'a}.
+\newblock An algorithm for data envelopment analysis.
+\newblock {\em INFORMS Journal on Computing}, 23(2):284--296, 2011.
+
+\bibitem{kalvelagen2002efficiently}
+Erwin Kalvelagen.
+\newblock Efficiently solving dea models with gams.
+\newblock {\em GAMS Development Corporation, Washington DC}, 2002.
+
+\bibitem{ali1990data}
+Agha~Iqbal Ali.
+\newblock Data envelopment analysis: computational issues.
+\newblock {\em Computers, Environment and Urban Systems}, 14(2):157--165, 1990.
+
+\bibitem{ali1993streamlined}
+Agha~Iqbal Ali.
+\newblock Streamlined computation for data envelopment analysis.
+\newblock {\em European journal of operational research}, 64(1):61--67, 1993.
+
+\bibitem{barr1997parallel}
+Richard~S Barr and Matthew~L Durchholz.
+\newblock Parallel and hierarchical decomposition approaches for solving
+  large-scale data envelopment analysis models.
+\newblock {\em Annals of Operations Research}, 73:339--372, 1997.
+
+\bibitem{chen2009procedure}
+Wen-Chih Chen and Wei-Jen Cho.
+\newblock A procedure for large-scale dea computations.
+\newblock {\em Computers \& Operations Research}, 36(6):1813--1824, 2009.
+
+\bibitem{emrouznejad2009combined}
+Ali Emrouznejad and Estelle Shale.
+\newblock A combined neural network and dea for measuring efficiency of large
+  scale datasets.
+\newblock {\em Computers \& Industrial Engineering}, 56(1):249--254, 2009.
+
+\bibitem{tosun2012using}
+Omur Tosun.
+\newblock Using data envelopment analysis--neural network model to evaluate
+  hospital efficiency.
+\newblock {\em International Journal of Productivity and Quality Management},
+  9(2):245--257, 2012.
+
+\bibitem{bougnol2012interior}
+ML~Bougnol, JH~Dul{\'a}, and P~Rouse.
+\newblock Interior point methods in dea to determine non-zero multiplier
+  weights.
+\newblock {\em Computers \& Operations Research}, 39(3):698--708, 2012.
+
+\bibitem{cooper2011handbook}
+W.W. Cooper, L.M. Seiford, and J.~Zhu.
+\newblock {\em Handbook on data envelopment analysis}.
+\newblock Springer, 2011.
+
+\bibitem{troutt1996potential}
+MD~Troutt, A.~Rai, and A.~Zhang.
+\newblock The potential use of dea for credit applicant acceptance systems.
+\newblock {\em Computers \& operations research}, 23(4):405--408, 1996.
+
+\bibitem{seiford1998acceptance}
+L.M. Seiford and J.~Zhu.
+\newblock An acceptance system decision rule with data envelopment analysis.
+\newblock {\em Computers \& operations research}, 25(4):329--332, 1998.
+
+\bibitem{athanassopoulos1996comparison}
+Antreas~D Athanassopoulos and Stephen~P Curram.
+\newblock A comparison of data envelopment analysis and artificial neural
+  networks as tools for assessing the efficiency of decision making units.
+\newblock {\em Journal of the Operational Research Society}, pages 1000--1016,
+  1996.
+
+\bibitem{pendharkar2011hybrid}
+P.C. Pendharkar.
+\newblock A hybrid radial basis function and data envelopment analysis neural
+  network for classification.
+\newblock {\em Computers \& Operations Research}, 38(1):256--266, 2011.
+
+\bibitem{yan2011dea}
+H.~Yan and Q.~Wei.
+\newblock Data envelopment analysis classification machine.
+\newblock {\em Information Sciences}, 181(22):5029--5041, 2011.
+
+\bibitem{sohn2001ensemble}
+So~Young Sohn and Hong Choi.
+\newblock Ensemble based on data envelopment analysis.
+\newblock In {\em ECML Meta Learning workshop}, volume~53, 2001.
+
+\bibitem{zheng2007constructing}
+Zhiqiang Zheng and Balaji Padmanabhan.
+\newblock Constructing ensembles from data envelopment analysis.
+\newblock {\em INFORMS Journal on Computing}, 19(4):486--496, 2007.
+
+\bibitem{song2009oil}
+Jiekun Song and Zaixu Zhang.
+\newblock Oil refining enterprise performance evaluation based on dea and svm.
+\newblock In {\em Knowledge Discovery and Data Mining, 2009. WKDD 2009. Second
+  International Workshop on}, pages 401--404. IEEE, 2009.
+
+\bibitem{bazleh2011new}
+A~Bazleh, P~Gholami, and F~Soleymani.
+\newblock A new approach using data envelopment analysis for ranking
+  classification algorithms.
+\newblock {\em Journal of Mathematics and Statistics}, 7, 2011.
+
+\bibitem{eftekhary2012ranking}
+Maysam Eftekhary, Peyman Gholami, Saeed Safari, and Mohammad Shojaee.
+\newblock Ranking normalization methods for improving the accuracy of svm
+  algorithm by dea method.
+\newblock {\em Modern Applied Science}, 6(10):p26, 2012.
+
+\bibitem{jiang2013supplier}
+Bo~Jiang, Wei Chen, Hua Zhang, and Weifeng Pan.
+\newblock Supplier’s efficiency and performance evaluation using dea-svm
+  approach.
+\newblock {\em Journal of Software}, 8(1):25--30, 2013.
+
+\bibitem{rezaie2013integrated}
+V~Rezaie, T~Ahmad, C~Daneshfard, M~Khanmohammadi, and S~Nejatian.
+\newblock An integrated modeling based on data envelopment analysis and support
+  vector machines: A case modeling of tehran social security insurance
+  organization.
+\newblock {\em World Applied Sciences Journal}, 21:138--142, 2013.
+
+\bibitem{po2009cluster}
+R.W. Po, Y.Y. Guh, and M.S. Yang.
+\newblock A new clustering approach using data envelopment analysis.
+\newblock {\em European Journal of Operational Research}, 199(1):276--284,
+  2009.
+
+\bibitem{toloo2009discover}
+M.~Toloo, B.~Sohrabi, and S.~Nalchigar.
+\newblock A new method for ranking discovered rules from data mining by dea.
+\newblock {\em Expert Systems with Applications}, 36(4):8503--8508, 2009.
+
+\bibitem{roll1991controlling}
+Yaakov Roll, Wade~D Cook, and Boaz Golany.
+\newblock Controlling factor weights in data envelopment analysis.
+\newblock {\em IIE transactions}, 23(1):2--9, 1991.
+
+\bibitem{cook1991multiple}
+Wade~D Cook and Moshe Kress.
+\newblock A multiple criteria decision model with ordinal preference data.
+\newblock {\em European Journal of Operational Research}, 54(2):191--198, 1991.
+
+\bibitem{cook1992prioritization}
+Wade~D Cook, Moshe Kress, and Lawrence~M Seiford.
+\newblock Prioritization models for frontier decision making units in dea.
+\newblock {\em European Journal of Operational Research}, 59(2):319--323, 1992.
+
+\bibitem{andersen1993procedure}
+Per Andersen and Niels~Christian Petersen.
+\newblock A procedure for ranking efficient units in data envelopment analysis.
+\newblock {\em Management science}, 39(10):1261--1264, 1993.
+
+\bibitem{ganley1992public}
+Joseph~Augustine Ganley and John~S Cubbin.
+\newblock {\em Public sector efficiency measurement: Applications of data
+  envelopment analysis}.
+\newblock Elsevier Science Inc., 1992.
+
+\bibitem{doyle1994efficiency}
+John Doyle and Rodney Green.
+\newblock Efficiency and cross-efficiency in dea: Derivations, meanings and
+  uses.
+\newblock {\em Journal of the operational research society}, pages 567--578,
+  1994.
+
+\bibitem{sinuany1994academic}
+Zilla Sinuany-Stern, Abraham Mehrez, and Arieh Barboy.
+\newblock Academic departments efficiency via dea.
+\newblock {\em Computers \& Operations Research}, 21(5):543--556, 1994.
+
+\bibitem{cooper1997measures}
+William~W Cooper and Kaoru Tone.
+\newblock Measures of inefficiency in data envelopment analysis and stochastic
+  frontier estimation.
+\newblock {\em European Journal of Operational Research}, 99(1):72--88, 1997.
+
+\bibitem{liu2008rankingdea}
+Fuh-Hwa~Franklin Liu and Hao Hsuan~Peng.
+\newblock Ranking of units on the dea frontier with common weights.
+\newblock {\em Computers \& operations research}, 35(5):1624--1637, 2008.
+
+\bibitem{adler2002review}
+Nicole Adler, Lea Friedman, and Zilla Sinuany-Stern.
+\newblock Review of ranking methods in the data envelopment analysis context.
+\newblock {\em European Journal of Operational Research}, 140(2):249--265,
+  2002.
+
+\bibitem{rita2011ranking}
+Rita Markovits-Somogyi.
+\newblock Ranking efficient and inefficient decision making units in data
+  envelopment analysis.
+\newblock {\em International Journal for Traffic \& Transport Engineering},
+  1(4):245--255, 2011.
+
+\bibitem{sexton1986data}
+Thomas~R Sexton, Richard~H Silkman, and Andrew~J Hogan.
+\newblock Data envelopment analysis: Critique and extensions.
+\newblock {\em New Directions for Program Evaluation}, 1986(32):73--105, 1986.
+
+\bibitem{jahanshahloo2005note}
+GR~Jahanshahloo, A~Memariani, F~Hosseinzadeh Lotfi, and HZ~Rezai.
+\newblock A note on some of dea models and finding efficiency and complete
+  ranking using common set of weights.
+\newblock {\em Applied Mathematics and Computation}, 166(2):265--281, 2005.
+
+\bibitem{de2008cross}
+Jo{\~a}o Carlos Correia Baptista~Soares De~Mello, Eliane~Gon{\c{c}}alves Gomes,
+  Lidia~Angulo Meza, and Luiz~Biondi Neto.
+\newblock Cross evaluation using weight restrictions in unitary input dea
+  models: theoretical aspects and application to olympic games ranking.
+\newblock {\em WSEAS Transactions on Systems}, 7(1):31--39, 2008.
+
+\bibitem{de2009ranking}
+Jo{\~a}o Carlos CB~Soares De~Mello, Lidia Angulo-Meza, and Brenda P~Branco
+  Da~Silva.
+\newblock A ranking for the olympic games with unitary input dea models.
+\newblock {\em IMA Journal of Management Mathematics}, 20(2):201--211, 2009.
+
+\bibitem{wu2009achievement}
+Jie Wu, Liang Liang, and Feng Yang.
+\newblock Achievement and benchmarking of countries at the summer olympics
+  using cross efficiency evaluation method.
+\newblock {\em European Journal of Operational Research}, 197(2):722--730,
+  2009.
+
+\bibitem{banker1988relative}
+RD~Banker and JL~Gifford.
+\newblock A relative efficiency model for the evaluation of public health nurse
+  productivity.
+\newblock {\em Mellon University Mimeo, Carnegie}, 1988.
+
+\bibitem{lovell2003equivalent}
+CAK Lovell and APB Rouse.
+\newblock Equivalent standard dea models to provide super-efficiency scores.
+\newblock {\em Journal of the Operational Research Society}, 54(1):101--108,
+  2003.
+
+\bibitem{cook1990dea}
+Wade~D Cook, Yaakov Roll, and Alex Kazakov.
+\newblock A dea model for measuring the relative efficiency of highway
+  maintenance patrols.
+\newblock {\em Infor}, 28(2):113--124, 1990.
+
+\bibitem{cook2007within}
+Wade~D Cook and Joe Zhu.
+\newblock Within-group common weights in dea: an analysis of power plant
+  efficiency.
+\newblock {\em European Journal of Operational Research}, 178(1):207--216,
+  2007.
+
+\bibitem{liu2008ranking}
+Fuh-Hwa~Franklin Liu and Hao Hsuan~Peng.
+\newblock Ranking of units on the dea frontier with common weights.
+\newblock {\em Computers \& operations research}, 35(5):1624--1637, 2008.
+
+\bibitem{payan2011modified}
+A~Payan, F~Hosseinzadeh Lotfi, AA~Noora, and M~Khodabakhshi.
+\newblock A modified common set of weights method to complete ranking dmus.
+\newblock {\em interpretation}, 1:1, 2011.
+
+\bibitem{li2000ranking}
+李果, 沈晓勇, and 王应明.
+\newblock 对决策单元进行排序的一种方法.
+\newblock {\em 预测}, 19(4):51--53, 2000.
+
+\bibitem{sinuany1998dea}
+Zilla Sinuany-Stern and Lea Friedman.
+\newblock Dea and the discriminant analysis of ratios for ranking units.
+\newblock {\em European Journal of Operational Research}, 111(3):470--478,
+  1998.
+
+\bibitem{tavares2001atchebycheff}
+Gabriel Tavares and Carlos~Henggeler Antunes.
+\newblock A tchebycheff dea model.
+\newblock Technical Report RRR35-2001, Rutgers Center for Operational Research,
+  Rutgers University, 2001.
+
+\bibitem{rezai2012ranking}
+F~Rezai~Balf, H~Zhiani~Rezai, GR~Jahanshahloo, and F~Hosseinzadeh~Lotfi.
+\newblock Ranking efficient dmus using the tchebycheff norm.
+\newblock {\em Applied Mathematical Modelling}, 36(1):46--56, 2012.
+
+\bibitem{zhu1998data}
+Joe Zhu.
+\newblock Data envelopment analysis vs. principal component analysis: An
+  illustrative study of economic performance of chinese cities.
+\newblock {\em European Journal of Operational Research}, 111(1):50--61, 1998.
+
+\bibitem{premachandra2001note}
+I~M Premachandra.
+\newblock A note on dea vs principal component analysis: An improvement to joe
+  zhu's approach.
+\newblock {\em European Journal of Operational Research}, 132(3):553--560,
+  2001.
+
+\bibitem{saaty2007analytic}
+Thomas~L Saaty, Kirti Peniwati, and Jen~S Shang.
+\newblock The analytic hierarchy process and human resource allocation: Half
+  the story.
+\newblock {\em Mathematical and Computer Modelling}, 46(7):1041--1053, 2007.
+
+\bibitem{saaty1998diagnosis}
+Thomas~L Saaty and Luis~G Vargas.
+\newblock Diagnosis with dependent symptoms: Bayes theorem and the analytic
+  hierarchy process.
+\newblock {\em Operations Research}, 46(4):491--502, 1998.
+
+\bibitem{ercsan2012use}
+{\.I}brahim Er{\c{s}}an and Ali Haydar.
+\newblock The use of analytic hierarchy process for prediction.
+\newblock {\em Academic Research International}, 2(3):138--141, 2012.
+
+\bibitem{saaty2003decision}
+Thomas~L Saaty.
+\newblock Decision-making with the ahp: Why is the principal eigenvector
+  necessary.
+\newblock {\em European journal of operational research}, 145(1):85--91, 2003.
+
+\bibitem{alexander1977forward}
+Joyce~M Alexander and Thomas~L Saaty.
+\newblock The forward and backward processes of conflict analysis.
+\newblock {\em Behavioral Science}, 22(2):87--98, 1977.
+
+\bibitem{xu1988ahp}
+许树柏.
+\newblock 实用决策方法: 层次分析法原理, 1988.
+
+\bibitem{de2010search}
+Arijit De, Elizabeth Diaz, and Vijay~V Raghavan.
+\newblock Search engine result aggregation using analytical hierarchy process.
+\newblock In {\em Web Intelligence and Intelligent Agent Technology (WI-IAT),
+  2010 IEEE/WIC/ACM International Conference on}, volume~3, pages 300--303.
+  IEEE, 2010.
+
+\bibitem{guo2012personalized}
+Yuhong Guo, Li~Kang, and Tie Shi.
+\newblock Personalized tweet ranking based on ahp: A case study of
+  micro-blogging message ranking in t. sina.
+\newblock In {\em Proceedings of the The 2012 IEEE/WIC/ACM International Joint
+  Conferences on Web Intelligence and Intelligent Agent Technology-Volume 03},
+  pages 159--163. IEEE Computer Society, 2012.
+
+\bibitem{benayoun1966manual}
+R~Benayoun, B~Roy, and N~Sussman.
+\newblock Manual de reference du programme electre.
+\newblock {\em Note de Synthese et Formation}, 25, 1966.
+
+\bibitem{hwang1981multiple}
+Ching-Lai Hwang and Kwangsun Yoon.
+\newblock {\em Multiple attribute decision making}.
+\newblock Springer, 1981.
+
+\bibitem{roy1971methode}
+Berthier Roy and Patrice Bertier.
+\newblock La m{\'e}thode electre ii: une m{\'e}thode de classement en
+  pr{\'e}dence de crit{\`e}res multiples.
+\newblock {\em Note de Travail}, 142, 1971.
+
+\bibitem{bertier1973methode}
+P~Bertier and B~Roy.
+\newblock La methode electre ii, une application au media-planning.
+\newblock In {\em Communication presentee a la Sixieme Conference
+  Internationale de Recherche Operationnelle}, 1973.
+
+\bibitem{roy1978electre}
+Bernard Roy.
+\newblock Electre iii: Un algorithme de classements fond{\'e} sur une
+  repr{\'e}sentation floue des pr{\'e}f{\'e}rences en pr{\'e}sence de criteres
+  multiples.
+\newblock {\em Cahiers du CERO}, 20(1):3--24, 1978.
+
+\bibitem{mareschal1984promethee}
+Bertrand Mareschal, Jean~Pierre Brans, and Philippe Vincke.
+\newblock Promethee: A new family of outranking methods in multicriteria
+  analysis.
+\newblock {\em Operational Research}, pages 408--421, 1984.
+
+\bibitem{brans1985note}
+Jean-Pierre Brans and Ph~Vincke.
+\newblock A preference ranking organisation method:(the promethee method for
+  multiple criteria decision-making).
+\newblock {\em Management science}, 31(6):647--656, 1985.
+
+\bibitem{brans1986select}
+Jean-Pierre Brans, Ph~Vincke, and Bertrand Mareschal.
+\newblock How to select and how to rank projects: The promethee method.
+\newblock {\em European journal of operational research}, 24(2):228--238, 1986.
+
+\bibitem{brans2005promethee}
+Jean-Pierre Brans and Bertrand Mareschal.
+\newblock Promethee methods.
+\newblock In {\em Multiple criteria decision analysis: state of the art
+  surveys}, pages 163--186. Springer, 2005.
+
+\bibitem{mareschal1988geometrical}
+Bertrand Mareschal and Jean-Pierre Brans.
+\newblock Geometrical representations for mcda.
+\newblock {\em European Journal of Operational Research}, 34(1):69--77, 1988.
+
+\end{thebibliography}

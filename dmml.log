@@ -1,0 +1,17 @@
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xetex 2016.5.28)  6 APR 2017 00:32
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**dmml.tex
+(./dmml.tex
+./dmml.tex:1: Undefined control sequence.
+l.1 \part
+         {数据挖掘与机器学习}
+? 
+./dmml.tex:1: Emergency stop.
+l.1 \part
+         {数据挖掘与机器学习}
+End of file on the terminal!
+
+No pages of output.

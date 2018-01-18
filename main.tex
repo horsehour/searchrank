@@ -1,0 +1,242 @@
+\documentclass[a4paper,twoside,hyperref]{ctexbook}
+\usepackage[top=1.25in, left=1.0in, right=1.0in]{geometry}
+
+%%% specific font
+\usepackage{fontspec}
+%\setmainfont{Garamond}
+%\setmainfont{Hoefler Text}
+%\setsansfont{Arial}
+%\setmonofont{Courier New}
+%\usepackage{xeCJK}
+%\setCJKmainfont{gkaiu}
+%\setCJKsansfont{KaiTi}
+%\setCJKmonofont{STFangsong}
+
+%\usepackage[indentfirst]{xeCJK}
+%\setCJKmainfont[BoldFont=SimHei,ItalicFont=KaiTi]{SimSun}
+%\setCJKsansfont{KaiTi}%cwkai
+%\setCJKmonofont{STFangsong}
+
+\usepackage{kpfonts}
+%\renewcommand{\familydefault}{pplj}
+
+\usepackage{amsmath,amsthm,mathrsfs,amsfonts,amssymb,bm}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{extarrows}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{bbding}
+\usepackage{framed}
+\usepackage{fancyhdr}
+%\usepackage{hyperref}
+\usepackage{color}
+
+% color
+\definecolor{marron}{RGB}{60,30,10}
+\definecolor{darkblue}{RGB}{0,0,80}
+\definecolor{lightblue}{RGB}{80,80,80}
+\definecolor{darkgreen}{RGB}{0,80,0}
+\definecolor{darkgray}{RGB}{0,80,0}
+\definecolor{darkred}{RGB}{80,0,0}
+\definecolor{shadecolor}{rgb}{0.97,0.97,0.97}
+
+\usepackage{titlesec}
+\ctexset{part/number = {\chinese{part}}}
+%\titleformat{\chapter}{\Huge \bfseries \center \color{darkred}}{\Huge \thechapter.}{1em}{}
+\titleformat{\section}{\Large \bfseries \centering \color{darkred}}{\Large \thesection}{1em}{}
+\titleformat{\subsection}{\bfseries \color{darkred}}{\thesubsection.}{1em}{}
+\titleformat{\subsubsection}{\bfseries \color{darkgreen}}{\thesubsubsection}{1em}{}
+
+%\hypersetup{colorlinks,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\usepackage{fourier-orns}
+\newcommand{\ornamento}{\vspace{2em}\noindent \textcolor{darkgray}{\hrulefill~ \raisebox{-2.5pt}[10pt][10pt]{\leafright \decofourleft \decothreeleft  \aldineright \decotwo \floweroneleft \decoone  \floweroneright \decotwo \aldineleft\decothreeright \decofourright \leafleft} ~  \hrulefill \\ }}
+\newcommand{\ornpar}{\noindent \textcolor{darkgray}{\hrulefill \raisebox{-1.9pt}[10pt][10pt]{\leafright \decofourleft \decothreeleft  \aldineright \decotwo \floweroneleft \decoone}}}
+\newcommand{\ornimpar}{\textcolor{darkgray}{\raisebox{-1.9pt}[10pt][10pt]{\decoone \floweroneright \decotwo \aldineleft \decothreeright \decofourright \leafleft} \hrulefill}}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{\baselineskip}% paragraph space
+\setlength{\parindent}{0pt}
+
+\usepackage[perpage]{footmisc}  %re-mark footnote per page
+\renewcommand{\footnoterule}{\parindent 0pt \color{marron} \linethickness{.3em} \line(1,0){80} \vspace{.6em}}
+
+\usepackage{scrextend}
+\deffootnote[1.8em]{0pt}{1.6em}{\makebox[1.8em][l]{\thefootnotemark \space}}
+\usepackage{pifont}
+\renewcommand{\thefootnote}{\ding{\numexpr 201 + \value{footnote}}}
+
+%\usepackage{algpseudocode,algorithm,algorithmicx}
+%\newcommand*\Let[2]{\State #1 $\gets$ #2}
+%\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+%\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\usepackage{algorithm,algorithmic}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\renewcommand{\thesubsubsection}{\Roman{subsubsection}.}
+
+\makeatletter
+\def\headrule{{\color{darkgray}\hrulefill \raisebox{-2.1pt}[10pt][10pt]{~~~\decofourleft \decotwo\decofourright~~~} \hrulefill}}
+\makeatother
+
+% setting for head and foot
+\fancyhf{}%remove all previous settings on foot and head
+\setlength{\headheight}{23pt}
+\newcommand{\estcab}[1]{\textcolor{marron}{\nouppercase #1}}
+\fancyhead[LE]{\estcab{\small \textbf{搜索与排名}}}
+\fancyhead[RE]{\estcab{\small \textbf{Searching and Ranking}}}
+\fancyhead[RO]{\estcab{\rightmark}}
+%\fancyhead[LO]{\estcab{\leftmark}}
+\fancyfoot[CO,CE]
+{\ornimpar ~~~ \bf \textcolor{darkgray}{\small \thepage} ~~~ \ornpar}%\leafNE,\reflectbox{\leafNE}
+\pagestyle{fancy}
+
+\renewcommand{\emptyset}{\varnothing}
+\DeclareMathOperator{\ind}{[\![]\!]}%indictor function
+\DeclareMathOperator*{\argmax}{\mathrm{\arg\!\max}}
+\DeclareMathOperator*{\argmin}{\mathrm{\arg\!\min}}
+\DeclareMathOperator*{\arginf}{\mathrm{\arg\!\inf}}
+\DeclareMathOperator*{\argsup}{\mathrm{\arg\!\sup}}
+\DeclareMathOperator{\sgn}{\mathrm{sgn}}
+\DeclareMathOperator{\complex}{\mathrm{O}}
+\DeclareMathOperator{\diag}{\mathrm{diag}}
+\DeclareMathOperator{\prob}{\mathrm{Pr}}
+\DeclareMathOperator{\var}{\mathrm{var}}
+\DeclareMathOperator{\corr}{\mathrm{corr}}
+\DeclareMathOperator{\cov}{\mathrm{cov}}
+\DeclareMathOperator{\rand}{\mathrm{rand}}
+\DeclareMathOperator{\vect}{\textit{vec}}
+\DeclareMathOperator{\rank}{\textit{rank}}
+\DeclareMathOperator{\tr}{\textit{tr}}
+
+\newtheorem{theorem}{\hspace{0em}定理}[chapter]
+\newtheorem{lemma}{\hspace{0em}引理}[chapter]
+%\newtheorem{algorithm}{\hspace{0em}算法}[chapter]
+\newtheorem{definition}{\hspace{0em}定义}[chapter]
+\newtheorem{axiom}{\hspace{0em}公理}[chapter]
+\newtheorem{property}{\hspace{0em}性质}[chapter]
+\newtheorem{proposition}{\hspace{0em}命题}[chapter]
+\newtheorem{corollary}{\hspace{0em}推论}[chapter]
+\newtheorem{condition}{\hspace{0em}条件}[chapter]
+\newtheorem{conclusion}{\hspace{0em}结论}[chapter]
+\newtheorem{assumption}{\hspace{0em}假设}[chapter]
+\newtheorem{remark}{\hspace{0em}注解}[chapter]
+\newtheorem{example}{\hspace{0em}例}[chapter]
+
+% proof environment
+\def\QEDDisk{\mbox{\color{darkred}{\rule[0pt]{1.3ex}{1.3ex}}}} %disk
+\def\proof{\noindent\bf{证明：}}
+\def\endproof{\hspace*{\fill}~\QEDDisk\par\endtrivlist}
+
+\def\solu{\noindent \bf{解} }
+\def\endsolu{\hspace*{\fill}~\QEDDisk\par\endtrivlist}
+
+\setcounter{secnumdepth}{3} % Number subsubsections in the chapters
+\setcounter{tocdepth}{2}% Put subsections in the table of contents
+
+\title{\color{darkred} \huge {搜索与排名 \\ Searching and Ranking}}
+\author{\color{darkblue} \textbf{Chunheng Jiang \# HorseHour}}
+% jiangchunheng@gmail.com, jiangc4@rpi.edu
+\date{}
+
+\begin{document}
+\maketitle
+
+排名存在于人类社会生活的各个角落，也是不同学科领域研究人员籍以解决各类实际问题的一个重要工具，排名问题从古至今始终都是人类发展历程中一个不可或缺的认知领域。现代人已经习惯于在虚拟的网络世界徜徉，通过敲击键盘、点击鼠标、分享互动构筑一个崭新的数字时代。当海量数据将信息贫乏的年代埋葬之时，也淹没了人们惯常的汲取知识的道路，长于信息检索和排名的搜索引擎已然成为现代人们检索查询信息的一个主要工具。它通过分析网络链接结构、文本语义、用户交互行为，建立一套成熟的网页排名系统，根据用户提交的查询词，检索庞大的数据存储系统，根据相关程度对网页进行排名和展示。民主社会的人们通过投票选举制度评选潜在候选人，排名系统的公平性决定了民主决策的效力，确保其在维护多数人利益的方向上不偏不倚。社会选择的标准对于不同国家存在迥然各异的解读，也就造就全球各国存在明显差异性的选举制度。
+
+排名的形式出奇地简单，其表现能力却惊人地丰富多彩，并显性地或隐形地影响人们的决策行为。比如，世界经济排名靠前的国家，其经济政策的制定就会对世界经济的走向产生直接影响，它可以部分解释国际投资对其经济政策变化的紧追不舍。科学文献引用量是衡量学术期刊等级、研究学者学术贡献大小的重要指标，甚至成为个人就业升迁的主要制约。一个稳居体育运动排行榜首的明星运动员，其商业价值自然可能明显高于排名靠后的其他运动员。高校排名是学生择校时的一个重要参考指标，也间接地为名校申请的竞争激烈贡献了一部分力量。兹文档辑总信息检索、机器学习、社会选择、推荐系统、统计学习、多目标决策等领域业界公认的经典排名算法，从数学和统计的角度解释其内在机理，构建一个跨领域的排名算法系统。
+
+\tableofcontents
+\listoftables
+\listoffigures
+
+% ===== Main =====
+\include{ir}%---------------information retrieval
+\include{rank}%-------------ranking theory
+\include{dmml}%-------------data mining & machine learning
+\include{l2r}%--------------learning to rank
+\include{metric}%-----------metrics
+\include{math}%-------------mathematics (optimisation, matrix, graph)
+\include{stat}%-------------statistics
+\include{mcda}%-------------multi-criteria decision analysis
+
+%\include{postal}%-----------postal sites selection problem
+%\include{opensource}%-------open source toolkit
+%\include{meeting}%----------international meeting
+%\include{socialnet}%--------social network
+%\include{searching}%--------search engine
+%\include{datastruct}%-------data structure
+%\include{celebrity}%--------celebrity introduction
+%\include{complexity}%-------complexity system
+
+% ===== Reference =====
+% \bibliographystyle{plain}
+% \bibliographystyle{alpha} % YN,05
+% \bibliographystyle{apalike} %Jiang et. al, 2013
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
+
+%\begin{figure}[ht]
+%  \centering
+%  \includegraphics[width=0.6\textwidth, height=8cm]{figures/Karmarkar.eps}\\
+%  \caption{-}\label{fig:karmarkar}
+%\end{figure}
+
+%\begin{figure}[ht]
+%    \begin{minipage}[t]{0.5\linewidth}
+%        \centering
+%          \includegraphics[width=0.95\textwidth,height=8cm]{figures/cayleydist}
+%          \caption{-}\label{fig:cayleydist}
+%    \end{minipage}
+%    \begin{minipage}[t]{0.5\linewidth}
+%        \centering
+%          \includegraphics[width=0.95\textwidth,height=8cm]{figures/ulamdist}
+%          \caption{-}\label{fig:ulamdist}
+%    \end{minipage}
+%\end{figure}
+
+%\begin{table}[ht]
+%    \centering
+%    \begin{tabular}{|c|c|c|}
+%      \hline
+%       & $V+$ & $V-$ \\
+%      \hline
+%      $U+$ & $k11$ & $k12$ \\
+%      \hline
+%      $U-$ & $k21$ & $k22$ \\
+%      \hline
+%    \end{tabular}
+%    \caption{-}
+%    \label{tbl:llr}
+%\end{table}
+
+%\footnote{\includegraphics[width=1.5mm]{figures/university/ucl.eps}~~~\href{http://www.ucl.ac.uk/}{University London College}, 1826}
+
+%\mathscr P 花体
+% shift + enter -- 命令提示
+
+%\begin{algorithm}
+%  \caption{Counting mismatches between two packed strings
+%  \label{alg:packed-dna-hamming}}
+%  \begin{algorithmic}[1]
+%    \Require{$x$ and $y$ are packed strings of equal length $n$}
+%    \Function{Distance}{$x, y$}
+%	  \State $z$ $\gets$ $x \oplus y$
+%%      \Let{$z$}{$x \oplus y$} \Comment{$\oplus$: bitwise exclusive-or}
+% %     \Let{$\delta$}{$0$}
+%      \For{$i \gets 1 \textrm{ to } n$}
+%        \If{$z_i \neq 0$}
+%          \State $\delta$ $\gets$ $\delta + 1$
+%%          \Let{$\delta$}{$\delta + 1$}
+%        \EndIf
+%      \EndFor
+%      \State \Return{$\delta$}
+%    \EndFunction
+%  \end{algorithmic}
+%\end{algorithm}
+

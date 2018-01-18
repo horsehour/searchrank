@@ -1,0 +1,689 @@
+\part{决策分析}
+\chapter{数据包络分析}
+
+\ornamento
+\section{引言}
+效率（绩效）评价在现实生活中是一项常见并且重要的工作。但是，当被评价系统存在多输入和多输出指标时，绩效评价工作则变得非常困难，尤其当输入和输出指标之间存在复杂的甚至是未知关系时，评价工作将更加难以进行。数据包络分析（Data Envelopment Analysis，DEA）作为处理多输入多输出系统评价问题的一种有效的非参数效率评价方法，在组织相对效率评价和组织改进投入产出效率方面越来越受到重视。
+
+DEA方法是由Abraham Charnes、William Cooper和Edwardo Rhodes\cite{charnes1978dea}基于“相对效率”（Relative Efficiency）概念发展而来的，常用于评价多输入-多输出类型决策单元（Decision Making Unit, DMU），如医院、银行、政府部门、生产供应商等企事业单位的生产或服务的相对效率。在数据包络分析框架下，相对效率定义为“加权输出总量与加权输入总量的比值”。
+
+假设有$n$个性质完全相同的生产厂商，都是使用原材料$A$生产出产品$B$，各厂商的生产状况如下表：
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|c|c|}
+  \hline
+  DMU & A & B \\
+  \hline
+  $1$ & $x_1$ & $y_1$ \\
+  $2$ & $x_2$ & $y_2$ \\
+  \ldots & \ldots& \ldots \\
+  $n$ & $x_n$ & $y_n$ \\
+  \hline
+\end{tabular}
+\end{table}
+
+如果需要评价各个厂商的生产效率，就需要一个标准的定量指标。对于单投入-单产出的生产问题，最简单的评价指标莫过于原材料利用率：单位原材料能够产出的产品数量，那么，对于$\mathrm{DMU}_i$，其原材料利用率$e_i = y_i/x_i$，则原材料利用率越高的厂商可以认定其生产效率越高。
+
+然而，原材料利用率忽略了投入-产出价格因素的影响，皆假设“各个厂商以相同的价格购买原材料，产品的定价也是相同的”。实际上，如果从投入-产出的价值（考虑了价格因素，以金钱作为度量单位）角度出发，评价结果不会有任何变化。
+
+在实际生产过程中，单投入-单产出的生产情形几乎不存在，比较常见的利用多用原材料生产多种产品，即多投入-多产出问题。假设存在$n$个同种类型的决策单元，每个决策单元有$m$个输入量$x_{ik},i=1,\ldots,m$，$s$个输出量$y_{rk},r=1,\ldots,s$。
+
+\begin{table}[htbp]\label{tbl:dmu}\caption{决策单元的输入输出}\vskip 2mm
+\centering
+\begin{tabular}{|c|c|c|c|c||c|c|c|c|}
+  \hline
+  DMU & $I_1$ & $I_2$ & \ldots & $I_s$ & $O_1$ & $O_2$ & \ldots & $O_m$\\
+  \hline
+  $1$ & $x_{11}$ & $x_{12}$ & \ldots & $x_{1s}$ &$y_{11}$ & $y_{12}$ & \ldots & $y_{1m}$\\
+  $2$ & $x_{21}$ & $x_{22}$ & \ldots & $x_{2s}$ & $y_{21}$ & $y_{22}$ & \ldots & $y_{2m}$\\
+  \ldots & \ldots & \ldots & \ldots & \ldots & \ldots & \ldots & \ldots & \ldots\\
+  $n$ & $x_{n1}$ & $x_{n2}$ & \ldots & $x_{ns}$ & $y_{n1}$ & $y_{n2}$ & \ldots & $y_{nm}$\\
+  \hline
+\end{tabular}
+\end{table}
+每个DMU使用$s$种原材料$I_1,I_2,\ldots, I_s$生产$m$种产品$O_1,O_2,\ldots,O_m$。
+
+从经济学角度来看，各个决策单元对输入原料的利用率千差万别，要衡量DMU使用原料生产产品（输出）的效率，数据包络分析为任意决策单元$\mathrm{DMU}_k$ 定义如下形式的相对效率指标：
+\begin{equation}\label{eq:relativeefficient}
+  e_k = \frac{u^T y_k}{w^T x_k}
+\end{equation}
+其中，$u\in \mathbb{R}^s$表示输入权值向量，$w\in \mathbb{R}^m$表示输出权值向量。此外，假设所有生产厂商的相对效率值均小于1，则经典的CCR模型可以表示成如下形式的线性规划问题：
+\begin{equation}\label{eq:fracccr}
+\begin{array}{ll}
+  \max\limits_{w, u} & \dfrac{u^Ty_k}{w^Tx_k}\\
+  \textit{s.t.} &\dfrac{u^Ty_j}{w^Tx_j}\leq 1, j=1,2,\dots,n\\
+   & w\geq 0, u\geq 0
+\end{array}
+\end{equation}
+
+从以上模型可以发现，每个决策单元实际上都是从自身角度出发，倾向于选择于自己最有利的输入- 输出“价格”（$w,u$）\cite{kao2005dea}。同时，模型对应的最优权值也反映出目标决策单元$\mathrm{DMU}_k$对输入-输出的某种评价。
+
+由于计算分式规划问题比较复杂，引入Charnes-Cooper变换，
+\footnote{令$t=1/w^Tx_k$，$\nu=tw$，$\mu=tu$，则有$u^Ty_k/w^Tx_k=\mu^Ty_k/\nu^Tx_k$，$\nu^Tx_k=tw^Tx_k=1$。}
+得到如下形式的线性规划模型：
+\begin{equation}\label{eq:ccr}
+\begin{array}{lllll}
+  \max\limits_{\mu,\nu} & \mu^Ty_k & & \min\limits_{\mu,\nu} & \nu^T x_k\\
+  \textit{s.t.} & \mu^Ty_j -\nu^Tx_j \le 0, j=1,2,\dots,n & & \textit{s.t.} & \mu^Ty_j -\nu^Tx_j \le 0, j=1,2,\dots,n \\
+   & \nu^Tx_k = 1 & & & \mu^T y_k = 1\\
+   & \nu\geq 0, \mu\geq 0 & & & \nu\geq 0, \mu\geq 0
+\end{array}
+\end{equation}
+前者为输入型CCR模型，后者为输出型CCR模型。
+\footnote{DEA模型根据目标函数的不同，可以分成两类：投入型（Input-Oriented）和产出型（Output-Oriented）。产出型DEA模型是在给定投入生产要素下最大化生产产出，而投入型是在给定产出水品下最小化投入成本。}
+
+在评价决策单元是否为DEA有效时，需要判断是否存在最优解$\nu^{*},\mu^{*}$，满足
+\begin{equation}
+  \nu^{*} >0, \mu^{*} >0, \mu^{*T}y_k = 1(\nu^{*T}x_k = 1)
+\end{equation}
+
+从计算的角度分析，单纯形法（Simplex Method）就可以有效地求解CCR模型\cite{cooper2011data}，由于DMU的个数通常远大于用于决策的特征属性（输入-输出）的数目，使用对偶模型对提升求解性能大有裨益。根据线性规划中的对偶理论（Duality Theory），乘法形式（Multiplier Form）的CCR模型等价对偶形式，也称包络形式（Envelopment Form）如下所示：
+\begin{equation}\label{eq:dualccr}
+\begin{array}{lllll}
+  \textit{min} & \theta & & \textit{max} & \theta\\
+  \textit{s.t.} &  \sum\limits_{i = 1}^n \lambda_i x_i \le \theta x_k & & \textit{s.t.} & \sum\limits_{i = 1}^n \lambda_i x_i \le x_k\\
+   & \sum\limits_{i = 1}^n \lambda_i y_i \ge y_k & & & \sum\limits_{i = 1}^n \lambda_i y_i \ge \theta y_k\\
+   & \lambda_i \ge 0, i = 1, \ldots, n & & & \lambda_i \ge 0, i = 1, \ldots, n
+\end{array}
+\end{equation}
+
+对输入型CCR包络模型添加松弛变量$S^{-},S^{+}$，转化为下式：
+\begin{equation}\label{eq:inputdualccr}
+\begin{array}{ll}
+  \textit{min} & \theta\\
+  \textit{s.t.} & \sum\limits_{i = 1}^n \lambda_i x_i + S^{-} = \theta x_k \\
+   & \sum\limits_{i = 1}^n \lambda_i y_i - S^{+} = y_k\\
+   & \lambda_i \ge 0, i = 1, \ldots, n\\
+   & S^{-} \ge 0, S^{+}\ge 0
+\end{array}
+\end{equation}
+
+根据线性规划对偶理论中的松紧定理，判断决策单元$\mathrm{DMU_k}$是否DEA有效，需要首先判定模型的最优解$\lambda^{*}, S^{-*},S^{+*},\theta^{*}$是否满足
+\begin{equation}
+  \theta^{*} = 1, S^{-*} = 0, S^{+*} = 0
+\end{equation}
+
+无论是利用\eqref{eq:ccr}还是\eqref{eq:inputdualccr}，直接判断DEA有效性都不容易。为此，通过引入非阿基米德无穷小量（non-Archimedean）$\varepsilon >0$的概念\cite{charnes1952optimality,charnes1957management}，可以成功地解决计算上和技术上的困难。
+\begin{equation}\label{eq:eccr}
+\begin{array}{lllll}
+  \max\limits_{\mu} & \mu^Ty_k & & \min & \theta - \varepsilon(1^T S^{-} + 1^T S^{+}) \\
+  \textit{s.t.} & \mu^Ty_j -\nu^Tx_j\leq 0, j=1,2,\dots,n & & \textit{s.t.} & \sum\limits_{i = 1}^n \lambda_i x_i + S^{-} = \theta x_k\\
+   & \nu^Tx_k = 1 & & & \sum\limits_{i = 1}^n \lambda_i y_i - S^{+} = y_k\\
+   & \nu\geq \varepsilon & & & \lambda_i \ge 0, i = 1, \ldots, n\\
+   & \mu\geq \varepsilon & & & S^{-} \ge 0, S^{+}\ge 0
+\end{array}
+\end{equation}
+
+\section{两阶段方法}%Two-Stage Method
+魏权龄在\cite{wei2004dea}给出一个引理：考虑线性规划问题
+\begin{equation}
+\begin{array}{ll}
+  \textit{min} & c^Tx \\
+  \textit{s.t.} & Ax = b \\
+  & x \ge 0
+\end{array}
+\end{equation}
+若其最优解集合为$\mathbb{E}$，则存在$\bar{\varepsilon} >0$，对于任意的$\varepsilon\in(0,\bar{\varepsilon})$，线性规划问题
+\begin{equation}
+\begin{array}{ll}
+  \textit{min} & c^Tx - \varepsilon d^Tx \\
+  \textit{s.t.} & Ax = b \\
+  & x \ge 0
+\end{array}
+\end{equation}
+的最优解也是下面线性规划问题的最优解：
+\begin{equation}
+\begin{array}{ll}
+  \textit{max} & d^Tx \\
+  \textit{s.t.} & x \in \mathbb{E}
+\end{array}
+\end{equation}
+
+对于含有非阿基米德无穷小量的对偶CCR模型：
+\begin{equation}\label{eq:dualeccr}
+\begin{array}{ll}
+  \textit{min} & \theta - \varepsilon(1^T S^{-} + 1^T S^{+}) \\
+  \textit{s.t.} & \sum\limits_{i = 1}^n \lambda_i x_i + S^{-} = \theta x_k\\
+   & \sum\limits_{i = 1}^n \lambda_i y_i - S^{+} = y_k\\
+   & \lambda_i \ge 0, i = 1, \ldots, n\\
+   & S^{-} \ge 0, S^{+}\ge 0
+\end{array}
+\end{equation}
+可以使用2-阶段法（阶段I与阶段II）求解：
+\begin{enumerate}[（I）]
+  \item 求解对偶规划
+\begin{equation}
+\begin{array}{ll}
+  \textit{min} & \theta\\
+  \textit{s.t.} & \sum\limits_{i = 1}^n \lambda_i x_i + S^{-} = \theta x_k \\
+   & \sum\limits_{i = 1}^n \lambda_i y_i - S^{+} = y_k\\
+   & \lambda_i \ge 0, i = 1, \ldots, n\\
+   & S^{-} \ge 0, S^{+}\ge 0
+\end{array}
+\end{equation}
+    的最优解$\theta^{*}$。如果$\theta^{*} < 1$，则$\mathrm{DMU_k}$不为DEA弱有效；若$\theta^{*} = 1$，则转到阶段II（将最优值$\theta^{*} = 1$带入上述模型中得到其最优解集合）。
+  \item 求解下面问题的最优解$\lambda^{*}, S^{-*},S^{+*}$：
+\begin{equation}
+\begin{array}{ll}
+  \textit{max} & 1^T S^{-} + 1^T S^{+} \\
+  \textit{s.t.} & \sum\limits_{i = 1}^n \lambda_i x_i + S^{-} = x_k\\
+   & \sum\limits_{i = 1}^n \lambda_i y_i - S^{+} = y_k\\
+   & \lambda_i \ge 0, i = 1, \ldots, n\\
+   & S^{-} \ge 0, S^{+}\ge 0
+\end{array}
+\end{equation}
+如果$1^T S^{-*} + 1^T S^{+*} \ne 0$，则$\mathrm{DMU_k}$弱DEA有效；否则$\mathrm{DMU_k}$DEA有效。
+\end{enumerate}
+
+对于$n$个决策单元组成的评价系统，假设参考集为
+\begin{equation}
+  \hat{T} = \{(x_i, y_i) | i = 1,\ldots, n\}
+\end{equation}
+形如下面的生产可能集
+\begin{equation}
+  \mathrm{T_{CCR}} = \{(x,y) | \sum\limits_{i = 1}^n \lambda_i x_i \le x, \sum\limits_{i = 1}^n \lambda_i y_i \ge y, \lambda_i \ge 0, i = 1,\ldots, n\}
+\end{equation}
+与CCR模型相对应。判断决策单元是否DEA有效，本质上是检验决策单元是否落在生产可能集的生产前沿面上。
+
+假设$\lambda^{*}, S^{-*},S^{+*}, \theta^{*}$是通过$2-$阶段法求解不含有非阿基米德无穷小量的CCR原始模型与对偶模型的最优解，令
+\begin{equation}
+  \begin{array}{lll}
+    \hat{x}_k & = & \theta^{*} x_k - S^{-*} \\
+    \hat{y}_k & = & y_k + S^{+*}
+  \end{array}
+\end{equation}
+称$(\hat{x}_k, \hat{y}_k)$是$\mathrm{DMU_k}$在生产可能集$ T_{CCR}$的生产前沿面上的“投影”，根据“投影定理”\cite{wei2004dea}，它们是DEA有效的。
+
+DEA能够计算分配效率（Allocate Efficiency，AE）和技术效率（Technical Efficiency，TE），后者分为规模效率（Scale Efficiency， SE）和纯技术效率（Pure Technical Efficiency，PTE），隐含着很强的经济学背景，其中，技术效率与规模效率分别是生产函数和生产函数的规模收益不变性质的推广\cite{wei2004dea}。
+
+\section{DEA变体模型}
+1984年，Banker等人\cite{banker1984some}提出一种新的模型——BCC模型，使用凸约束（Convexity Constraint）度量决策单元的技术效率。在凸约束中，可以确保复合决策单元与被评测单元大小相当。BCC模型估计的相对效率值不小于对应CCR模型计算的相对效率分值。BCC与CCR模型不同，后者是基于规模收益不变（Constant Return to Scales，CRS）的假设，而BCC则适用于规模收益可变（Variable Return to Scales，VRS）的场景。
+\begin{equation}\label{eq:inputbcc}
+  \begin{array}{lllll}
+    \textit{max} & \mu^T y_k - u_k & & \textit{min} & \theta\\
+    \textit{s.t.} & \mu^T y_i - \nu^T x_i  - u_k \le 0, i = 1,\ldots, n & & \textit{s.t.} & \sum\limits_{i=1}^n \lambda_i x_i \le \theta x_k\\
+    & \nu^T x_k = 1 & & & \sum\limits_{i=1}^n \lambda_i y_i \ge y_k\\
+    & \nu \ge 0,\mu \ge 0 & & & \sum\limits_{i=1}^n \lambda_i = 1,\lambda_i \ge 0, i = 1,\ldots, n\\
+  \end{array}
+\end{equation}
+此为输入型BCC模型，而输出型BCC模型如下所示：
+\begin{equation}\label{eq:outputbcc}
+  \begin{array}{lllll}
+    \textit{min} & \nu^T x_k + u_k & & \textit{max} & \theta\\
+    \textit{s.t.} & \nu^T x_i - \mu^T y_i  + u_k \ge 0, i = 1,\ldots, n & & \textit{s.t.} & \sum\limits_{i=1}^n \lambda_i y_i \ge \theta y_k\\
+    & \mu^T y_k = 1 & & & \sum\limits_{i=1}^n \lambda_i x_i \le x_k\\
+    & \nu \ge 0,\mu \ge 0 & & & \sum\limits_{i=1}^n \lambda_i = 1,\lambda_i \ge 0, i = 1,\ldots, n\\
+  \end{array}
+\end{equation}
+
+1985年，F\"{a}re和Grosskopf\cite{fare1985nonparametric}在使用非参数的费用方法研究规模收益时，使用的DEA模型称为FG模型，其基本假设是规模收益递减：
+\begin{equation}\label{eq:fg}
+  \begin{array}{lllll}
+    \textit{max} & \mu^T y_k - u_k & & \textit{min} & \theta\\
+    \textit{s.t.} & \mu^T y_i - \nu^T x_i  - u_k \le 0, i = 1,\ldots, n & & \textit{s.t.} & \sum\limits_{i=1}^n \lambda_i x_i \le \theta x_k\\
+    & \nu^T x_k = 1 & & & \sum\limits_{i=1}^n \lambda_i y_i \ge y_k\\
+    & \nu \ge 0,\mu \ge 0, u_k \ge 0 & & & \sum\limits_{i=1}^n \lambda_i \le 1,\lambda_i \ge 0, i = 1,\ldots, n\\
+  \end{array}
+\end{equation}
+
+1990年，Seiford与Thrall\cite{seiford1990recent}提出了基于规模收益递增假设下的ST模型：
+\begin{equation}\label{eq:st}
+  \begin{array}{lllll}
+    \textit{max} & \mu^T y_k - u_k & & \textit{min} & \theta\\
+    \textit{s.t.} & \mu^T y_i - \nu^T x_i  - u_k \le 0, i = 1,\ldots, n & & \textit{s.t.} & \sum\limits_{i=1}^n \lambda_i x_i \le \theta x_k\\
+    & \nu^T x_k = 1 & & & \sum\limits_{i=1}^n \lambda_i y_i \ge y_k\\
+    & \nu \ge 0,\mu \ge 0, u_k \le 0 & & & \sum\limits_{i=1}^n \lambda_i \ge 1,\lambda_i \ge 0, i = 1,\ldots, n\\
+  \end{array}
+\end{equation}
+
+1985年，Charnes等人\cite{charnes1985foundations}认为CCR 模型中关于生产函数凸性的假设在某些条件下是不合理的，将目标规划首次应用到DEA方法，推出了一种新的效率评价模型——加法模型（Additive Model）（亦称“$\mathrm{C^2GS^2}$模型”）。加法模型基于规模收益可变假设，最大化被评估决策单元与有效前沿面（或包络面）的$\ell_1$ 距离。
+\begin{equation}\label{eq:c2gs2-l1}
+  \begin{array}{ll}
+    \textit{max} & ||(x_k, y_k) - (\sum\limits_{i=1}^n \lambda_i x_i,\sum\limits_{i=1}^n \lambda_i y_i)||_1\\
+    \textit{s.t.} & x_k \ge \sum\limits_{i=1}^n \lambda_i x_i \\
+    & y_k \le \sum\limits_{i=1}^n \lambda_i y_i\\
+    & \sum\limits_{i=1}^n \lambda_i = 1\\
+    & \lambda_i \ge 0, i =1,\ldots, n
+  \end{array}
+\end{equation}
+由于
+\begin{equation}
+  \begin{array}{lll}
+    & ||(x_k, y_k) - (\sum\limits_{i=1}^n \lambda_i x_i,\sum\limits_{i=1}^n \lambda_i y_i)||_1 \\
+    = &  |x_{k1} - \sum\limits_{i=1}^n \lambda_i x_{i1}| + \cdots + |x_{km} - \sum\limits_{i=1}^n \lambda_i x_{im}| + \cdots + |y_{k1} - \sum\limits_{i=1}^n \lambda_i y_{i1}| + \cdots + |y_{k1} - \sum\limits_{i=1}^n \lambda_i y_{is}|\\
+    = & (x_{k1} - \sum\limits_{i=1}^n \lambda_i x_{i1}) + \cdots  + (x_{km} - \sum\limits_{i=1}^n \lambda_i x_{im}) + \cdots + (\sum\limits_{i=1}^n \lambda_i y_{i1} - y_{k1}) + \cdots + (\sum\limits_{i=1}^n \lambda_i y_{is} - y_{ks})\\
+    = & 1^T S^{-} + 1^T S^{+}
+  \end{array}
+\end{equation}
+从而，可以得到下面等价的加法模型：
+\begin{equation}\label{eq:c2gs2}
+  \begin{array}{ll}
+    \textit{max} & 1^T S^{+}_k + 1^T S^{-}_k\\
+    \textit{s.t.} & S^{+}_k = \sum\limits_{i=1}^n \lambda_i y_i - y_k \\
+    & S^{-}_k = x_k - \sum\limits_{i=1}^n \lambda_i x_i\\
+    & \sum\limits_{i=1}^n \lambda_i = 1\\
+    & S^{+}_k \ge 0, S^{-}_k  \ge 0,\lambda_i \ge 0, i =1,\ldots, n
+  \end{array}
+\end{equation}
+
+原始的DEA模型对权重无任何限制，允许被评估决策单元选择对于自身最有利的权重，得出的结果明显不符合实际，因此，人们一直重视对权重的研究。1986年，Charnes等人\cite{charnes1989cone}通过调整锥比率以反映决策者的偏好或者意愿，给出一个含有偏好的$\mathrm{C^2WH}$模型。
+
+\subsection{一般性DEA模型}
+为了分析DEA模型的一般性质，避免无谓的重复工作，研究人员开始构建综合的数据包络分析模型。1988年，Charnes等人\cite{charnes1988compositive}给出了第一个综合的DEA 模型$\mathrm{C^2WY}$，包含CCR模型，加法模型和$\mathrm{C^2WH}$等模型，遗憾的是$\mathrm{C^2WY}$模型不能直接进行编程实现。根据
+\cite{yu1996generalized}构造的一般性DEA 模型，可以统一CCR、BCC、FG与ST 模型为下面形式的输入型综合DEA模型：
+\begin{equation}\label{eq:uniteddea}
+  \begin{array}{lllll}
+    \textit{max} & \mu^T y_k - \delta_1 u_k & & \textit{min} & \theta\\
+    \textit{s.t.} & \nu^T x_i - \mu^T y_i + \delta_1 u_k \ge 0, i = 1,\ldots, n & & \textit{s.t.} & \sum\limits_{i=1}^n \lambda_i x_i \le \theta x_k\\
+    & \nu^T x_k = 1 & & & \sum\limits_{i=1}^n \lambda_i y_i \ge y_k\\
+    & \nu \ge 0,\mu \ge 0 & & & \delta_1(\sum\limits_{i=1}^n \lambda_i + \delta_2(-1)^{\delta_3}\lambda_{n+1}) = \delta_1\\
+    & \delta_1\delta_2(-1)^{\delta_3} u_k \ge 0 & & & \lambda_i \ge 0, i = 1,\ldots, n+1
+  \end{array}
+\end{equation}
+其中，$\delta_i\in \{0,1\},i =1,2,3$。当$\delta_1 = 0$时，模型\eqref{eq:uniteddea}就是标准的输入型CCR模型；当$\delta_1=1,\delta_2 = 0$时，模型退化为输入型BCC模型；当$\delta_1=1,\delta_2 = 1,\delta_3 = 0$时，模型就是输入型FG模型；当$\delta_1=1,\delta_2 = 1,\delta_3=1$时，就是输入型ST模型。
+
+2004年，Yun等人\cite{yun2004generalized}应用增强的切比雪夫标量化函数构造如下形式的一般型数据包络分析模型（GDEA）：
+\begin{equation}\label{eq:gdea}
+\begin{array}{ll}
+\max\limits_{\mu, \nu}& \Delta\\
+\textit{s.t.}& \Delta \le \widetilde{d_i} + \alpha(\mu^T (y_k - y_i) + \nu^T(-x_k + x_i)), i = 1,\ldots, n\\
+& \mu^T 1 + \nu^T 1 = 1\\
+& \mu,\nu \ge \varepsilon
+\end{array}
+\end{equation}
+其中， $\alpha>0$需要根据具体问题做适当调整；$\varepsilon>0$是一个非阿基米德无穷小量，一般取值范围在$[10^{-6},10^{-5}]$；$\widetilde{d_i}$是向量$y_k - y_i$与$-x_k + x_i$中数值最大的元素与对应权值的乘积。如果目标值$\Delta = 0$，则对应决策单元$\mathrm{DMU_k}$ 称为$\alpha-$有效；若$\Delta < 0$，那么决策单元就是$\alpha-$无效的。
+
+\subsection{退化的DEA模型}
+原始的CCR模型主要用以解决多输入多输出问题，在现实评价问题中，常会遇到诸如只有输入或者输出的“退化”情况。1995年何静给出了评价只有输出（入）指标的模型，并讨论了其相关性质\cite{he1995inputonly}。
+
+假设所有决策单元输入指标相等（等输入），那么根据分式CCR模型\eqref{eq:fracccr}有：
+\begin{equation}
+\begin{array}{ll}
+  \textit{max} & (\frac{\mu}{\nu^T x_k})^T y_k \\
+  \textit{s.t.} & (\frac{\mu}{\nu^T x_i})^T y_i \le 1 \\
+   & \mu \ge 0, \nu \ge 0
+\end{array}
+\end{equation}
+由于$\nu^T x_1 = \nu^T x_2 = \ldots = \nu^T x_n = \lambda_\nu, \forall \nu \ge 0$，若取$\mu = \mu/\lambda_\nu$，上面的模型等价于：
+\begin{equation}\label{eq:dea-without-input}
+\begin{array}{lllll}
+  \textit{max} & \mu^Ty_k & & \textit{min} & \sum\limits_{i=1}^n \lambda_i \\
+  \textit{s.t.} & \mu^Ty_i \le 1, i=1,2,\dots,n & \Rightarrow & \textit{s.t.} & \sum\limits_{i=1}^n \lambda_i y_i \ge y_k, i=1,2,\dots,n \\
+   & \mu\ge 0 & & & \lambda_i \ge 0, i=1,2,\dots,n
+\end{array}
+\end{equation}
+类似地，可以得到相应的等输出CCR模型：
+\begin{equation}\label{eq:dea-without-output}
+\begin{array}{lllll}
+  \textit{min} & \nu^Tx_k & & \textit{max} & \sum\limits_{i=1}^n \lambda_i \\
+  \textit{s.t.} & \nu^Tx_i \ge 1, i=1,2,\dots,n & \Rightarrow & \textit{s.t.} & \sum\limits_{i=1}^n \lambda_i x_i \ge x_k, i=1,2,\dots,n\\
+   & \nu \ge 0 & & & \lambda_i \ge 0, i=1,2,\dots,n
+\end{array}
+\end{equation}
+对于等输出的CCR模型\eqref{eq:dea-without-input}，其对偶形式可以通过变换
+\begin{equation}
+  \left\{
+    \begin{array}{lll}
+      t & = & \sum\limits_{i=1}^n \lambda_i \\
+      \theta & = & 1/t \\
+      \lambda_i & = & \lambda_i/t
+    \end{array}
+  \right.
+\end{equation}
+得到如下形式的等价模型：
+\begin{equation}
+\begin{array}{ll}\label{eq:unitinputccr}
+    \textit{max} & \theta\\
+    \textit{s.t.} & \sum\limits_{i=1}^n \lambda_i y_i \ge \theta y_k\\
+    & \sum\limits_{i=1}^n \lambda_i = 1\\
+    & \lambda_i \ge 0,i = 1,\ldots, n
+\end{array}
+\end{equation}
+
+对于等输入的输出型BCC模型：
+\begin{equation}
+\begin{array}{ll}
+    \textit{min} & \nu^T x_k + v_k \\
+    \textit{s.t.} & \nu^T x_i - \mu^T y_i + v_k \ge 0\\
+    & \mu^T y_k = 1\\
+    & \mu \ge 0, \nu \ge 0
+\end{array}
+\end{equation}
+有$\nu^T x_1 + v_k = \ldots = \nu^T x_n + v_k = \theta$，则上述模型等价于
+\begin{equation}
+\begin{array}{ll}
+    \textit{min} & \theta \\
+    \textit{s.t.} & \theta - \mu^T y_i \ge 0\\
+    & \mu^T y_k = 1\\
+    & \mu \ge 0,\theta \ge 0
+\end{array}
+\end{equation}
+设置新的权值向量$\omega = \mu/\theta$，则可以得到等价的线性模型如下：
+\begin{equation}
+\begin{array}{ll}
+    \textit{max} & \omega^T y_k \\
+    \textit{s.t.} & \omega^T y_i \le 1\\
+    & \omega \ge 0
+\end{array}
+\end{equation}
+由此可知，等输入的输出型CCR模型与等输入的输出型BCC模型等价\cite{lovell1999radial,liu2011study,kostrzewa2011data}。
+
+如果所有决策单元只有输出（输入相等均为0），根据输出型CCR对偶模型\eqref{eq:dualccr}，取$x_i =0, i =1,\ldots,n$，则可以得到下面形式模型：
+\begin{equation}\label{eq:ccr-output}
+\begin{array}{ll}
+    \textit{max} & \theta\\
+    \textit{s.t.} & \sum\limits_{i=1}^n \lambda_i y_i \ge \theta y_k\\
+    & \lambda_i \ge 0,i = 1,\ldots, n
+\end{array}
+\end{equation}
+由于在$\theta = 1,\lambda_k = 1, \lambda_i = 0, i\ne k$是模型的一个可行解，显然$\theta = k, \lambda_k = k, \lambda_i=0,i\ne k$也是其可行解（$k = 1,2,\ldots$）。显然，模型最优效率值$\theta^* > M,\forall M >0$。所有的决策单元的最优效率值均是无穷的，有效的与无效的决策单元无法区分，因此结果是没有意义的\cite{lovell1999radial}。对于只有输入指标的CCR模型，可以得到相同的结论。
+
+根据输出型BCC对偶模型\eqref{eq:outputbcc}，只要取$x_i = 0, i = 1,\ldots, n$，则可以得到\textbf{只有输出的BCC模型}：
+\begin{equation}\label{eq:bcconlyoutput}
+\begin{array}{ll}
+    \textit{max} & \theta\\
+    \textit{s.t.} & \sum\limits_{i=1}^n \lambda_i y_i \ge \theta y_k\\
+    & \sum\limits_{i=1}^n \lambda_i = 1\\
+    & \lambda_i \ge 0,i = 1,\ldots, n
+\end{array}
+\end{equation}
+与\textbf{等输入的输出型CCR模型}\eqref{eq:unitinputccr}形式完全相同，是等价的，从而与\textbf{等输入的BCC模型}也是等价的，输出型BCC模型中输出指标是最重要的。类似地，可以得到输入型模型（BCC与CCR）的等价对应关系。
+
+如果决策单元只有一个输入（输出）指标，但各个决策单元的输入（输出）指标不全相等，在规模收益不变的假设前提下，可以通过同时放缩一定比例的输出（输入）指标，使得决策单元的单个输入（输出）指标相等，从而转换为等输入（等输出）的应用环境。
+
+我们对规模收益变化不做任何假设，则CCR模型就退化为单输入-多输出（多输入-单输出）的模型，根据模型\eqref{eq:ccr}可得：
+\begin{equation}\label{eq:one2multi-ccr}
+\begin{array}{lllll}
+  \max\limits_{\mu,\nu} & \mu^Ty_k & & \min\limits_{\mu,\nu} & \nu^T x_k\\
+  \textit{s.t.} & \mu^Ty_i -\nu x_i \le 0, i=1,2,\dots,n & & \textit{s.t.} & \mu y_i -\nu^Tx_i \le 0, i=1,2,\dots,n \\
+   & \nu x_k = 1 & & & \mu y_k = 1\\
+   & \nu\geq 0, \mu\geq 0 & & & \nu\geq 0, \mu\geq 0
+\end{array}
+\end{equation}
+由模型可以明显的看到，对于单输入-多输出的CCR模型，如果存在$x_k = 0$，模型无可行解；类似地，对于多输入-单输出的CCR模型，如果存在$y_k = 0$，则模型亦无可行解。否则，可以将模型中的等式约束带入到第一个约束条件，可得：
+\begin{equation}\label{eq:degenerate-ccr}
+\begin{array}{lllll}
+  \max\limits_{\mu} & \mu^Ty_k & & \min\limits_{\nu} & \nu^T x_k\\
+  \textit{s.t.} & x_k \mu^Ty_i - x_i \le 0, i=1,2,\dots,n & & \textit{s.t.} & y_i -y_k \nu^Tx_i \le 0, i=1,2,\dots,n \\
+   & \mu\geq 0 & & & \nu\geq 0
+\end{array}
+\end{equation}
+
+目前，无输出类型的DEA模型已经得到广泛应用：多目标规划\cite{ramanathan2006data,wang2009new}、智能系统\cite{wang2008integrated,pendharkar2005data}、数据挖掘\cite{chen2007ranking}、偏好投票系统\cite{cook1990data,llamazares2009preference}、技术选择
+\cite{ertugrul2008improved,amin2008note,amin2009optimal}、信息检索与搜索引擎排名聚合\cite{amin2009finding}等。
+
+\subsection{逆数据包络分析模型}
+逆DEA的思想源于构建投资预测模型（IPM）\cite{zhang1999project,wei2000inverse}，在已知其输入输出变量和相对效率分值的前提下，对于某个决策单元，在部分输入发生改变时，预测其输出所发生的改变。
+
+假设存在决策单元$\mathrm{DMU_1}, \ldots, \mathrm{DMU_n}$，构建一个虚拟决策单元$\mathrm{DMU_{n+1}}$，逆DEA模型通过其输入输出值同其他$n$个决策单元建立联系，不妨假设其输入向量为$x_{n+1}\in \mathbb{R}^m$，输出向量为$y_{n+1}\in \mathbb{R}^s$。逆DEA 模型实际上可以由以下两个基本问题予以概括\cite{li2003dea}：
+\begin{enumerate}[（1）]
+  \item 在每个决策单元相对效率不变的前提下，只变动某个决策单元的某些输入值，预测该决策单元输出值的变化。假设对于决策单元$\mathrm{DMU_k}$，其输入向量变化为$\Delta x_k$，在保持其相对效率不变的情况下，其输出值变化为$\Delta y_k$，不妨将变化以后的决策单元记作$\mathrm{DMU_{n+1}}$，则$x_{n+1} = x_k + \Delta x_k, y_{n+1} = y_k + \Delta y_k$。那么，输出值的变化可以通过求解如下形式的数学规划问题获得：
+\begin{equation}
+  \begin{array}{ll}
+    \textit{max} & \sum\limits_{r = 1}^s c_r \Delta y_{kr} \\
+    \textit{s.t.} & \sum\limits_{i=1}^n \lambda_i x_i + \lambda_{n+1} \underbrace{(x_k + \Delta x_k)}_{x_{n+1}} + s^{-} = \underbrace{(x_k + \Delta x_k)}_{x_{n+1}} \theta_k\\
+     & \sum\limits_{i=1}^n \lambda_i y_i + \lambda_{n+1} (\underbrace{y_k + \Delta y_k}_{y_{n+1}}) - s^{+} = \underbrace{y_k + \Delta y_k}_{y_{n+1}}\\
+     & s^{-}, s^{+} \ge 0 \\
+     & \lambda_i \ge 0, i = 1,\ldots, n, n+1
+  \end{array}
+\end{equation}
+考虑到原始决策单元$\mathrm{DMU_k}$输出值的比例，可以取$c_r = y_r >0, r = 1,\ldots, s$。
+  \item 在每个决策单元相对效率不变的前提下，只变动某个决策单元的某些输出值，预测该决策单元输入值的变化。假设对于决策单元$\mathrm{DMU_k}$，其输出向量变化为$\Delta y_k$，在保持其相对效率不变的情况下，其输入值变化为$\Delta x_k$，不妨将变化以后的决策单元记作$\mathrm{DMU_{n+1}}$，则$x_{n+1} = x_k + \Delta x_k, y_{n+1} = y_k + \Delta y_k$。那么，输入值的变化可以通过求解如下形式的数学规划问题获得：
+\begin{equation}
+  \begin{array}{ll}
+    \textit{min} & \sum\limits_{r = 1}^m c_r \Delta x_{kr} \\
+    \textit{s.t.} & \sum\limits_{i=1}^n \lambda_i x_i + \lambda_{n+1} \underbrace{(x_k + \Delta x_k)}_{x_{n+1}} + s^{-} = \underbrace{(x_k + \Delta x_k)}_{x_{n+1}} \theta_k\\
+     & \sum\limits_{i=1}^n \lambda_i y_i + \lambda_{n+1} (\underbrace{y_k + \Delta y_k}_{y_{n+1}}) - s^{+} = \underbrace{y_k + \Delta y_k}_{y_{n+1}}\\
+     & s^{-}, s^{+} \ge 0 \\
+     & \lambda_i \ge 0, i = 1,\ldots, n, n+1
+  \end{array}
+\end{equation}
+考虑到原始决策单元$\mathrm{DMU_k}$输入值的比例，可以取$c_r = 1/x_r >0, r = 1,\ldots, m$。
+\end{enumerate}
+
+\section{计算问题}
+任何方法都有其最佳适用范围，DEA也不例外，如果能够恰当的使用，它由于以下特征显得功能强大：（1）它能够处理多输入-多输出问题。（2）它不需要知道输入与输出之间的显性函数关系。（3）DMU可以与其他DMU或者其他DMU的组合直接比较。（4）它具有单位不变性（Unit Invariant）的特点，DEA衡量的DMU的结果不受投入产出数据所选择单位的影响。（5）DEA模型不需要事前设定投入与产出的权重，因此不受人为主观因素的影响。
+
+分析人员在决定使用DEA时，需要时刻注意DEA存在的一些局限性：（1）DEA是一种极点技术（Extreme Point Technique）对噪声（如测量误差）十分敏感，即便是零均值的对称噪声都能够造成严重的问题。（2）DEA 适于估计决策单元的“相对”效率，难以计算“绝对”效率，使用它可以对决策单元相互比较，而无法同“理论最大值”（Theoretical Maximum）做比较。（3）DEA是一种非参数技术，很难基于它做统计假设检验，这也是未来研究的焦点。（4）由于标准形式的DEA模型，需要对每个决策单元计算一个线性规划模型，属于计算密集型模型，对于大数据集合时间开销不容忽视。
+
+对于DEA方法中使用的输入变量与输出变量，Cooper等人给出如下的选取准则\cite{cooper2000dea}：（1）对所有决策单元，可以得到每个输入和输出值，而且这些数值须为正数。（2）对这些项目选择，必须反映分析者或者管理者对于使用相对效率评估相关要素的兴趣。（3）从相对效率的定义出发，输入的数值应越小越好，而输出的数值应越大越好。
+
+传统的DEA模型，如CCR、BCC的求解需要对每个DMU计算一个LP问题，在处理大规模数据时，计算开销形成一个巨大的瓶颈
+\cite{dula2008computational,dula2011algorithm}。改善DEA模型的求解效率，存在两条路径：设计高效的通用LP优化算法，根据DEA模型的特征设计高效的优化算法。本节主要讨论选择第二条路径，设计高效的DEA优化算法。
+
+对于乘法形式的CCR模型，任意两个LP问题的区别仅仅在于目标函数的不同，\cite{kalvelagen2002efficiently}利用乘法形式的DEA模型，使用GAMS（General Algebraic Modeling System）将多个小型LP问题合并为一个LP模型，以实现批量高效求解。
+\cite{ali1990data,ali1993streamlined}从DEA的精度与计算健壮性两个问题出发，研究CCR、BBC和加法型三个典型的DEA模型，并根据DEA的特性设计高效的求解算法。
+如果某个DMU相对于部分数据集是无效的，那么它相对于整个数据集也一定是无效的。根据这个原则，\cite{barr1997parallel}使用分解技术，将数据集分割成多个大小相似的数据块，并对每个数据块独立求解DEA模型，并充分利用并行化优势，通过求解部分模型分析所有数据集，有效提高求解速度。
+Chen等人\cite{chen2009procedure}认为DMU数目对DEA的计算构成压力，因此，提出了一种增速流程，在BCC模型上的实现结果表现不错。
+Emrouznejad和Shale\cite{emrouznejad2009combined}随机选取部分数据样本，使用传统DEA方法计算它们的相对效率，并以此作为输出变量训练神经网络，进而利用训练得到的模型，直接用于预测测试DMU的相对效率，从而大幅提高计算的效率。
+Omur\cite{tosun2012using}将其应用到对医院的效率评价问题上，其性能甚至超过判别分析方法。
+\cite{bougnol2012interior}认为非零最优权值的求解是制约模型优化速度的主要因素，由此提出使用内点法快速计算非零权值。
+
+对于$n$个决策单元，假设
+\begin{equation}\label{eq:productset}
+  \mathcal{T} = \bigg\{(\mu,\nu)\mid \mu^T y_i - \nu^T x_i \le 0, \mu \ge 0, \nu \ge 0, i=1,\ldots, n\bigg\}
+\end{equation}
+对于决策单元$\mathrm{DMU_k}$，可以利用下面的CCR模型评估其相对效率：
+\begin{equation}
+  \begin{array}{ll}
+    \textit{max} & \mu^T y_k \\
+    \textit{s.t.} & (\mu, \nu)\in \mathcal{T} \\
+     & \nu^T x_k = 1
+  \end{array}
+\end{equation}
+
+假设其最优权值向量为$\mu^*, \nu^*$，定义
+\begin{equation}\label{eq:ers-k}
+  \mathcal{S}_k = \big\{i\mid \mu^{*T} y_i = 1, \forall i=1,\ldots, n\big\}
+\end{equation}
+为$\mathrm{DMU_k}$的\textbf{效率参考集}（Efficiency Reference Set，ERS）\cite{cooper2011handbook}。
+\footnote{J C Paradi: \href{http://www.cmte.utoronto.ca/research/dea.shtml}{An efficiency reference set, or peer group, defined by a (small) subset of efficient units ``closest" to the unit under evaluation; i.e. with similar mixes of inputs and outputs.}}
+
+对于任意决策单元集合$\mathrm{DMU_j}$，可以利用下面的CCR模型评估其效率：
+\begin{equation}\label{eq:dmu-j}
+  \begin{array}{ll}
+    \textit{max} & \mu^T y_j \\
+    \textit{s.t.} & (\mu, \nu)\in \mathcal{T} \\
+     & \nu^T x_j = 1
+  \end{array}
+\end{equation}
+
+如果$j\in \mathcal{S}_k$，则根据ERS的定义可知$\mu^{*T} y_j = 1$，并且$(\mu^*, \nu^*)\in \mathcal{T}$，故$\mu^*, \nu^*$是模型\eqref{eq:dmu-j}的可行解。对于任意的$(\mu, \nu) \in \mathcal{T}$，由于$\mu^T y_k \le 1$，故$\mu^*, \nu^*$也是模型\eqref{eq:dmu-j}的一个最优解。由此可知，利用决策单元的效率参考集，可以减少不必要的计算，对于包含大量相对有效的决策单元，效果尤其明显。
+
+\section{数据包络分析与数据挖掘}
+Troutt等人\cite{troutt1996potential}给出BBC模型的变体，构建一个接受边界（Acceptance Boundary），作为区分决策单元的超平面。尽管方法无需输入数据非负，但是对决策单元提出以下几个限制条件：1）决策单元是单调的（对于任意两个决策单元，如果其他属性值全部相同，某个属性值越大则该决策单元属于某个类别的可能性也更大，反之亦然）；2）决策单元中不含第二类错误；3）分类函数是凸函数等。基于\cite{troutt1996potential}中定义的接受边界的概念，\cite{seiford1998acceptance} 更近一步，不仅能够确定新样本是否可以被接受，而且还能够确定新数据与之前已经分类好的数据之间的距离。\cite{athanassopoulos1996comparison}将数据包络分析和神经网络解决决策单元效率评价问题进行了比较。
+
+Pendharkar等人\cite{pendharkar2011hybrid}给出一种融合数据包络分析和径向基函数网络（RBFN）的混合模型，解决带有负值输入，非线性可分的分类问题。
+
+Yan和Wei\cite{yan2011dea}将每个样本数据都看作一个决策单元，以数据的全部特征作为输入，单位1为输出，确立数据包络分析模型和数据分类器之间的等价关系，从而将决策单元的分类问题转化为确定决策单元能否为“接受域”（Acceptance Domain）所接受。“接受域”是从训练数据集中构建的，也就是传统数据包络分析模型中的生产可能集。\cite{yan2011dea} 基于生产可能集的基本公理体系，使用线性不等式组来表示“接受域”，与一个分类函数一起构成了基于数据包络分析模型的分类器。
+
+除了直接根据DEA模型构建分类器以外，研究人员根据已经发展成熟的经典数据挖掘分类算法，使用集成技术构建分类器。如Sohn和Choi\cite{sohn2001ensemble}选择分类器的四个性能指标：Sensitivity，Specificity，False negative，Positive error作为输出，常量1作为输入，一个分类器构成一个决策单元，求解多个分类器构成的数据包络模型，然后根据各个分类器的相对效率值为分类器赋权，获得集成分类器。
+
+2007年，Zheng和Padmanabhan\cite{zheng2007constructing}使用数据包络分析模型（输入型BBC）选择、组合多个基本分类模型。对于二元分类模型，如果假阳性
+（False Positive）、真阳性（True Positive）分别作为输入和输出，利用数据包络分析模型构建的效率前沿面（凸壳）与ROC曲线是等价的。对于多元分类模型，基于分类预测混淆矩阵，他们使用以对角元素（正确分类）为输出，其他元素为输入的决策单元，计算各个分类器的相对效率分值，并提出两种方法集成分类器：只使用相对有效的模型（EMO）根据多数投票原则确定组合模型的预测分类；使用效率值作为权值组合所有模型（ESW）。
+2009年，Song等人\cite{song2009oil}根据DEA方法SF模型计算得到的炼油企业的相对效率分值，将企业分为两种类型：相对有效（记作$+1$），相对无效（记作$-1$），取出部分样本及标记作为训练集，部分样本及标记作为测试集，利用SVM训练二元分类模型。
+2011年，Bazleh等人\cite{bazleh2011new}以精度与计算时间作为主要特征，利用数据包络分析模型给基本分类模型排名。2012年，Eftekhary等人\cite{eftekhary2012ranking}利用数据包络分析模型分析不同标准化预处理方法对影响，根据预处理后分类器的表现性能对标准化预处理方法排名。
+2013年，Jiang等人\cite{jiang2013supplier}根据Performance 与Efficiency 两种指标，将供应商分成四类：HI，HE，LI，LE，使用两个步骤区分出供应商的类型。第一步：将供应商的6 种能力属性与5 种性能属性分别作为输入、输出变量，利用数据包络分析模型CCR计算供应商的相对分值。第二步：将供应商的相对效率分值添加到原始的属性（特征）空间，根据SVM训练一种四元分类模型。实验表明，DEA-SVM混合模型表现良好。
+\textbf{疑问：}\cite{jiang2013supplier}在使用分类模型对新加入的供应商预测其类属时\ref{fig:deasvm}，为了获得其相对效率分值，需要对模型建立所基于的所有供应商重新计算相对效率分值，增加了大量的计算开销。
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=4cm]{figures/deasvm.eps}
+  \caption{DEA-SVM混合模型}\label{fig:deasvm}
+\end{figure}
+
+DEA模型天生就是一个分类器，无需建立输入输出之间显性的函数关系，就可以将决策单元划分为两组：相对有效的决策单元（相对效率值等于1）、相对无效的决策单元（相对效率值小于1）。研究人员已经开始研究数据包络分析模型自然分类的能力，融合机器学习中经典的分类方法，如支持向量机（SVM），构建集成形式的分类器\cite{rezaie2013integrated,jiang2013supplier}。无论是直接利用相对效率值实现自动标记\cite{rezaie2013integrated}，还是将相对效率值作为新的独立特征引入数据集\cite{jiang2013supplier}，都取得良好的表现。
+
+由传统DEA方法产生的生产前沿面实际上可以看做一个分段生产函数（Piecewise Production Function），Po等人\cite{po2009cluster}根据据此对决策单元做聚类分析。
+
+通常，关联规则的兴趣度可以使用支持度和置信度两个指标度量。然而，在实际生活中，能够反映兴趣度的因素可能有多个，使得关联规则评价变成多属性决策问题。于是，Chen\cite{chen2007ranking}、Toloo等人\cite{toloo2009discover}使用DEA方法解决关联规则挖掘问题。
+
+\section{基于数据包络分析的排名模型}
+对于前沿面上相对有效的DMU，原始的DEA模型没有提供更多的信息区分它们，从而无法得到所有DMU 的完全排名（Full Ranking）结果。如果能够提升DEA的区分能力，则完全排名的问题就可以迎刃。在传统的DEA模型中，每个DMU都存在一个相对整个DMU集合，对于自身最佳的权值，由此确定了各个DMU相对于整个DMU集合的相对效率值。如果能够从整个DMU集合出发，寻找最佳的DMU作为参考，从而可以确定一个公共权值（Common Weight），作为衡量各个DMU“绝对效率”的标准，从而实现完全排名的目的。
+
+关于公共权值和排名问题，目前已经有很多研究人员参与研究。1990年，Cook等人\cite{cook1990data}首次提出公共权值的概念。1991年，Roll等人
+\cite{roll1991controlling}首次使用公共权值评价高速路养护单位。Cook和Kress\cite{cook1990data,cook1991multiple}通过缩小权值上下界的差距，利用有界DEA的公共权值给出主观有序偏好排名。Cook等人\cite{cook1992prioritization}，Andersen和Petersen\cite{andersen1993procedure}分别发展了排列相对有效决策单元的过程。Ganley与Cubbin\cite{ganley1992public}通过最大化所有DMU的效率分值之和，确定一个公共权值用于对各个决策单元排名。Doyle 和Green \cite{doyle1994efficiency} 利用交叉效率矩阵发展了一种排名尺度方法（Rank Scale Method）。Sinuany–Stern等人\cite{sinuany1994academic}引入了包括两阶段线性判定分析（Two-stage Linear Discriminate Analysis）在内的多种分析方法对DMU集合进行排名。Cooper和Tone 通过计算基于松弛变量的相对效率值，使用其中相对无效的效率值尺度度量进行排名\cite{cooper1997measures}。Liu和Peng\cite{liu2008rankingdea}提出公共权值分析（Common Weights Analysis, CWA）的概念，利用公共权值集合，可以预计算相对有效的DMU的绝对效率分值，即构建一条隐含的绝对效率前沿面作为标准参照。
+
+近年来，利用DEA方法对决策单元进行效率排序的方法层出不穷\cite{adler2002review,rita2011ranking}，如交叉效率评价方法\cite{sexton1986data}，超效率排名技术
+\cite{andersen1993procedure}，融合多目标决策（MCDM）的数据包络分析方法\cite{jahanshahloo2005note}等，得到长足的发展与广泛的应用。
+
+\subsection{交叉评价方法}
+在传统DEA模型，如CCR模型中，各DMU都选择对于自己最有利的权值，不同DMU拥有不同的最优权值，导致相互之间的效率失去可比性，传统DEA单纯依靠自评体系来评价决策单元有失公允。Sexton 等人\cite{sexton1986data}充分利用所有DMU的评价信息，通过建立交叉评估矩阵（Cross-Evaluation Matrix），利用平均交叉效率值，对DMU 进行优劣评价和排名。交叉效率评价方法希望利用互评体系来弥补自评体系的缺陷。
+
+对于任意两个决策单元$\mathrm{DMU_i}$和$\mathrm{DMU_j}$，交叉效率评价方法执行以下几个步骤：
+\begin{enumerate}[（1）]
+  \item 计算各自的相对效率$h_i = h_{ii}$、$h_j = h_{jj}$。
+  \item 计算交叉效率$h_{ij}$、$h_{ji}$，对于$h_{ji}$，可以通过下面条件DEA模型确定：
+\begin{equation}\label{eq:ce1}
+\begin{array}{ll}
+  h_{ji} = & \max\limits_{\mu} \mu^T y_i\\
+  \textit{s.t.} & h_{jj}\nu^Tx_j - \mu^Ty_j = 0 \\
+   & \nu^Tx_i - \mu^Ty_i \ge 0 \\
+   & \nu^Tx_i = 1 \\
+   & \nu\ge 0
+\end{array}
+\end{equation}
+由第一个约束条件可知，可行解源于决策单元$\mathrm{DMU_j}$的最优权值，反映决策单元$\mathrm{DMU_j}$对输入、输出指标的评价，而目标函数$\mu^T y_i$则反映了$\mathrm{DMU_j}$对$\mathrm{DMU_i}$的评价。$h_{ji}$的计算方法类似。
+  \item 使用交叉效率构造交叉效率矩阵：
+\begin{equation}
+H=
+\begin{bmatrix}
+h_{11} & h_{12} & \cdots & h_{1n}\\
+h_{21} & h_{22} & \cdots & h_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+h_{n1} & h_{n2} & \cdots & h_{nn}\\
+\end{bmatrix}
+\end{equation}\label{eq:cem}
+由此，可以获得决策单元$\mathrm{DMU_k}(k = 1,\ldots,n)$的平均效率\cite{doyle1994efficiency}：
+\begin{equation}\label{eq:averageefficiency}
+  \begin{array}{lll}
+    \bar{h}_k  & = & \frac{1}{n}\sum\limits_{j=1}^nh_{kj} (Averaged~Appraisal~\textbf{of}~Peers)\\
+    \bar{h}_k & = & \frac{1}{n}\sum\limits_{i=1}^n h_{ik} (Averaged~Appraisal~\textbf{by}~Peers)
+  \end{array}
+\end{equation}
+由于平均效率是全部决策单元共同表决的结果，因此可作为各个决策单元排名的依据。
+\end{enumerate}
+
+交叉效率评价方法依然存在缺陷，如交叉效率值不唯一；平均交叉效率值和权重之间没有相应的联系，无法帮助决策者改进其效率；最终的平均交叉效率值并非帕累托最优或是可以进行帕累托改进，无法使所有的决策单元确信接受最终的评价结果。对于交叉效率评价方法的一些缺陷，陆续有研究人员提出改进。比如，Doyle 等人
+\cite{doyle1994efficiency}使用全局优化技术，以确定出全局最优解，确保最优解是唯一的。
+
+交叉效率评价方法的应用比较丰富，比如对夏季奥林匹克运动会参赛国家进行排名\cite{de2008cross,de2009ranking,wu2009achievement}。
+
+\subsection{超效率排名模型}
+利用传统DEA方法评估决策单元，通常存在多个相对有效的决策单元，无法直接利用相对效率值对相对有效的决策单元做进一步区分。为了弥补这一不足，Banker与Gifford\cite{banker1988relative}首次提出将有效决策单元从效率前沿面分离开来，在CCR模型的基础上构建超效率DEA模型，度量各决策单元的超效率分值。在Andersen 与Petersen\cite{andersen1993procedure}的努力下，得到进一步完善。超效率模型（Super Efficiency Model）的基本思想：将待评测决策单元的投入和产出使用其它所有单元的投入和产出的线性组合替代，而将被评测单元排除在参考集（Reference Set）之外来评估其效率。
+\begin{equation}\label{eq:superefficiency}
+  \begin{array}{lllll}
+    \max & \mu^T y_k & & \min & \theta\\
+    \textit{s.t.} & \nu^T x_i - \mu^T y_i \ge 0 & & \textit{s.t.} & \sum\limits_{i=1}^n \lambda_i x_i \le \theta x_k\\
+    & \nu^T x_k = 1 & & & \sum\limits_{i=1}^n \lambda_i y_i \ge y_k\\
+    & \nu \ge 0,\mu \ge 0 & & & \lambda_i \ge 0\\
+    & i = 1,\ldots, n , i \ne k &&& i = 1,\ldots, n, i \ne k
+  \end{array}
+\end{equation}
+对于无效决策单元，超效率模型估计的结果与CCR模型结果一致；对于CCR模型下有效的决策单元，在超效率模型下效率值$\theta$一般都是大于1。超效率DEA模型的经济含义是：一个有效决策单元可以将其投入按比例增加而效率值保持不变，投入增加的最大比例就是其超效率值$\theta - 1$。
+
+超效率模型存在一个不足：使用传统CCR模型确定的相对有效的决策单元，在超效率模型中可能无可行解。对此，Lovell与Rouse\cite{lovell2003equivalent}提出一个新的超效率模型解决这一问题，确保所有决策单元都有可行解。
+
+\subsection{公共权值向量集}
+传统的DEA方法允许每个决策单元选择最有利于自身的指标权值向量，作为评价其生产效率的基准，由此确立的各个决策单元的相对效率缺乏可比性，无法作为决策单元排名的依据。为了对所有的决策单元采用统一的标准进行评估，研究人员便提出公共权值向量集（Common Set of Weights）的概念。公共权值向量集解自多目标规划，是生产可能集（Production Possibility Set, PPS）
+\footnote{PPS将决策单元分成两组：处于PPS内的是无效率的决策单元，位于PPS前沿面上的是有效的决策单元。}
+支持超平面（Supporting Hyperplane）的法向量（Normal Vector）。 使用公共权值向量集对决策单元进行排名是一个重要的方法，对决策单元进行排名需要首先定义一个度量决策单元与超平面距离的范数\cite{cook1990dea,roll1991controlling,cook2007within,liu2008ranking,payan2011modified}。
+
+\cite{li2000ranking}利用决策单元集合构造输入最小输出最大的虚拟决策单元，根据CCR模型确定虚拟决策单元的最大效率，从而解得其最优权值作为公共权值，据此可以评估各个决策单元的相对效率，并进行效率排名。
+
+\subsection{DR/DEA方法}
+根据DEA模型计算的相对效率可以将决策单元分成两个类簇：相对有效的（$\mathcal{P}$）与相对无效的（$\mathcal{N}$），Sinuany-Stern和Friedman\cite{sinuany1998dea}根据两个类簇定义了一个比率分值
+\begin{equation}\label{eq:dr}
+  T_i = \frac{\mu^T y_i}{\nu^T x_i}, i = 1,\ldots, n
+\end{equation}
+并基于“最大化类簇间比率分值差异，最小化类簇内比率分值差异”的原则，寻找最佳公共权值向量，作为分离两个类簇决策单元的分类函数。对于类簇$\mathcal P$ 与$\mathcal N$，各自的平均比率分值定义为：
+\begin{equation}
+  \begin{array}{lll}
+    \bar{T}_\mathcal{P} & = & \frac{1}{n_1} \sum\limits_{i\in \mathcal{P}} T_i \\
+    \bar{T}_\mathcal{N} & = & \frac{1}{n_2} \sum\limits_{i\in \mathcal{N}} T_i
+  \end{array}
+\end{equation}
+其中，$n_1,n_2$分别表示类簇$\mathcal{P},\mathcal{N}$的大小。由此可以确定所有决策单元平均比率分值：
+\[
+ \bar{T} = \frac{n_1\bar{T}_\mathcal{P} + n_2\bar{T}_\mathcal{N}}{n}
+\]
+
+选择最佳公共权值向量转化为如下最优化问题：
+\begin{equation}
+  \max_{\mu,\nu} \lambda = \frac{SS_B(T)}{SS_W(T)}
+\end{equation}
+其中，$SS_B(T),SS_W(T)$表示类簇间（内）比率分值差异，定义为：
+\begin{equation}
+  \begin{array}{lll}
+    SS_B(T) & = & n_1(\bar{T}_\mathcal{P} - \bar{T})^2 + n_2(\bar{T}_\mathcal{N} - \bar{T})^2 = \frac{n_1n_2}{n_1+n_2}(\bar{T}_\mathcal{P} - \bar{T}_\mathcal{N})^2\\
+    SS_W(T) & = & \sum\limits_{i\in \mathcal{P}} (T_i - \bar{T}_\mathcal{P})^2 + \sum\limits_{i\in \mathcal{N}} (T_i - \bar{T}_\mathcal{N})^2
+  \end{array}
+\end{equation}
+
+DR/DEA属于非线性优化问题，\cite{sinuany1998dea}使用的共轭梯度算法（Conjugate Gradient Algorithm）优化模型，但无法保证能够找到全局最优解。
+
+利用最优公共权值，可以实现对所有决策单元进行完全排序，并保证相对有效的决策单元排列在无效决策单元之前。
+
+\subsection{基于切比雪夫距离的排名方法}
+Tavares与Antunes\cite{tavares2001atchebycheff}提出一种类似于加法模型的效率评价方法，唯一的区别就是最小化被评价单元与有效前沿面的$L_{\infty}$范数距离（也称切比雪夫距离，或棋盘距离）：
+\begin{equation}\label{eq:chebycheffmodel}
+  \begin{array}{ll}
+    \min & \|(x_k, y_k) - (\sum\limits_{i=1}^n \lambda_i x_i,\sum\limits_{i=1}^n \lambda_i y_i)\|_{\infty}\\
+    \textit{s.t.} & x_k \ge \sum\limits_{i=1}^n \lambda_i x_i \\
+    & y_k \le \sum\limits_{i=1}^n \lambda_i y_i\\
+    & \sum\limits_{i=1}^n \lambda_i = 1\\
+    & \lambda_i \ge 0, i =1,\ldots, n
+  \end{array}
+\end{equation}
+可以证明，模型\eqref{eq:chebycheffmodel}等价于下面的线性模型\cite{rezai2012ranking}：
+\begin{equation}\label{eq:chebycheffmodel-eqv}
+  \begin{array}{ll}
+    \max & u_k\\
+    \textit{s.t.} & x_k \ge \sum\limits_{i=1}^n \lambda_i x_i + u_k \\
+    & y_k \le \sum\limits_{i=1}^n \lambda_i y_i - u_k\\
+    & \sum\limits_{i=1}^n \lambda_i = 1\\
+    & \lambda_i \ge 0, i =1,\ldots, n
+  \end{array}
+\end{equation}
+其中，$u_k\in [0,\infty)$表示效率值，当且仅当$u_k =0$时，决策单元$\mathrm{DMU_k}$是有效的，或者取$\theta_k = 1/(1+u_k)$，当$\theta_k = 1$时，决策单元有效。
+
+\cite{rezai2012ranking}将待评测的决策单元从生产可能集中剔除，使用下面的模型计算其效率值：
+\begin{equation}
+  \begin{array}{ll}
+    \min & \|(x_k,y_k) - (\sum\limits_{i=1, i \ne k}^n \lambda_i x_i,\sum\limits_{i=1, i \ne k}^n \lambda_i y_i)\|_{\infty} \\
+    \textit{s.t.} & x_k \le \sum\limits_{i=1, i \ne k}^n \lambda_i x_i \\
+    & y_k \ge \sum\limits_{i=1, i \ne k}^n \lambda_i y_i\\
+    & \lambda_i \ge 0, i =1,\ldots, n
+  \end{array}
+\end{equation}
+
+根据$L_{\infty}$的定义可知：
+\begin{equation}\label{eq:infinitynorm}
+  \begin{array}{ll}
+     & \|(x_k,y_k) - (\sum\limits_{i=1, i \ne k}^n \lambda_i x_i,\sum\limits_{i=1, i \ne k}^n \lambda_i y_i)\|_{\infty} \\
+     = & \max\bigg\{\big\{|x_{kl} - \sum\limits_{i = 1, i\ne k}^n \lambda_i x_{il}|\big\}_{l=1}^m,\big\{|y_{kr} - \sum\limits_{i = 1, i\ne k}^n \lambda_i y_{ir}|\big\}_{r=1}^s\bigg\} \\
+     = & \max\bigg\{\big\{\sum\limits_{i = 1, i\ne k}^n \lambda_i x_{il} - x_{kl}\big\}_{l=1}^m,\big\{y_{kr} - \sum\limits_{i = 1, i\ne k}^n \lambda_i y_{ir}\big\}_{r=1}^s\bigg\}\\
+     \triangleq & v_k
+  \end{array}
+\end{equation}
+则有下面模型：
+\begin{equation}
+  \begin{array}{ll}
+    \min & v_k \\
+    \textit{s.t.} & v_k \ge \sum\limits_{i=1, i \ne k}^n \lambda_i x_i - x_k\\
+    & v_k \ge y_k - \sum\limits_{i=1, i \ne k}^n \lambda_i y_i\\
+    & \lambda_i \ge 0, i =1,\ldots, n
+  \end{array}
+\end{equation}
+根据对偶理论，可得其对偶模型：
+\begin{equation}
+  \begin{array}{ll}
+    \max & \mu^T y_k - \nu^T x_k\\
+    \textit{s.t.} & \mu^T y_i \le \nu^T x_i\\
+    & 1^T \mu + 1^T \nu = 1\\
+    &\mu \ge 0, \nu \ge 0\\
+    & i = 1,\ldots, n, i \ne k
+  \end{array}
+\end{equation}
+
+\subsection{PCA排名}
+Joe Zhu\cite{zhu1998data}做过关于DEA与PCA两种方法的比较实验，发现二者对决策单元的排名具有一致性。后来，Premachandra\cite{premachandra2001note}对Zhu的方法做了进一步的改进。

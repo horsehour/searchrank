@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: ir.aux
+A level-1 auxiliary file: rank.aux
+A level-1 auxiliary file: dmml.aux
+A level-1 auxiliary file: l2r.aux
+A level-1 auxiliary file: metric.aux
+A level-1 auxiliary file: math.aux
+A level-1 auxiliary file: stat.aux
+A level-1 auxiliary file: mcda.aux
+The style file: unsrt.bst
+Reallocated field_info (elt_size=4) to 15787 items from 5000.
+Database file #1: references.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--empty journal in shor1985minimization
+You've used 469 entries,
+            1791 wiz_defined-function locations,
+            2741 strings with 74069 characters,
+and the built_in function-call counts, 118166 in all, are:
+= -- 11618
+> -- 3892
+< -- 160
++ -- 1507
+- -- 1038
+* -- 7599
+:= -- 17492
+add.period$ -- 1488
+call.type$ -- 469
+change.case$ -- 434
+chr.to.int$ -- 0
+cite$ -- 470
+duplicate$ -- 5571
+empty$ -- 11888
+format.name$ -- 1038
+if$ -- 27133
+int.to.chr$ -- 0
+int.to.str$ -- 469
+missing$ -- 483
+newline$ -- 2342
+num.names$ -- 471
+pop$ -- 1344
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 2866
+stack$ -- 0
+substring$ -- 9596
+swap$ -- 1653
+text.length$ -- 160
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 1320
+width$ -- 472
+write$ -- 5191
+(There was 1 warning)

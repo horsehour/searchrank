@@ -1,0 +1,75 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces 颜色分布图}}{60}{figure.6.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces 陪审团做出正确决定的概率}}{76}{figure.8.1}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces 排列分布及分布肯德尔距离，$1234 \triangleq \delimiter "426830A 1,2,3,4 \delimiter "526930B $}}{81}{figure.8.2}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces 序对投票准则下的搜索排名聚合（\textbf {左}）与加权排名聚合（\textbf {右}）}}{90}{figure.8.3}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {12.1}{\ignorespaces 二维空间线性模型的VC维}}{117}{figure.12.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {13.1}{\ignorespaces 三层神经网络}}{135}{figure.13.1}
+\contentsline {figure}{\numberline {13.2}{\ignorespaces 信号处理流程}}{138}{figure.13.2}
+\contentsline {figure}{\numberline {13.3}{\ignorespaces 受限Boltzmann机}}{139}{figure.13.3}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {15.1}{\ignorespaces 决策树预测模型}}{147}{figure.15.1}
+\contentsline {figure}{\numberline {15.2}{\ignorespaces 商品房价格预测模型}}{159}{figure.15.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {16.1}{\ignorespaces 密度峰值聚类决策图\nobreakspace {}\cite {rodriguez2014clustering}}}{164}{figure.16.1}
+\contentsline {figure}{\numberline {16.2}{\ignorespaces 经典人工数据集（上）与Olivetti人脸数据集（下）上密度峰值算法的性能\nobreakspace {}\cite {rodriguez2014clustering}}}{165}{figure.16.2}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {18.1}{\ignorespaces 集成学习框架}}{181}{figure.18.1}
+\contentsline {figure}{\numberline {18.2}{\ignorespaces 飞镖投掷产生的偏置与方差}}{184}{figure.18.2}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {21.1}{\ignorespaces 四折交叉验证}}{212}{figure.21.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {22.1}{\ignorespaces 排序学习框架}}{219}{figure.22.1}
+\contentsline {figure}{\numberline {22.2}{\ignorespaces 偏好概率模型}}{225}{figure.22.2}
+\contentsline {figure}{\numberline {22.3}{\ignorespaces 交叉熵损失函数}}{225}{figure.22.3}
+\contentsline {figure}{\numberline {22.4}{\ignorespaces 级联模型}}{251}{figure.22.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {23.1}{\ignorespaces 曼哈顿街区与曼哈顿距离}}{268}{figure.23.1}
+\contentsline {figure}{\numberline {23.2}{\ignorespaces 参数$p$与单位闵科夫斯基距离之间的关系图}}{268}{figure.23.2}
+\contentsline {figure}{\numberline {23.3}{\ignorespaces Cayley距离距离演示}}{269}{figure.23.3}
+\contentsline {figure}{\numberline {23.4}{\ignorespaces Ulam距离计算演示}}{269}{figure.23.4}
+\contentsline {figure}{\numberline {23.5}{\ignorespaces 真实标记与预测结果}}{278}{figure.23.5}
+\contentsline {figure}{\numberline {23.6}{\ignorespaces PR曲线}}{279}{figure.23.6}
+\contentsline {figure}{\numberline {23.7}{\ignorespaces ROC曲线}}{279}{figure.23.7}
+\contentsline {figure}{\numberline {23.8}{\ignorespaces Left：Rudolf Clausius (1822 - 1888), Middle：Ludwig Boltzmann (1844 - 1906), Right：Claude Shannon (1916 - 2001)}}{282}{figure.23.8}
+\contentsline {figure}{\numberline {23.9}{\ignorespaces Solomon Kullback (1907 - 1994)}}{286}{figure.23.9}
+\contentsline {figure}{\numberline {23.10}{\ignorespaces Richard Leibler (1904 - 2003)}}{286}{figure.23.10}
+\contentsline {figure}{\numberline {23.11}{\ignorespaces 联合熵、条件熵、互信息三者之间的关系}}{287}{figure.23.11}
+\contentsline {figure}{\numberline {23.12}{\ignorespaces David Albert Huffman (1925 - 1999)}}{288}{figure.23.12}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {25.1}{\ignorespaces 原始问题：利润最大化的生产计划问题}}{308}{figure.25.1}
+\contentsline {figure}{\numberline {25.2}{\ignorespaces 对偶问题：成本最小化的资源定价问题}}{308}{figure.25.2}
+\contentsline {figure}{\numberline {25.3}{\ignorespaces 内点法求解示例}}{310}{figure.25.3}
+\contentsline {figure}{\numberline {25.4}{\ignorespaces Army of Four: Broyden-Fletcher-Goldfard-Shanno}}{326}{figure.25.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {26.1}{\ignorespaces 圆周率$\pi $值前1,000万位小数所含数字统计图（左）数字一阶转移概率矩阵图（右）}}{349}{figure.26.1}
+\contentsline {figure}{\numberline {26.2}{\ignorespaces 不规则图形面积计算}}{367}{figure.26.2}
+\contentsline {figure}{\numberline {26.3}{\ignorespaces 估计无理数$\pi $的值}}{367}{figure.26.3}
+\contentsline {figure}{\numberline {26.4}{\ignorespaces 定积分计算}}{367}{figure.26.4}
+\contentsline {figure}{\numberline {26.5}{\ignorespaces 圆周率$\pi $值前1,000万位小数连续数字串加和分布图}}{370}{figure.26.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {27.1}{\ignorespaces DEA-SVM混合模型}}{400}{figure.27.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {28.1}{\ignorespaces Analytic Hierarchy Process: Decision on a Vacation Spot}}{407}{figure.28.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {29.1}{\ignorespaces 偏好关系}}{418}{figure.29.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

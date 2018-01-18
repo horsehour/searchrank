@@ -1,0 +1,210 @@
+\chapter{邮区中心局选址问题}
+邮政设施是一个国家重要的基础设施，邮政通信的发展依赖于科学合理的邮区中心局网络。在邮区中心局体制下，邮件的流动主要有三种类型：
+\begin{itemize}
+  \item 集中：邮件从各邮区节点汇集到中心局（邮区$\rightarrow$ 中心局）
+  \item 转发：中心局将汇集的辖区邮件派送到其它中心局（中心局$\rightarrow$中心局）
+  \item 分发：中心局将“转发”来的邮件派送到邮区节点（中心局$\rightarrow$邮区）
+\end{itemize}
+在邮区中心局体制下规划邮政网络，必须完成两个基本任务：选择中心局位置，确定各个中心局的管辖范围。假定同一辖区节点间的邮件交互也需通过中心局“分发”，我们考虑以下几个问题：
+\begin{enumerate}
+  \item 某地区有25个邮区节点，给定各节点间的业务流量及距离，现计划从中选择3 个邮区节点设置为中心局，请给出一个合理的中心局位置，并且确定其辖区。
+  \item 一般来说，“转发”阶段的批量派送有利于节省开支，在“集中”和“分发”阶段，单位邮件单位距离的费用则偏高。假设“集中”和“分发”阶段单位邮件单位距离费用为1，“转发”阶段单位邮件单位距离的费用介于0.2到0.8之间。某地区有200个邮区节点，给定节点的坐标位置及节点间的业务流量（非对称），现计划从中选择10 个邮区节点设置为中心局，请给出合理的设计。
+\end{enumerate}
+
+\ornamento
+\section{标记与假设}
+\begin{enumerate}
+  \item $\mathbb{G} =(\mathbb{V},\mathbb{E})$：邮区网络图，每个节点对应一个邮区，包含$n$个邮区，每条边对应邮区之间的一条邮路。
+  \item $D\in \mathbb{R}^{n\times n}$：邮区节点的距离矩阵，矩阵$D$为对称矩阵。
+  \item $X\in \mathbb{R}^{n\times n}$：邮区节点间的邮件流量矩阵。
+  \item $\mathbb{H}=\{H_1,\ldots,H_m\}$：邮政辖区的划分，有$m$ 个辖区
+    \begin{equation}
+        H_i = \{V_i^1,\ldots, V_i^{n_i}\},~~~ H_i\cap H_j = \varnothing, H_i\cup H_j = \mathbb V, ~~~\sum\limits_{i = 1}^m n_i = n
+    \end{equation}
+  \item $\mathbb V_c = \{V_1^c, V_2^c,\ldots, V_m^c\}$：邮区中心局集合，其中$V_i^c\in H_i$表示辖区$H_i$“中心局”或“中心节点”，辖区内的其他节点统称为“普通节点”。
+  \item $Y\in \mathbb{R}^{n\times n}$：给定辖区的划分$\mathbb{H}$，辖区划分后节点间的流量矩阵。
+\end{enumerate}
+
+任意节点都存在两类邮件的流通：簇内流通与簇间流通，前者是指同一辖区内节点间的邮件流通，后者则表示不同辖区节点间的邮件流通。对于簇内流通，包括中心流通和普通流通，分别表示普通结点与中心节点之间的流通，普通结点间的流通。
+\begin{enumerate}[假设1]
+  \item 同一辖区的普通节点间的邮件流通需要经过中心局，可分解为两个基本流程：将始发节点的邮件\textbf{集中}到中心节点；将邮件\textbf{分发}到目标节点。
+  \item 不同辖区节点间邮件流通可以分解为三个基本流程：将始发节点的邮件\textbf{集中}到始发中心节点；始发中心节点将邮件\textbf{转发}给目标中心节点；目标中心节点将邮件\textbf{分发}给目标节点。
+\end{enumerate}
+
+\section{以辖区为基本单元考察流通成本}
+\subsection{邮件流量分布}
+给定邮政辖区的一种划分$\mathbb{H}$，对于任意普通节点$V_i^k$，辖区划分前以它为起始节点的邮件，全部改道经中心节点$V_i^c$，从而普通节点$V_i^k$与中心节点$V_i^c$之间的邮件流量
+\begin{equation}
+    Y(V_i^k, V_i^c) = \sum\limits_{j = 1}^m \sum\limits_{l = 1}^{n_j} X(V_i^k, V_j^l)
+\end{equation}
+对应矩阵$X$中对应$V_i^k$行所有元素之和。在辖区划分前从其他节点寄送至节点$V_i^k$的所有邮件，都经过中心节点$V_i^c$ 进行“分发”派送，则中心节点$V_i^c$ 到节点$V_i^k$的邮件流量
+\begin{equation}
+    Y(V_i^c, V_i^k) = \sum\limits_{j = 1}^m \sum\limits_{l = 1}^{n_j} X(V_j^l, V_i^k)
+\end{equation}
+对应矩阵$X$中对应$V_i^k$列所有元素之和。
+
+对于任意两个中心节点$V_i^c$与中心节点$V_j^c$，它们之间的邮件流量为两个辖区$h_i,h_j$之间的邮件流量。从中心节点$V_i^c$到中心节点$V_j^c$的邮件流量
+\begin{equation}
+    Y(V_i^c, V_j^c) = \sum\limits_{k = 1}^{n_i} \sum\limits_{l = 1}^{n_j} X(V_i^k, V_j^l)
+\end{equation}
+
+\subsection{邮件流通总成本}
+根据邮件流量与邮路的距离，可以确定网络$\mathbb{G}$邮件流通产生的总成本
+\begin{equation}
+    L(\mathbb{H}) = \sum\limits_{i = 1}^m (L_i^{+} + L_i^{-}) + \sum\limits_{i = 1}^m \sum\limits_{j = 1}^m C_{ij}
+\end{equation}
+第一项表示所有辖区内的邮件流通总成本，任意辖区$H_i$内的流通成本等于辖区内普通节点与中心节点$V_i^c$之间的流通成本之和，它包括两部分：
+\begin{itemize}
+  \item 中心节点$V_i^c$“集中”辖区内普通节点邮件的成本
+\begin{equation}
+    L_i^{+} = \sum\limits_{k = 1}^{n_i} \alpha D(V_i^c, V_i^k) Y(V_i^k, V_i^c)
+\end{equation}
+  \item 从中心节点$V_i^c$向辖区内普通节点“分发”邮件的成本
+\begin{equation}
+    L_i^{-} = \sum\limits_{k = 1}^{n_i} \alpha D(V_i^c, V_i^k) Y(V_i^c, V_i^k)
+\end{equation}
+\end{itemize}
+
+第二项表示从辖区$H_i$向辖区$H_j$“转发”邮件的成本
+\begin{equation}
+    C_{ij} = \beta D(V_i^c, V_j^c) Y(V_i^c, V_j^c)
+\end{equation}
+其中，集中、分发、转发邮件的单位成本分别为$\alpha$、$\alpha$与$\beta$。将两项代入总成本函数，则有
+\begin{equation}
+    \begin{array}{lll}
+      L(\mathbb{H}) & = & \sum\limits_{i = 1}^m \sum\limits_{k = 1}^{n_i} \alpha D(V_i^c, V_i^k)\big[Y(V_i^k, V_i^c) + Y(V_i^c, V_i^k)\big] + \sum\limits_{i = 1}^m \sum\limits_{j = 1}^m \beta D(V_i^c, V_j^c) Y(V_i^c, V_j^c)  \\
+        & = & \sum\limits_{i = 1}^m \sum\limits_{k = 1}^{n_i} \sum\limits_{j = 1}^m \sum\limits_{l = 1}^{n_j} \Big\{\alpha D(V_i^c, V_i^k) \big[X(V_i^k, V_j^l) + X(V_j^l, V_i^k)\big] + \beta D(V_i^c, V_j^c) X(V_i^k, V_j^l) \Big\}
+    \end{array}
+\end{equation}
+
+\section{以节点对为基本单元考察流通成本}
+在确定每个邮局的中心局以后，可以直接从任意一对邮局$(V_i,V_j)$出发确定两者之间的流通成本。对于任意一对邮局$(V_i,V_j)$，从$V_i$到$V_j$的流通划分成三段：从$V_i$“集中”至其中心局$V_i^c$，从其中心局$V_i^c$“转发”至$V_j$ 的中心局$V_j^c$，再从$V_j^c$“分发”至$V_j$。如果$V_i$与$V_j$属于同一辖区，或者有至少一个属于中心局，则三段流通分解就退化为两段甚至是两个中心局之间的单段转发。由于在计算流通总成本时，同时考虑邮局之间的距离和流量，因此不影响三段划分的一般性。\textcolor{blue}{注意：以节点对为基本考察单元时，下标统一按照$\{1,2,\ldots,n\}$ 所以标示。符号$V_i^c$表示节点$V_i$ 所在辖区的中心节点，则有$\bigcup\limits_{i=1}^n V_i^c = \mathbb V_c$。如果$V_i$与$V_j$划分到相同的辖区，则$V_i^c=V_j^c$，这与以辖区为基本考察单元时将$V_i^c$视为辖区$H_i$ 的中心节点有所差别，注意区分。}
+
+对于任意一对邮局$(V_i,V_j)$，由于从$V_i$到$V_j$的邮件流动，基于两个各自的中心局$(V_i^c,V_j^c)$所产生的邮件流通成本为：
+\begin{equation}
+    L_{ij} = \big[\alpha D(V_i, V_i^c) + \beta D(V_i^c, V_j^c) + \alpha D(V_j^c, V_j) \big] X_{ij}
+\end{equation}
+从而可以确定总的流通成本：
+\begin{equation}
+    \begin{array}{lll}
+        L(\mathbb H) & = & \sum\limits_{i=1}^n\sum\limits_{j=1}^n L_{ij}\\
+        & = & \alpha \sum\limits_{i=1}^n D(V_i, V_i^c) \sum\limits_{j=1}^n X_{ij} + \beta \sum\limits_{i=1}^n\sum\limits_{j=1}^n D(V_i^c,V_j^c) X_{ij} + \alpha \sum\limits_{j=1}^n D(V_j^c, V_j) \sum\limits_{i=1}^n X_{ij} \\
+        & = & \alpha \sum\limits_{i=1}^n D(V_i, V_i^c) X_i^{-} + \beta \sum\limits_{i=1}^n\sum\limits_{j=1}^n D(V_i^c,V_j^c) X_{ij} + \alpha \sum\limits_{j=1}^n D(V_j^c, V_j) X_j^{+} \\
+        & = & \alpha \sum\limits_{i=1}^n D(V_i,V_i^c) \big[X_i^{-} + X_i^{+}\big] + \beta \sum\limits_{i=1}^n\sum\limits_{j=1}^n D(V_i^c,V_j^c) X_{ij}
+    \end{array}
+\end{equation}
+其中，$V_i^{-}$表示从邮局$V_i$发出的所有邮件流量，$V_j^{+}$表示邮局$V_j$收到的所有邮件流量。
+
+从而，确定中心局以及中心局所辖范围的目标可以由下面的规划问题表示：
+\begin{equation}
+    \min\limits_{\substack{I(\bigcup\limits_{i=1}^n V_i^c)= m\\V_1^c,\ldots,V_n^c\in \mathbb V}} L(\mathbb H) = \alpha \sum\limits_{i=1}^n D(V_i,V_i^c) \big[X_i^{-} + X_i^{+}\big] + \beta \sum\limits_{i=1}^n\sum\limits_{j=1}^n D(V_i^c,V_j^c) X_{ij}.
+\end{equation}
+
+
+\section{重新划分普通节点}
+假设在当前分组基础之上，对任意一个普通节点$V_i$重新划分其所属辖区，其他节点分组情况、中心节点均不变。对于普通节点$V_i$，与之关联的流通成本$L_i(V_i^c)$可表示如下：
+\begin{equation}
+    \begin{array}{lll}
+        L_i(V_i^c) & = & \sum\limits_{j=1}^n (L_{ij} + L_{ji})\\
+        & = & \sum\limits_{j=1}^n \big[\alpha D(V_i, V_i^c) + \beta D(V_i^c, V_j^c) + \alpha D(V_j^c, V_j) \big] X_{ij} \\
+        && + \sum\limits_{j=1}^n \big[\alpha D(V_j, V_j^c) + \beta D(V_j^c, V_i^c) + \alpha D(V_i^c, V_i) \big] X_{ji}\\
+        & = & \alpha D(V_i, V_i^c) \big[X_i^{-} + X_i^{+}\big] + \beta \sum\limits_{j=1}^n D(V_i^c, V_j^c) \big[X_{ij} + X_{ji} \big] + \alpha \sum\limits_{j=1}^n D(V_j^c, V_j)\big[ X_{ij} + X_{ji}\big].
+    \end{array}
+\end{equation}
+将$V_i$的中心节点$V_i^c$换成$V_i^{c'}$，可以发现$L_i$也会发生相应的改变：
+\begin{equation}
+        L_i(V_i^{c'})  = \alpha D(V_i, V_i^{c'}) \big[X_i^{-} + X_i^{+}\big] + \beta \sum\limits_{j=1}^n D(V_i^{c'}, V_j^c) \big[X_{ij} + X_{ji} \big] + \alpha \sum\limits_{j=1}^n D(V_j^c, V_j)\big[X_{ij} + X_{ji}\big].
+\end{equation}
+我们的目标是确定一个新的$V_i^{c'}$使得$\Delta_i = L_i(V_i^c) - L_i(V_i^{c'})$最大化，则总的流通成本相应地也会有所下降：
+\begin{equation}
+    \begin{array}{lll}
+    \max\limits_{V_i^{c'}\in \mathbb V_c} \Delta_i  & = & L_i(V_i^c) - L_i(V_i^{c'}) \\
+    & = & \alpha \big[D(V_i, V_i^c) - D(V_i, V_i^{c'})\big] \big[X_i^{-} + X_i^{+}\big] + \\
+    && \beta \sum\limits_{j=1}^n \big[D(V_i^c, V_j^c)-D(V_i^{c'}, V_j^c)\big] \big[X_{ij} + X_{ji} \big].
+    \end{array}
+\end{equation}
+
+\section{重新选择中心节点}
+假设对于某个辖区$H_i$内所有原始节点不变，其他辖区及中心节点均不变，我们现在期望通过更新$H_i$的中心节点以减少总的流通成本。辖区$H_i$对总流通成本的贡献包含三部分，一部分源自于辖区内，另一部分则源于辖区中心节点与其他中心节点之间的流通成本，最后一部分则是其他辖区内的流通成本。假设辖区$H_i$的中心节点$V_i^c$更新为$V_i^{c'}$。
+
+\subsection{辖区内}
+辖区内的流通成本即从普通节点到中心节点的集中成本，从中心节点向普通节点分发邮件的流通成本：
+\begin{equation}
+    L_i^1(V_i^c) = \sum\limits_{k=1}^{n_i} \alpha D(V_i^k, \textcolor{blue}{V_i^c}) \big[X(V_i^k)^{+} + X(V_i^k)^{-}\big],
+\end{equation}
+%更新中心节点所引发的成本变化为：
+%\begin{equation}
+%    \begin{array}{lll}
+%        \Gamma_i^1 & = & L_i^1(V_i^c) - L_i^1(V_i^{c'})\\
+%        & = & \sum\limits_{k=1}^{n_i} \alpha \big[D(V_i^k, V_i^c) - D(V_i^k, V_i^{c'})\big] \big[X(V_i^k)^{+} + X(V_i^k)^{-}\big]\\
+%        & = & \sum\limits_{k=1}^{n_i} \alpha \big[D(V_i^k, V_i^c) - D(V_i^k, V_i^{c'})\big] \sum\limits_{j=1}^m \sum\limits_{l=1}^{n_j} \big[X(V_i^k, V_j^l) + X(V_j^l, V_i^k)\big]\\
+%        & = & \sum\limits_{k=1}^{n_i} \sum\limits_{j=1}^m \sum\limits_{l=1}^{n_j} \alpha \big[D(V_i^k, V_i^c) - D(V_i^k, V_i^{c'})\big] \big[X(V_i^k, V_j^l) + X(V_j^l, V_i^k)\big].
+%    \end{array}
+%\end{equation}
+
+\subsection{辖区间}
+辖区间的流通成本是两个辖区中心节点的转发成本：
+\begin{equation}
+    L_i^2(V_i^c) = \sum\limits_{j=1}^m \beta D(\textcolor{blue}{V_i^c}, V_j^c) \sum\limits_{k=1}^{n_i} \sum\limits_{l=1}^{n_j} \big[X(V_i^k, V_j^l) + X(V_j^l, V_i^k)\big]
+\end{equation}
+
+\subsection{其他辖区内}
+辖区与辖区间相互影响，不仅反映在两个辖区中心节点间的相互转发，还有一部分则反映在目标辖区“集中”和“分发”过程：
+\begin{equation}
+    L_i^3 = \sum\limits_{\forall j\in \{1,2,\ldots, m\}\setminus \{i\}} \sum\limits_{l=1}^{n_j} \alpha D(V_j^l, V_j^c)\sum\limits_{k=1}^{n_i}\big[X(V_i^k, V_j^l) + X(V_j^l, V_i^k)\big]
+\end{equation}
+辖区$H_i$中心节点的变化不会对成本$L_i^3$造成任何影响，只能改变成本$L_i^1(V_i^c)$与$L_i^2(V_i^c)$，从而更新辖区$H_i$中心节点的目标就转化为如下形式的优化问题：
+\begin{equation}
+    \min\limits_{V_i^{c'} \in H_i} L_i(V_i^{c'}) = L_i^1(V_i^{c'}) + L_i^2(V_i^{c'})
+\end{equation}
+
+%更新中心节点所引发的成本变化为：
+%\begin{equation}
+%    \begin{array}{lll}
+%        \Gamma_i^2 & = & L_i^2(V_i^c) - L_i^2(V_i^{c'})\\
+%        & = & \sum\limits_{j=1}^m \beta \big[D(V_i^c, V_j^c) - D(V_i^{c'}, V_j^c)\big] \sum\limits_{k=1}^{n_i} \sum\limits_{l=1}^{n_j} \big[X(V_i^k, V_j^l) + X(V_j^l, V_i^k)\big]\\
+%        & = & \sum\limits_{k=1}^{n_i} \sum\limits_{j=1}^m \sum\limits_{l=1}^{n_j} \beta \big[D(V_i^c, V_j^c) - D(V_i^{c'}, V_j^c)\big] \big[X(V_i^k, V_j^l) + X(V_j^l, V_i^k)\big]
+%    \end{array}
+%\end{equation}
+%
+%我们从而可以确定由单个辖区内更新中心节点所引发的流通成本变化量：
+%\begin{equation}
+%    \begin{array}{lll}
+%        \Gamma_i & = & \Gamma_i^1 + \Gamma_i^2 \\
+%        & = & \sum\limits_{k=1}^{n_i} \sum\limits_{j=1}^m \sum\limits_{l=1}^{n_j}\Big\{\alpha \big[D(V_i^k, V_i^c) - D(V_i^k, V_i^{c'})\big] + \beta \big[D(V_i^c, V_j^c) - D(V_i^{c'}, V_j^c)\big] \Big\}\big[X(V_i^k, V_j^l) + X(V_j^l, V_i^k)\big]
+%    \end{array}
+%\end{equation}
+%从而更新单个辖区内中心节点的目标如下：
+%\begin{equation}
+%    \max\limits_{V_i^{c'} \in H_i} \Gamma_i
+%\end{equation}
+
+
+\section{贪心算法（Greedy Selection, GS）}
+\begin{enumerate}[1、]
+  \item 从网络图中任选$m$个节点作为临时中心节点集合$\mathbb V_c$。
+  \item 对于任意的普通节点$V_i$：
+  \begin{itemize}
+      \item  选择任意一个临时中心节点$V_j^c\in \mathbb{V}_c$，计算将普通节点$V_i$划分至临时节点$V_j^c$ 辖区内所产生的“集中”和“分发”成本$L_i^1(V_j^c)$。
+      \item 遍历集合$\mathbb V_c$内所有临时中心节点，选取流通成本$L_i^1(V_j^c)$最小的临时中心节点作为$V_i$的中心局。
+  \end{itemize}
+  \item 根据$\max\limits_{V_i^{c'}\in \mathbb V_c} \Delta_i$对普通节点$V_i$ 重新划分辖区。
+  \item 在划定各个中心节点的辖区后，对任意辖区$H_i$，根据$\min\limits_{V_i^{c'} \in H_i} L_i(V_i^{c'})$ 选择新的临时中心节点。
+  \item 更新临时中心节点集合$\mathbb V_c=\{V_1^{c'},\ldots,V_m^{c'}\}$。
+  \item 重复以上三个步骤，直至划分$\mathbb H$稳定为止。
+\end{enumerate}
+
+\section{局部最优}
+根据CS算法，通过（i）划定普通节点的辖区，（ii）选择辖区的中心节点两种选择策略更新中心局结构，使其达到稳定状态，满足如下两个基本属性：
+\begin{itemize}
+  \item $V_i^k$划入其他辖区不会降低总的流通成本：$C(V_i^k, H_i) \le C(V_i^k, H_j), j\ne i, i,j=1,\ldots,m,k=1,\ldots,n_i$
+  \item $V_i^k$替代$H_i$中心节点不会降低总的流通成本：$C(H_i, V_i^c) \le C(H_i, V_i^k), i = 1,\ldots,m, k=1,\ldots,n_i$
+\end{itemize}
+这种稳定状态可能只是一种局部最优结构。为此，我们可以在GS算法的基础上，将选择辖区中心节点的范围扩展至其他辖区。实际上，扩展选择策略（iii）就是选择策略（i）和（ii）的合并，如果选择策略（i）和（ii）是一阶段选择策略，那么扩展选择策略（iii）就是两阶段选择策略，甚至还可以扩展至多阶段的混合选择模型。
+
+我们还可以多次试验直至中心局达到稳定状态，统计稳定状态下所有节点对属于同一个辖区的频次（共现），利用共现矩阵，我们可以为每个节点筛选出一组最佳的同组节点，将其视作\textbf{遗传算法}中的优秀基因保存下来。
+
+对于每个节点，将与之相关的所有数值（距离，流量，辖区内成本，辖区间成本等）统统转换为特征，以一个特征向量的形式表示每个节点，并将其化为传统的\textbf{聚类算法}。
+
+\section{K-Medoid分析0-1矩阵表示}
+对K-Medoid聚类分析结果使用0-1矩阵表示，同时反映类簇与中心节点信息，然后基于遗传算法进行优化。
